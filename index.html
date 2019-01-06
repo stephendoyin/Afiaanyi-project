@@ -35,18 +35,24 @@
                 Directory & Marketplace</h1>
 
             <p>Locate <span class="dots">.</span>Sell <span class="dots">.</span> Buy</p>
-            <input type="text">
+            <form>
+                <input placeholder="Search for companies and services" id="box-one" type="text"><input placeholder="Categories"
+                    id="box-two" type="text"><input placeholder="Location" type="text" id="box-three"><input type="submit"
+                    id="box-four" value="search">
+            </form>
+
         </div>
 
         <div class="bottom-navigation clearfix">
             <ul class="sub-nav">
-                <li><a href="#">Automative</a></li>
-                <li><a href="#">Beauty & Wellness</a></li>
-                <li><a href="#">Construction</a></li>
-                <li><a href="#">Food & Drinks</a></li>
-                <li><a href="#">Finance & Insurance</a></li>
-                <li><a href="#">Lifestyle</a></li>
-                <li><a href="#" class="colored-link">See more...</a></li>
+                <li><a href="#"><img class="icon-small" src="resources/img/automotive.svg">Automative</a></li>
+                <li><a href="#"><img class="icon-small" src="resources/img/beauty and wellness.svg">Beauty & Wellness</a></li>
+                <li><a href="#"><img class="icon-small" src="resources/img/construction.svg">Construction</a></li>
+                <li><a href="#"><img class="icon-small" src="resources/img/food and drinks.svg">Food & Drinks</a></li>
+                <li><a href="#"><img class="icon-small" src="resources/img/finance and insurance.svg">Finance &
+                        Insurance</a></li>
+                <li><a href="#"><img class="icon-small" src="resources/img/lifestyle.svg">Lifestyle</a></li>
+                <li><a href="#" class="colored-list" style=color:#d8b027>See more...</a></li>
             </ul>
         </div>
     </header>
@@ -56,7 +62,10 @@
         <p>See what other people are searching for</p>
 
         <div class="featured-images">
-            <div class="left">
+
+            <div class="left hide-flow">
+                <img class="yellow-black" src="resources/img/yellow-black.svg">
+                <img class="black-yellow" src="resources/img/black-yellow.svg">
                 <div class="rating-wrapper">
                     <div class="rating">
                         <img src="resources/img/ratings.svg" alt="rating">
@@ -69,7 +78,9 @@
                 </div>
                 <a href="#">Browse</a>
             </div>
-            <div class="middle">
+            <div class="middle hide-flow">
+                <img class="yellow-black" src="resources/img/yellow-black.svg">
+                <img class="black-yellow" src="resources/img/black-yellow.svg">
                 <div class="rating-wrapper">
                     <div class="rating">
                         <img src="resources/img/ratings.svg" alt="rating">
@@ -83,7 +94,9 @@
                 <a href="#">Browse</a>
             </div>
             <div class="right">
-                <div class="top-image">
+                <div class="top-image hide-flow">
+                    <img class="yellow-black" src="resources/img/yellow-black.svg">
+                    <img class="black-yellow" src="resources/img/black-yellow.svg">
                     <div class="rating-wrapper">
                         <div class="rating">
                             <img src="resources/img/ratings.svg" alt="rating">
@@ -96,7 +109,9 @@
                     </div>
                     <a href="#" class="adjust">Browse</a>
                 </div>
-                <div class="bottom-image">
+                <div class="bottom-image hide-flow">
+                    <img class="yellow-black" src="resources/img/yellow-black.svg">
+                    <img class="black-yellow" src="resources/img/black-yellow.svg">
                     <div class="rating-wrapper">
                         <div class="rating">
                             <img src="resources/img/ratings.svg" alt="rating">
@@ -136,9 +151,12 @@
         <p>Explore some of the best places around you and leave a review</p>
 
         <div class="card-wrapper">
-            <div class="card">
+            <div class="card hide-flow">
+                <img class="yellow-black" src="resources/img/yellow-black.svg">
+                <img class="black-yellow" src="resources/img/black-yellow.svg">
                 <img src="resources/img/laundry.png" class="image-part" alt="">
                 <div class="city-services">
+
                     <img class="icon-small" src="resources/img/Vector.svg" alt="">
                     <p>Ezeudo Cleaners</p>
                     <button class="card-btn">4.5</button>
@@ -161,6 +179,8 @@
                 </div>
             </div>
             <div class="card">
+                <img class="yellow-black" src="resources/img/yellow-black.svg">
+                <img class="black-yellow" src="resources/img/black-yellow.svg">
                 <img src="resources/img/fancycrave-254180-unsplash.png" class="image-part" alt="">
                 <div class="city-services">
                     <img class="icon-small" src="resources/img/Vector.svg" alt="">
@@ -185,6 +205,8 @@
                 </div>
             </div>
             <div class="card">
+                <img class="yellow-black" src="resources/img/yellow-black.svg">
+                <img class="black-yellow" src="resources/img/black-yellow.svg">
                 <img src="resources/img/fancycrave-254180-unsplash.png" class="image-part" alt="">
                 <div class="city-services">
                     <img class="icon-small" src="resources/img/Vector.svg" alt="">
@@ -222,9 +244,21 @@
     </section>
 
     <section class="row">
-        <div class="testimonials">
-            <div></div>
-            <div class="avatar paper left">
+        <!-- <div id="main">
+            <div id="side1">
+                <img src="resources/img/man.png" height="100%" width="100%" />
+            </div>
+            <div id="side2">
+                <img src="NEW%20YORK.jpg" height="100%" width="100%" />
+            </div>
+            <div id="side3">
+                <img src="PARIS.jpg" height="100%" width="100%" />
+            </div>
+        </div> -->
+
+        <!-- <div class="testimonials">
+            <div></div> -->
+        <!-- <div class="avatar paper left">
                 <img src="resources/img/man.png" alt="">
                 <p>Afiaanyi has taken my business to the next
                     <br>My dreams of expansion has been
@@ -237,15 +271,15 @@
                     <br>My dreams of expansion has been
                     <br>realized</p>
                 <h3><i>- CEO, Don P Ltd</i></h3>
-            </div>
-            <div class="avatar paper right">
+            </div> -->
+        <!-- <div class="avatar paper right">
                 <img src="resources/img/man.png" alt="">
                 <p>Afiaanyi has taken my business to the next
                     <br>My dreams of expansion has been
                     <br>realized</p>
                 <h3><i>- CEO, Don P Ltd</i></h3>
-            </div>
-            <div></div>
+            </div> -->
+        <div></div>
         </div>
     </section>
 
@@ -304,81 +338,103 @@
     <section class="row">
         <div class="contact">
             <div class="one">
-                <p>PHONE SUPPORT</p>
+                <p><strong>SUPPORT</strong></p>
 
                 <p><img class="icon-small" src="resources/img/phone.svg" alt="">
                     +234 803 400 0000</p>
             </div>
             <div class="two">
-                <p>EMAIL SUPPORT</p>
+                <p><strong>EMAIL SUPPORT</strong></p>
                 <p><img class="icon-small" src="resources/img/mail.svg" alt="">
                     info@afiaayan.com</p>
             </div>
             <div class="three">
-                <p>GET LATEST DEALS & UPDATES</p>
-                <p>Stay in the loop on all upcoming promotions, <br>
-                    discounts and latest updates.</p>
+                <p><span><strong>GET LATEST DEALS & UPDATES</strong></span><br>
+                    <i>Stay in the loop on all upcoming promotions, <br>
+                        discounts and latest updates.</i></p>
             </div>
             <div class="four">
-                <input type="email" placeholder="Enter an e-mail">
+                <input type="email" id="mail" placeholder="Enter e-mail"><input id="send" type="submit" value="send">
             </div>
         </div>
     </section>
 </body>
 
-<section class="row">
-    <footer>
-        <div class="col 1-of-7">
-            <ul>
-                <li>GET TO KNOW US</li>
-                <li>About us</li>
-                <li>Careers</li>
-                <li>Blog</li>
-                <li>FAQ</li>
-                <li>Contact Us</li>
-            </ul>
-        </div>
-        <div class="col 1-of-7">
-            <ul>
-                <li>PAYMENTS</li>
-                <li>Mastercard</li>
-                <li>Verve</li>
-                <li>Visa</li>
-                <li>Wallet</li>
-            </ul>
-        </div>
-        <div class="col 1-of-7">
-            <ul>
-                <li>EXPLORE</li>
-                <li>Top Brands</li>
-                <li>Privacy Policy</li>
-                <li>Disclaimer</li>
-                <li>Billing Policy</li>
-                <li>Terms of Use</li>
-                <li>Advertise with Us</li>
-            </ul>
-        </div>
-        <div class="col 1-of-7">
-            <ul>
-                <li>SELL ON AFIANANYI</li>
-                <li>Register your Business</li>
-                <li>Create a Store</li>
-                <li>How it works</li>
-                <li>Trust and Safety</li>
-            </ul>
-        </div>
-        <div class="col 1-of-7">
-            <ul>
-                <li>DELIVERY</li>
-                <li>Chisco Express</li>
-            </ul>
-        </div>
-        <div class="col 2-of-7">
-            <p>DOWNLOAD AND CONNECT WITH US</p>
-        </div>
+<section class="footer hide-flow">
+    <footer class="row">
+        <div class="footer-inner">
+            <div class="space">
+                <ul>
+                    <li class="colored-list">GET TO KNOW US</li>
+                    <li><a href="">About us</a></li>
+                    <li><a href="">Careers</a></li>
+                    <li><a href="">Blog</a></li>
+                    <li><a href="">FAQ</a></li>
+                    <li><a href="">Contact Us</a></li>
+                </ul>
+            </div>
+            <div class="space">
+                <ul>
+                    <li class="colored-list">PAYMENTS</li>
+                    <li><a href="">Mastercard</a></li>
+                    <li><a href="">Verve</li>
+                    <li><a href="">Visa</li>
+                    <li><a href="">Wallet</li>
+                </ul>
+            </div>
+            <div class="space">
+                <ul>
+                    <li class="colored-list">EXPLORE</li>
+                    <li><a href="">Top Brands</a></li>
+                    <li><a href="">Privacy Policy</a></li>
+                    <li><a href="">Disclaimer</a></li>
+                    <li><a href="">Billing Policy</a></li>
+                    <li><a href="">Terms of Use</a></li>
+                    <li><a href="">Advertise with Us</a></li>
+                </ul>
+            </div>
+            <div class="space">
+                <ul>
+                    <li class="colored-list">SELL ON AFIANANYI</li>
+                    <li><a href="">Register your Business</a></li>
+                    <li><a href="">Create a Store</a></li>
+                    <li><a href="">How it works</a></li>
+                    <li><a href="">Trust and Safety</a></li>
+                </ul>
+            </div>
+            <div class="space">
+                <ul>
+                    <li class="colored-list">DELIVERY</li>
+                    <li><a href="">Chisco Express</a></li>
+                </ul>
+            </div>
+            <div class="left-space">
+                <ul>
+                    <li class="colored-list big-para">DOWNLOAD AND CONNECT WITH US</li>
+                </ul>
+                <span class="ios"><a href=""></a></span>
+                <span class="android"><a href=""></a></span>
+                <p>Follow us:
+                    <span><img class="icon-small" src="resources/img/facebook.svg" alt="facebook"></span>
+                    <span><img class="icon-small" src="resources/img/instagram.svg" alt="instagram"></span>
+                    <span><img class="icon-small" src="resources/img/linkedin.svg" alt="linkedin"></span>
+                    <span><img class="icon-small" src="resources/img/twitter.svg" alt="twitter"></span>
+                </p>
 
-        <p>Copyright (c) 2018 Afiaanyi. All rights reserved</p>
+            </div>
+        </div>
+        <img class="footer-last-img" src="resources/img/pandora.svg">
+        <img class="footer-last-img" src="resources/img/anambra.svg">
+        <img class="footer-last-img" src="resources/img/awka.svg">
+        <img class="footer-last-img" src="resources/img/onitsha.svg">
+        <img class="footer-last-img" src="resources/img/nccima.svg">
+        <img class="footer-last-img" src="resources/img/oni.svg">
+        <p class="powered">Powered by <img class="logo-by" src="resources/img/logo-by.svg"></p>
+        <p class="copy">Copyright (c) 2018 Afiaanyi. All rights reserved</p>
     </footer>
+    <img class="yb" src="resources/img/yb.svg">
+    <img class="by" src="resources/img/black-yellow.svg">
+
 </section>
 
 </html>
