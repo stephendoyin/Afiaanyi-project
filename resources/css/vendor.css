@@ -6,11 +6,20 @@
 }
 
 @font-face {
-    font-family: "Segoe UI";
-    src: url('../../vendor/fonts/segoeuiz.ttf');
-    font-weight: normal;
+    font-family: 'Segoe UI Web (West European)';
+    src: url('https://static2.sharepointonline.com/files/fabric/assets/fonts/segoeui-westeuropean/segoeui-regular.woff2') format('woff2'), 
+    url('https://static2.sharepointonline.com/files/fabric/assets/fonts/segoeui-westeuropean/segoeui-regular.woff') format('woff');
+    font-weight: 400;
     font-style: normal;
-}
+  }
+  
+  @font-face {
+    font-family: 'Segoe UI Web (West European)';
+    src: url('https://static2.sharepointonline.com/files/fabric/assets/fonts/segoeui-westeuropean/segoeui-semibold.woff2') format('woff2'), 
+    url('https://static2.sharepointonline.com/files/fabric/assets/fonts/segoeui-westeuropean/segoeui-semibold.woff') format('woff');
+    font-weight: 600;
+    font-style: normal;
+  }
 
 * {
     margin: 0;
@@ -18,10 +27,14 @@
     box-sizing: border-box;
 }
 
+h1{
+    margin: 0;
+}
+
 html {
     background-color: #ffffff;
     color: #000;
-    font-family: 'Montserrat', sans-serif;
+    font-family: 'Segoe UI', sans-serif;
     font-size: 10px;
     font-weight: 300;
 }
@@ -122,7 +135,8 @@ nav{
 .header__nav-link:visited {
     text-decoration: none;
     color: #000;
-    font-size: 1rem;
+    font-family: Montserrat;
+    font-size: 12px;
     margin-right: inherit;
     font-weight: 500;
 }
@@ -172,12 +186,12 @@ nav{
 }
 
 .header__greeting{
+    font-family: "Montserrat";
     font-weight: 500;
     font-size: 12px;
 }
 
 .full--nav {
-    border-bottom: 1px solid grey;
     position: relative;
 }
 
@@ -185,7 +199,7 @@ nav{
     padding: 0 15px 26px 15px;
     position: absolute;
     z-index: 1;
-    /* top: 100%; */
+    top: 100%;
     left: 50%;
     transform: translateX(-50%);
     box-shadow: 0px 10px 40px rgba(0, 0, 0, 0.05);
@@ -218,19 +232,15 @@ nav{
 }
 
 .header__full-nav-list{
-    /* position: relative; */
-    /* cursor: pointer; */
-} 
-
-.header__full-nav-list::before{
-    content: ""
+    padding: 30px 0;
 }
 
 .header__full-nav-link:link,
 .header__full-nav-link:visited{
     text-decoration: none;
     color: #000;
-    font-size: 11px;
+    padding: 14px 0;
+    font-size: 12px;
     font-weight: normal;
     word-spacing: -1px
 }
@@ -238,7 +248,7 @@ nav{
 .hero{
     position: relative;
     width: 100%;
-    height: 200px;
+    height: 220px;
     background: #F3F3F3;;
     background-size: center;
     background-repeat: no-repeat;
@@ -292,18 +302,18 @@ nav{
 
 .header__nav__list{
     text-decoration: none;
+    font-family: Monserrat;
     padding: 0 17px;
 }
 
 .lower-nav__link:link,
 .lower-nav__link:visited{
     text-decoration: none;
-    /* font-family: Segoe UI; */
+    font-family: Segoe UI;
     font-Size: 12px;
     font-style: regular;
     color: #000;
-    font-weight: 500;
-    /* margin-right: 12px; */
+    font-weight: 400;
 }
 
 .lower-nav__list--crumbs::after{
@@ -313,74 +323,15 @@ nav{
 }
 
 label{
-    font-size: 14px;
+    font-size: 12px;
     color: #333333;
     padding-right: 7px;
+    font-weight: 400;
 }
 
 .lower-nav__search{
     padding: 7px 7px;
 }
-
-/* The container must be positioned relative: */
-.custom-select {
-    position: relative;
-    font-family: Arial;
-  }
-  
-  .custom-select select {
-    display: none; /*hide original SELECT element: */
-  }
-  
-  .select-selected {
-    background-color: DodgerBlue;
-  }
-  
-  /* Style the arrow inside the select element: */
-  .select-selected:after {
-    position: absolute;
-    content: "";
-    top: 14px;
-    right: 10px;
-    width: 0;
-    height: 0;
-    border: 6px solid transparent;
-    border-color: #fff transparent transparent transparent;
-  }
-  
-  /* Point the arrow upwards when the select box is open (active): */
-  .select-selected.select-arrow-active:after {
-    border-color: transparent transparent #fff transparent;
-    top: 7px;
-  }
-  
-  /* style the items (options), including the selected item: */
-  .select-items div,.select-selected {
-    color: #ffffff;
-    padding: 8px 16px;
-    border: 1px solid transparent;
-    border-color: transparent transparent rgba(0, 0, 0, 0.1) transparent;
-    cursor: pointer;
-  }
-  
-  /* Style items (options): */
-  .select-items {
-    position: absolute;
-    background-color: DodgerBlue;
-    top: 100%;
-    left: 0;
-    right: 0;
-    z-index: 99;
-  }
-  
-  /* Hide the items when the select box is closed: */
-  .select-hide {
-    display: none;
-  }
-  
-  .select-items div:hover, .same-as-selected {
-    background-color: rgba(0, 0, 0, 0.1);
-  }
 
   .lower-nav{
       height: 60px;
@@ -430,7 +381,6 @@ box-shadow: -11px 15px 32px -27px rgba(0,0,0,0.51);
       align-items: center;
       flex-flow: row wrap;
       width: 100%;
-      padding: 20px 20px;
 }
 
 .product__card{
@@ -518,22 +468,21 @@ padding-left: 2px;
    border-bottom: 2px solid #f3f3f3;
 }
 
-.filter__title,
-.filter__category-list{
-    font-size: 11px;
+.filter__title{
+    font-size: 13px;
     font-weight: 600;
 }
-.filter__category-list{
-    font-size: 11px;
+
+.filter__category-list {
     list-style: none;
-    padding: 3px 19px;
+    padding: 4px 0px 6px 14px;
 }
 
 .filter__category-link:link,
 .filter__category-link:visited,
 .filter__reset-btn{
-    font-size: 11px;
-    font-weight: 500;
+    font-size: 12px;
+    font-weight: 400;
     text-decoration: none;
     color: #000;
 }
@@ -567,8 +516,8 @@ input[type=checkbox]{
 }
 
 form{
-    font-size: 11px;
-    font-weight: 500;
+    font-size: 12px;
+    font-weight: 400;
 }
 
 .right {
@@ -589,12 +538,12 @@ form{
 .form__sections{
     border-top: 2px solid #f3f3f3;
     margin-bottom: 25px;
-    padding-top: 20px;
+    padding-top: 12px;
 }
 
 .form__sections--scroll{
     overflow-y: auto;
-    height: 150px;
+    height: 127px;
 }
 
 .form__sections--scroll::-webkit-scrollbar {
@@ -609,7 +558,7 @@ form{
    
   /* Handle */
   .form__sections--scroll::-webkit-scrollbar-thumb {
-    background: #CAAA3B;; 
+    background: #CAAA3B;
   }
   
   /* Handle on hover */
@@ -618,7 +567,7 @@ form{
   }
 
   .spacer{
-      padding-bottom: 9px;
+      padding-bottom: 5px;
   }
 
   
@@ -756,11 +705,8 @@ a:visited{
     font-size: 18px;
     text-align: center;
     padding: 15px 0;
-    border: 4px 0 solid #fcfcfc;
-    -webkit-box-shadow: -12px 4px 49px -25px rgba(0,0,0,0.67);
--moz-box-shadow: -12px 4px 49px -25px rgba(0,0,0,0.67);
-box-shadow: -12px 4px 49px -25px rgba(0,0,0,0.67);
-    /* margin-top: 20px; */
+    border-top: 6px;
+    border-color: #000;
 }
 
 .search__history{
@@ -775,14 +721,11 @@ box-shadow: -12px 4px 49px -25px rgba(0,0,0,0.67);
 box-shadow: -36px 33px 42px -55px rgba(0,0,0,0.51);
 }
 
-/* <div class="product__pagination-container">
-                    <div class="product__pages"> */
-
 .product__pagination-container{
     display: flex;
     justify-content: flex-end;
     align-items: center;
-    padding: 20px;
+    padding-top: 20px;
 }
 
 .product__pages{
@@ -851,9 +794,10 @@ box-shadow: -36px 33px 42px -55px rgba(0,0,0,0.51);
 .drop-down__content h4{ 
     font-size: 12px;
     padding-top: 7px;
-    line-height: 22px;
+    line-height: 26px;
     white-space: nowrap;
 }
+
 
 .drop-down__column{
     padding: 0px 18px;
@@ -866,10 +810,11 @@ input:focus {
 .hero__content-container{
     display: flex;
     align-items: center;
+    height: 100%;
 }
 
 .hero__image-part{
-    height: 196px;
+    height: 212px;
     width: 40%;
     background: #CD97CB;
 }
@@ -890,11 +835,191 @@ input:focus {
 }
 
 .hero__text-content{
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-family: 'Segoe UI', Tahoma;
     font-size: 24px;
     font-weight: 300;
 }
 
-.hero__first-image{
+.hero__first-image {
+    position: relative;
+    top: 5%;
+    left: 25%;
+}
+
+.hero__second-image {
+    height: 130px;
+    position: relative;
+    top: -8%;
+    opacity: .5;
+    left: 23%;
+}
+
+.hero__third-image {
+    height: 101px;
+    position: relative;
+    top: -17%;
+    opacity: 0.4;
+    left: 22%;
+}
+
+.price__categories{
+    font-size: 12px;
+    padding: 10px 8px 10px 14px;
+    background: #fff;
+    width: 200px;
+    border: 1px solid #DEDEDE;;
+    overflow: hidden;
+    position: relative;
+}
+
+.select{
+    width: 120%;
+    background: url();
+    background-position: 80% center;
+}
+
+select{
+    background: transparent;
+    padding: 0;
+    border: 0;
+    border-radius: 0;
+    width: 120%;
+    position: relative;
+    z-index: 10;
+    font-size: 12px;
+    -webkit-border-radius: 0;
+    -moz-border-radius: 0;
+    -ms-border-radius: 0;
+    -o-border-radius: 0;
+}
     
+.lower-nav__sort-container{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.sort {
+    font-size: 14px;
+    padding-right: 13px;
+}
+
+select:focus {
+    outline: none;
+}
+
+/*the container must be positioned relative:*/
+.custom-select {
+    position: relative;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  }
+  
+  .custom-select select {
+    display: none; /*hide original SELECT element:*/
+  }
+  
+  .select-selected {
+    border: 1px solid #DEDEDE;;
+  }
+  
+  /*style the arrow inside the select element:*/
+  .select-selected:after {
+    position: absolute;
+    content: url(../img/vendor/downarrow.svg);
+    top: 10.5%;
+    right: 10%;
+    width: 0;
+    height: 0;
+    border: 6px solid transparent;
+    border-color: #fff transparent transparent transparent;
+  }
+  
+  
+  /*style the items (options), including the selected item:*/
+  .select-items div,.select-selected {
+    color: #000;
+    font-size: 12px;
+    font-weight: 400;
+    padding: 8px 16px;
+    cursor: pointer;
+    user-select: none;
+  }
+  
+  /*style items (options):*/
+  .select-items {
+    position: absolute;
+    background-color: #fff;
+    top: 98%;
+    border: 1px solid #dedede;
+    left: 56px;
+    right: 0;
+    z-index: 9;
+  }
+  
+  /*hide the items when the select box is closed:*/
+  .select-hide {
+    display: none;
+  }
+  
+  .select-items div:hover, .same-as-selected {
+    background-color: #CAAA3B;
+    color: white;
+  }
+
+  input[type=checkbox]{
+        padding: 0;
+        height: initial;
+        width: initial;
+        margin-bottom: 0;
+        display: none;
+        cursor: pointer;
+  }
+
+  label:before {
+    content: '';
+    -webkit-appearance: none;
+    background-color: transparent;
+    /* border: 1px solid #666666; */
+    padding: 5px;
+    display: inline-block;
+    position: relative;
+    vertical-align: top;
+    cursor: pointer;
+    margin-right: 5px;
+
+}
+label {
+    position: relative;
+    cursor: pointer;
+  }
+
+input:checked + label:after {
+    content: '';
+    display: block;
+    position: absolute;
+    top: 2px;
+    left: 3px;
+    width: 3px;
+    height: 8px;
+    border: 1px solid #CAAA3B;;
+    border-width: 0 2px 2px 0;
+    transform: rotate(45deg);
+}
+
+.search__container{
+    position: relative;
+}
+
+#form__size-search + img{
+    position: absolute;
+    top: 22%;
+    left: 87%;
+}
+
+.increased-font{
+    font-size: 12px;
+}
+
+.vendor__img{
+    height: 50%;
 }

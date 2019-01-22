@@ -1,13 +1,24 @@
+@font-face {
+    font-family: 'Adobe Gothic Std';
+    src: url('../../vendor/fonts/adobegothicstd-bold.otf');
+    font-weight: normal;
+    font-style: normal;
+}
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
+h1{
+    margin: 0;
+}
+
 html {
     background-color: #ffffff;
     color: #000;
-    font-family: 'Montserrat', sans-serif;
+    font-family: 'Poppins', sans-serif;
     font-size: 10px;
     font-weight: 300;
 }
@@ -38,9 +49,9 @@ html {
     top: 0;
     left: 0;
     height: 100vh;
-    width: 25%;        
+    width: 28%;        
     background: linear-gradient(0.22deg, rgba(255, 77, 0, 0.5) 0.29%, rgba(255, 77, 0, 0) 99.5%), url(img/mask_group.png);
-    background-position: center;
+    background-position: 100% 100%;
     background-size: cover;
 }
 
@@ -48,29 +59,34 @@ html {
     position: absolute;
     top: 0;
     right: 0;
-    width: 75%;
+    width: 72%;
 }
 
 .social--box{
     width: 100%;
-    height: 30%;
+    height: 40%;
     position: absolute;
+    background: #FFFFFF;
+    border: 2px solid #FCFCFC;
+    box-sizing: border-box;
+    box-shadow: -20px 20px 40px rgba(222, 222, 222, 0.5), 20px -20px 40px rgba(222, 222, 222, 0.5);
     bottom: 0;
     left: 0;
-    background: rgba(0, 0, 0, 0.5);
 }
 .logo--circle {
-    width: 192px;
-    height: 192px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 153px;
+    height: 153px;
     border-radius: 50% 50% 0 0;
-    overflow: hidden;
-    background-color: rgba(0, 0, 0, 0.5);
-    /*background-image: linear-gradient(0deg, transparent 50%, transparent 50%);
-    */-webkit-border-radius: 50%;
-    -moz-border-radius: 50% 50% 0 0;
-    -ms-border-radius: 50% 50% 0 0;
-    -o-border-radius: 50% 50% 0 0;
+    border-radius: 50%;
     position: relative;
+    background: #fff;
+    border: 10px solid #FFFFFF;
+box-sizing: border-box;
+box-shadow: 0px 10px 20px rgba(51, 51, 51, 0.2);
+    border-radius: 50%;
     top: 0;
     left: 50%;
     transform: translate(-50%, -50%);
@@ -78,11 +94,10 @@ html {
     -moz-transform: translate(-50%, -50%);
     -ms-transform: translate(-50%, -50%);
     -o-transform: translate(-50%, -50%);
-    -webkit-border-radius: 50% 50% 0 0;
-}
-
-body.branded{
-    font-family: Lato;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
 }
 
 .header-brand {
@@ -95,9 +110,8 @@ body.branded{
 }
 
 .nav-brand {
-    padding: 15px 0;
-    background-color: #33333A;
-    
+    background: rgba(255, 255, 255, 0.9);
+    padding: 5px 0;
 }
 
 .brand-nav {
@@ -111,14 +125,13 @@ body.branded{
 }
 
 .divider {
-    border-right: 1px solid white;
-    padding: 0 35px;
+    padding: 0px 19px;
 }
 
 .brand-nav li a:link,
 .brand-nav li a:visited {
     text-decoration: none;
-    color: #fff;
+    color: #000;
     font-size: 14px;
     padding: 8px 0;
     border-bottom: 2px solid transparent;
@@ -131,7 +144,7 @@ body.branded{
 }
 
 .padding {
-    padding-left: 35px;
+    padding-left: 19px;
 }
 
 .btn:link, btn:visited{
@@ -149,20 +162,23 @@ body.branded{
 .brand-text{
     position: absolute;
     top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+    left: 15%;
+    transform: translateY(-40%);
     color: #fff;
-    text-align: center;
+    -webkit-transform: translateY(-40%);
+    -moz-transform: translateY(-40%);
+    -ms-transform: translateY(-40%);
+    -o-transform: translateY(-40%);
 }
 
 .brand-text h1{
-    font-family: "Playfair Display";
-    font-size: 48px;
-    font-weight: bold;    
+    font-family: Adobe Gothic Std;
+    font-size: 64px;
+    padding-bottom: 13px;
 }
 
 .brand-text p{
-    font-family: "Josefin Sans";
+    font-family: 'Poppins', sans-serif;
     font-size: 24px;
     font-weight: 300;    
 }
@@ -170,15 +186,18 @@ body.branded{
 .brand-text .btn{
     display: block;
     margin-top: 16px;
-    width: 400px;
 }
 
 .btn-brand:link, .btn-brand:visited{
     font-size: 16px;
-    font-weight: 600;
-    background-color: #fff;
-    color: #000;
-    margin: 35px auto;
+    border-radius: 8px;
+    font-weight: 400;
+    background-color: transparent;
+    color: #fff;
+    margin: 26px auto;
+    border: 2px solid #fff;
+    text-align: center;
+
 }
 
 .brand-sub-nav {
@@ -189,7 +208,7 @@ body.branded{
 .brand-sub-nav li {
     display: inline-block;
     padding: 12px 25px;
-    font-weight: 500;
+    font-weight: 400;
     font-size: 14px;
 }
 
@@ -197,7 +216,7 @@ body.branded{
 .brand-sub-nav li a:visited {
     text-decoration: none;
     color: #000;
-    font-weight: 500;
+    font-weight: 400;
     font-size: 14px;
     transition-delay: 0.2s;
 }
@@ -210,6 +229,7 @@ body.branded{
     position: relative;
     overflow: hidden;
     height: 60vh;
+    padding-top: 3%;
 }
 
 .rect-one{
@@ -243,18 +263,17 @@ body.branded{
 }
 
 .whoweare-text h3{
-    font-size: 28px;
+    font-size: 24px;
     margin: 0;
     width: 40%;
 }
 
 .whoweare-text p{
     font-size: 16px;
-    padding: 5%;
-    margin: 5% 10%;
+    padding: 5%  0 5% 5%;
+    margin: 5% 5% 0 12%;
     height: 40%;
     border-left: 2px solid #3B5998;
-    text-align: center;
 }
 
 .gallery h2{
@@ -284,10 +303,8 @@ section.gallery {
 
 .gallery-img-one{
     background-image: url(../img/brands/dining.jpg);
-    width: 100%;
-    background-size: contain;
+    background-size: cover;
     background-position: center;
-    background-attachment: fixed;
     border-radius: 14px;
     position: relative;
 }
@@ -304,11 +321,9 @@ section.gallery {
 }
 
 .gallery-img-two{
-    width: 30%;
     background-image: url(../img/brands/conference.jpg);
-    background-size: contain;
+    background-size: cover;
     background-position: center;
-    background-attachment: fixed;
     border-radius: 14px;
     position: relative;
 }
@@ -326,9 +341,8 @@ section.gallery {
 
 .gallery-img-three{
     background-image: url(../img/brands/kitchen.jpg);
-    background-size: contain;
+    background-size: cover;
     background-position: center;
-    background-attachment: fixed;
     border-radius: 14px;
     position: relative
 }
@@ -364,7 +378,7 @@ section.gallery {
 .team h3{
     text-align: center;
     font-size: 28px;
-    font-weight: 500;
+    font-weight: 400;
 }
 
 .team p{
@@ -380,28 +394,21 @@ section.gallery {
 .team-profile{
     display: flex;
     justify-content: space-around;
+    flex-wrap: wrap;
     padding: 35px 0;
 }
 
 .team-profile>div{
-    width: 15%;
+    width: 25%;
     height: 40vh;
     position: relative;
     text-align: center;
-    /* background: red; */
-
-    
 }
 
-/* .team-profile div img:first-child{
-    width: 100%;
-    height: auto;
-} */
-
 .team-avatar{
-    height: 90px;
-    width: 90px;
-    margin: 15px auto;
+    height: 82px;
+    width: 82px;
+    margin: 21px auto;
     border-radius: 50%;
     -webkit-border-radius: 50%;
     -moz-border-radius: 50%;
@@ -433,28 +440,28 @@ pie{
 
 .team-avatar-progress-one{
 
-       background-image:    linear-gradient(360deg, transparent 50%, #3b5998 50%),        
+       background-image:    linear-gradient(360deg, transparent 50%, rgba(65, 64, 64, 0.5) 50%),        
        linear-gradient(270deg, white 50%, transparent 50%);
        z-index: -88;
        
 }
 
 .team-avatar-progress-two{
-    background-color: #ff4d00;
+    background-color: rgba(243, 0, 0, 0.5);
     background-image:
     linear-gradient(0deg, white 50%, transparent 50%);
         z-index: -88;
 }
 
 .team-avatar-progress-three {
-    background-color: #3B5998;
+    background-color: rgba(65, 64, 64, 0.5);
     background-image:
     linear-gradient(180deg, transparent 50%, white 50%),
     linear-gradient(90deg, white 50%, transparent 50%);
 }
 
 .team-avatar-progress-four {
-    background-color: #ff4d00;
+    background-color: rgba(243, 0, 0, 0.5);
     background-image:    
     linear-gradient(-45deg, white 50%, transparent 50%);
         z-index: -88;
@@ -490,6 +497,7 @@ pie{
 
 section.brand-contact{
     background: #f2f2f2;
+    padding-top: 10px;
     padding-bottom: 70px;
 }
 
@@ -504,7 +512,7 @@ section.brand-contact{
 
 .brand-contact p{
     font-size: 24px;
-    
+    padding-bottom: 10px;
 }
 
 form#brand-contact input#brand-mail, 
@@ -513,7 +521,7 @@ form#brand-contact input#brand-subject{
     display: block;
     width: 70%;
     margin: 17px 15%;
-    padding: 8px 13px;
+    padding: 9px 20px;
     border: none;
     border-radius: 20px;
     -webkit-border-radius: 20px;
@@ -530,36 +538,36 @@ form#brand-contact textarea{
 form#brand-contact input#brand-mail[placeholder], 
 form#brand-contact textarea[placeholder],
 form#brand-contact input#brand-subject[placeholder]{
-    font-family: Lato;
+    font-family: 'Poppins', "sans-seriff";
 }
 
 form#brand-contact #brand-submit-btn{
     margin-left: 15%;
     padding: 10px 80px;
     color: #fff;
-    background: #FF4D00;
-    border-radius: 60px;
+    background: #414040;
+    border-radius: 8px;
     cursor: pointer;
     border: none;
-    -webkit-border-radius: 60px;
-    -moz-border-radius: 60px;
-    -ms-border-radius: 60px;
-    -o-border-radius: 60px;
+    -webkit-border-radius: 8px;
+    -moz-border-radius: 8px;
+    -ms-border-radius: 8px;
+    -o-border-radius: 8px;
     box-shadow: none;
 }
 
 .brand-footer{
+    
     background-color: #33333A;
     color: #fff;
 }
 
 .brand-footer-container{
     width: 90%;
-    padding-left: 5%;
-    padding-right: 5%;
     padding-top: 3%;
     padding-bottom: 1%;
     display: flex;
+    justify-content: space-between;
     align-items: center;
 }
 
@@ -567,33 +575,37 @@ form#brand-contact #brand-submit-btn{
     list-style: none;
 }
 
-.brand-footer-social-links{
-    width: 20%;
-    padding-left: 16%;
-}
-
 .brand-footer-suscribe{
-    width: 80%;
     text-align: center;
+    white-space: nowrap;
+    position: relative;
 }
 
-.brand-footer-links{
-    width: 20%;
+.brand-footer-social-links{
+    white-space: nowrap;
 }
 
-.brand-footer-social-links img{
+.social-link{
     display: block;
-    margin-bottom: 5px;
+    margin-left: 80%;
+    white-space: nowrap;
 }
 
 .brand-footer-copy{
-    text-align: center;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    -webkit-transform: translateX(-50%);
+    -moz-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+    -o-transform: translateX(-50%);
 }
 
 #brand-footer-form input{
     padding: 8px 12px;
     margin: 1%;
     border-radius: 60px;
+    border: none;
     -webkit-border-radius: 60px;
     -moz-border-radius: 60px;
     -ms-border-radius: 60px;
@@ -603,7 +615,6 @@ form#brand-contact #brand-submit-btn{
 }
 
 input#brand-footer-email::placeholder{
-    font-family: "Lato";
     font-size: 12px;
 }
 
@@ -613,115 +624,121 @@ input#brand-footer-email::placeholder{
 
 .brand-footer-copy{
     font-size: 14px;
-    padding-bottom: 1%;
+    padding-top: 8%;
+}
+
+.brand-footer__list-container{
+    list-style: none;
+}
+
+.brand-footer__link:link,
+.brand-footer__link:visited{
+    color: #fff;
+    line-height: 28px;
+    text-decoration: none;
+    font-size: 12px;
+}
+
+.brand-nav li a:hover,
+.brand-nav li a:active {
+    color: #d8b027;
 }
 
 #brand-footer-send{
     font-size: 12px;
     width: 150px;
-    background: #FF4D00;
+    background: #555555;
+    border-radius: 60px;
     color: #fff;
     cursor: pointer;
+    border: 0;
+    box-shadow: none;
 }
+
 .brand-menu{
     position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 50px;
 }
+
 .brand-logo{
     height: 40px;
-    position: absolute;
-    top: -60%;
 }
 
-.brand-modal-login{
-    position: fixed;
-    left: 0;
-    top: 0;
-    width: 100vw;
-    height: 100vh;
-    background-color: rgba(0, 0, 0, 0.8);
-    /*opacity: 0;
-    *//*visibility: hidden;
-    */transform: scale(1.1);
-    transition: visibility 0s linear 0.25s, opacity 0.25s 0s, transform 0.25s;
-    -webkit-transition: visibility 0s linear 0.25s, opacity 0.25s 0s, transform 0.25s;
-    -moz-transition: visibility 0s linear 0.25s, opacity 0.25s 0s, transform 0.25s;
-    -ms-transition: visibility 0s linear 0.25s, opacity 0.25s 0s, transform 0.25s;
-    -o-transition: visibility 0s linear 0.25s, opacity 0.25s 0s, transform 0.25s;
+input:focus {
+    outline: none;
 }
 
-.brand-modal-content{
-    position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  background-color: white;
-  padding: 1rem 1.5rem;
-  width: 500px;
-  text-align: center;
+textarea:focus {
+    outline: none;
 }
 
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+.brand__powered{
+    white-space: nowrap;
 }
 
-html {
-    background-color: #ffffff;
-    color: #000;
-    font-family: 'Montserrat', sans-serif;
-    font-size: 10px;
-    font-weight: 300;
+.powered-img{
+    display: inline-block;
+    vertical-align: middle;
+    margin-top: -3px;
 }
 
-.clearfix {
-    zoom: 1
+.brand-footer__list-container{
+    margin-top: -25px;
 }
 
-.clearfix::after {
-    content: '.';
-    clear: both;
-    display: block;
-    height: 0;
-    visibility: hidden;
+.logo__img{
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
-.row {
-    max-width: 90%;
-    margin: 0 auto;
-}
-
-.brand-modal-login h2{
-    font-family: Montserrat;
-    font-style: normal;
+.brand__discription{
+    font-size: 12px;
+    text-align: center;
+    margin-top: -54px;
     font-weight: 500;
-    line-height: normal;
-    font-size: 18px;
-    color: #000000;
 }
 
-.brand-modal-login #login-form input.centered{
-    display: block;
-    padding: 8px 14px;
-    margin-top: 5%;
+.brand__social_media-icons{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
     width: 100%;
+    margin-top: 18px;
 }
 
-.brand-modal-login #login-form input[type=email],
-.brand-modal-login #login-form input[type=password]{
-    border: none;
-    box-shadow: none;
-    border: 1px solid rgba(65, 64, 64, 0.5);
-    border-radius: 4px;
-    -webkit-border-radius: 4px;
-    -moz-border-radius: 4px;
-    -ms-border-radius: 4px;
-    -o-border-radius: 4px;
+.brand__social_media-icons img{
+    padding-left: 7px;
+    padding-right: 7px;
 }
 
-.brand-modal-login #login-form{
-    width: 80%;
-    margin: 0 auto;
+.first-col__list-container{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    padding-top: 28px;
+}
+
+.first-col__list{
+    list-style: none;
+    padding: 0 9px;
 }
 
 
+.first-col__link:link,
+.first-col__link:visited{
+    text-decoration: none;
+    color: #000;
+    margin-top: 49px;
+    font-size: 12px;
+}
+
+.first-col__copyright{
+    margin-top: 22px;
+    text-align: center;
+}

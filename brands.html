@@ -4,7 +4,8 @@
 <head>
     <link rel="stylesheet" type="text/css" href="vendor\css\grid.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Poppins:400,500,600" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Montserrat:200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i"
         rel="stylesheet">
     <style>
@@ -21,35 +22,52 @@
     <div class="page__container">
         <div class="page__first-column">
             <div class="social--box">
-                <div class="logo--circle"></div>
+                <div class="logo--circle">
+                    <img src="resources/img/market-logo.svg">
+                </div>
+
+                <p class="brand__discription">Business Drectory & e-Commerce Platform</p>
+                <div class="brand__social_media-icons">
+                    <img height="29px" width="29px" src="resources/img/brands/facebook-logo.svg">
+                    <img height="29px" width="29px" src="resources/img/brands/linkedin-logo.svg">
+                    <img height="29px" width="29px" src="resources/img/brands/instagram-logo.svg">
+                    <img height="29px" width="29px" src="resources/img/brands/twitter.svg">
+                </div>
+                <ul class="first-col__list-container">
+                    <li class="first-col__list"><a href="" class="first-col__link">Home</a></li>
+                    <li class="first-col__list"><a href="" class="first-col__link">Directory</a></li>
+                    <li class="first-col__list"><a href="" class="first-col__link">Shop</a></li>
+                    <li class="first-col__list"><a href="" class="first-col__link">Jobs</a></li>
+                </ul>
+
+                <p class="first-col__copyright">(c) Copyright 2019. Afiaanyi.com</p>
             </div>
         </div>
         <div class="page__second-column">
-            <header class="header-brand">
+            <header class="row header-brand">
                 <nav class="nav-brand">
                     <div class="row brand-menu">
-                        <img src="resources/img/logo.png" alt="Afi Logo" class="brand-logo">
+                        <img src="resources/img/logo-black.svg" alt="Afi Logo" class="brand-logo">
                         <ul class="brand-nav">
                             <li class="divider">
-                                <a href="#">Directory</a>
+                                <a href="#">Home</a>
                             </li>
                             <li class="divider">
-                                <a href="#">Shop</a>
+                                <a href="#">About</a>
                             </li>
                             <li class="divider">
-                                <a href="#">Jobs</a>
+                                <a href="#">Gallery</a>
                             </li>
                             <li class="divider">
-                                <a href="#">Login</a>
+                                <a href="#">Our team</a>
                             </li>
                             <li class="padding">
-                                <a href="#">Create an account</a>
+                                <a href="#">Contact Us</a>
                             </li>
                         </ul>
                     </div>
                 </nav>
-
-                <div class="sub-navigation">
+                <!-- <div class="sub-navigation">
                     <div class="row">
                         <ul class="row brand-sub-nav">
                             <li>
@@ -70,7 +88,7 @@
                         </ul>
                     </div>
 
-                </div>
+                </div> -->
 
                 <div class="brand-text">
                     <h1>
@@ -80,11 +98,11 @@
                         A better way to shop online
                         <br> for furnitures, home decor & a lot more...
                     </p>
-                    <a href="#" class="btn btn-brand">SHOP NOW</a>
+                    <a href="#" class="btn btn-brand">EXPLORE OUR CATALOG</a>
                 </div>
 
             </header>
-            <section class="whoweare clearfix">
+            <section class="row whoweare clearfix">
                 <img src="resources/img/brands/blue.svg" class="rect-one">
                 <img src="resources/img/brands/second.svg" class="rect-two">
                 <img src="resources/img/brands/third.svg" class="rect-three">
@@ -93,8 +111,10 @@
                     <div class="whoweare__content">
                         <div>
                             <p>
-                                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor ididunt ut labore et dolore magna aliqua.
-                                Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor ididunt
+                                ut labore et dolore magna aliqua.
+                                Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex
+                                ea
                                 commodo consequat.
                             </p>
                         </div>
@@ -114,8 +134,10 @@
                         </div>
                         <div>
                             <p>
-                                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                                Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                                incididunt ut labore et dolore magna aliqua.
+                                Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex
+                                ea
                                 commodo consequat.
                             </p>
                         </div>
@@ -132,13 +154,13 @@
                         <div></div>
                     </div>
 
-                    <div class="gallery-img-two">
+                    <!-- <div class="gallery-img-two">
                         <div></div>
-                    </div>
-
-                    <!-- <div class="gallery-img-three">
-                        <div> </div>
                     </div> -->
+
+                    <div class="gallery-img-three">
+                        <div> </div>
+                    </div>
                 </div>
 
                 <div class="gallery-label">
@@ -226,22 +248,22 @@
 
             <footer class="brand-footer">
                 <div class="brand-footer-container row">
-                    <div class="brand-footer-links">
-                        <ul>
-                            <li>
-                                <a href="">Home</a>
+                    <div class="brand-footer__container">
+                        <ul class="brand-footer__list-container">
+                            <li class="brand-footer__list">
+                                <a href="" class="brand-footer__link">Home</a>
                             </li>
-                            <li>
-                                <a href="">About</a>
+                            <li class="brand-footer__list">
+                                <a href="" class="brand-footer__link">About</a>
                             </li>
-                            <li>
-                                <a href="">Gallery</a>
+                            <li class="brand-footer__list">
+                                <a href="" class="brand-footer__link">Gallery</a>
                             </li>
-                            <li>
-                                <a href="">Our Team</a>
+                            <li class="brand-footer__list">
+                                <a href="" class="brand-footer__link">Our Team</a>
                             </li>
-                            <li>
-                                <a href="">Contact Us</a>
+                            <li class="brand-footer__list">
+                                <a href="" class="brand-footer__link">Contact Us</a>
                             </li>
                         </ul>
                     </div>
@@ -249,22 +271,24 @@
 
 
                         <form id="brand-footer-form">
-                            <span>Subscribe for our newsletter</span>
+                            <span>SUSCRIBE FOR OUR NEWSLETTER</span>
                             <input type="email" placeholder="Enter Email" id="brand-footer-email">
                             <input type="submit" value="SUSCRIBE NOW" id="brand-footer-send">
                         </form>
 
-
+                        <p class="brand-footer-copy">Copyright (c) 2018. FurniShop. All Rights Reserved</p>
                     </div>
                     <div class="brand-footer-social-links">
-                        <img src="resources/img/brands/facebook-white.svg" width="22px" height="22px" alt="facebook">
-                        <img src="resources/img/brands/instagram-white.svg" width="22px" height="22px" alt="instagram">
-                        <img src="resources/img/brands/linkedin-white.svg" width="22px" height="22px" alt="linkedin">
-                        <img src="resources/img/brands/twitter-circular-button-white.svg" width="22px" height="22px" alt="twitter">
+                        <img class="social-link" src="resources/img/brands/facebook-white.svg" width="22px" height="22px" alt="facebook"><br>
+                        <img class="social-link" src="resources/img/brands/instagram-white.svg" width="22px" height="22px" alt="instagram"><br>
+                        <img class="social-link" src="resources/img/brands/linkedin-white.svg" width="22px" height="22px" alt="linkedin"><br>
+                        <img class="social-link" src="resources/img/brands/twitter-circular-button-white.svg" width="22px" height="22px"
+                            alt="twitter"><br>
+                        <p class="brand__powered">Powered By <img class="powered-img" src="resources/img/logo-by.svg"></p>
                     </div>
 
                 </div>
-                <p class="brand-footer-copy">Copyright (c) 2018. FurniShop. All Rights Reserved</p>
+                
 
 
             </footer>
