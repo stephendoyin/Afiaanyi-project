@@ -2,57 +2,107 @@
 <html lang="en">
 
 <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type="text/css" href="vendor\css\grid.css">
     <link href="https://fonts.googleapis.com/css?family=Montserrat:200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i"
         rel="stylesheet">
+    <link rel="stylesheet" href="vendor/css/animate.css">
     <style>
         @import url('https://fonts.googleapis.com/css?family=Lato:100,300,300i,400');
         @import url(resources/css/style.css);
-        @import url(vendor/css/ionicons.min.css);
     </style>
-
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
     <title>Afiaanyi</title>
 </head>
 
 <body>
-    <header>
-        <nav>
+    <header class="home-header-one">
+
+        <nav class="home-nav">
             <div class="row">
                 <img src="resources/img/logo.png" alt="Afi Logo" class="logo">
                 <ul class="main-nav">
-                    <li class="divider"><a href="#">Directory</a></li>
-                    <li class="divider"><a href="#">Shops</a></li>
-                    <li class="divider"><a href="#">Jobs</a></li>
-                    <li class="divider"><a href="#">Login</a></li>
-                    <li class="padding"><a href="#">Create an account</a></li>
+                    <li class="divider">
+                        <a href="#">Directory</a>
+                    </li>
+                    <li class="divider">
+                        <a href="#">Shops</a>
+                    </li>
+                    <li class="divider">
+                        <a href="#">Jobs</a>
+                    </li>
+                    <li class="divider">
+                        <a href="#">Login</a>
+                    </li>
+                    <li class="padding">
+                        <a href="#">Create an account</a>
+                    </li>
                 </ul>
             </div>
         </nav>
+        <div class="slide-container">
+            <div class="slides">
+                <img class="slide" src="resources/img/hero slide.png">
+                <img class="slide" src="resources/css/img/mask_group.png">
+                <img class="slide" src="resources/img/hero slide1.png">
+                <img class="slide" src="resources/img/hero slide2.png">
+                <img class="slide" src="resources/img/hero slide3.png">
+                <img class="slide" src="resources/img/hero slide4.png">
+                <img class="slide" src="resources/img/hero slide5.png">
+            </div>
+        </div>
+
+        <div class="overlay"></div>
 
         <div class="hero-text-box">
             <img src="resources/img/hero-logo.png" alt="Afi Hero" class="hero-logo">
-            <h1><span class="hero-big-text">Afiaanyi,</span> <span class="hero-small-text">Our Market</span><br>Business
-                Directory & Marketplace</h1>
+            <h1>
+                <span class="hero-big-text">Afiaanyi,</span>
+                <span class="hero-small-text">Our Market</span>
+                <br>Business Directory & Marketplace</h1>
 
-            <p>Locate <span class="dots">.</span>Sell <span class="dots">.</span> Buy</p>
+            <p>Locate
+                <span class="dots">.</span>Sell
+                <span class="dots">.</span> Buy</p>
             <form>
-                <input placeholder="Search for companies and services" id="box-one" type="text"><input placeholder="Categories"
-                    id="box-two" type="text"><input placeholder="Location" type="text" id="box-three"><input type="submit"
-                    id="box-four" value="search">
+                <input placeholder="Search for companies and services" id="box-one" type="search">
+                <input placeholder="Categories" id="box-two" type="search">
+                <input placeholder="Location" type="search" id="box-three">
+                <input type="submit" id="box-four" value="search">
             </form>
 
         </div>
 
         <div class="bottom-navigation clearfix">
             <ul class="sub-nav">
-                <li><a href="#"><img class="icon-small" src="resources/img/automotive.svg">Automative</a></li>
-                <li><a href="#"><img class="icon-small" src="resources/img/beauty and wellness.svg">Beauty & Wellness</a></li>
-                <li><a href="#"><img class="icon-small" src="resources/img/construction.svg">Construction</a></li>
-                <li><a href="#"><img class="icon-small" src="resources/img/food and drinks.svg">Food & Drinks</a></li>
-                <li><a href="#"><img class="icon-small" src="resources/img/finance and insurance.svg">Finance &
-                        Insurance</a></li>
-                <li><a href="#"><img class="icon-small" src="resources/img/lifestyle.svg">Lifestyle</a></li>
-                <li><a href="#" class="colored-list" style=color:#d8b027>See more...</a></li>
+                <li>
+                    <a href="#">
+                        <img class="icon-small" src="resources/img/automotive.svg">Automative</a>
+                </li>
+                <li>
+                    <a href="#">
+                        <img class="icon-small" src="resources/img/beauty and wellness.svg">Beauty & Wellness</a>
+                </li>
+                <li>
+                    <a href="#">
+                        <img class="icon-small" src="resources/img/construction.svg">Construction</a>
+                </li>
+                <li>
+                    <a href="#">
+                        <img class="icon-small" src="resources/img/food and drinks.svg">Food & Drinks</a>
+                </li>
+                <li>
+                    <a href="#">
+                        <img class="icon-small" src="resources/img/finance and insurance.svg">Finance & Insurance
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <img class="icon-small" src="resources/img/lifestyle.svg">Lifestyle</a>
+                </li>
+                <li>
+                    <a href="#" class="colored-list" style=color:#d8b027>See more...</a>
+                </li>
             </ul>
         </div>
     </header>
@@ -60,41 +110,24 @@
     <section class="features row">
         <h2>What are you interested in?</h2>
         <p>See what other people are searching for</p>
-
-        <div class="featured-images">
-
-            <div class="left hide-flow">
-                <img class="yellow-black" src="resources/img/yellow-black.svg">
-                <img class="black-yellow" src="resources/img/black-yellow.svg">
-                <div class="rating-wrapper">
-                    <div class="rating">
-                        <img src="resources/img/ratings.svg" alt="rating">
-                        <img src="resources/img/ratings.svg" alt="rating">
-                        <img src="resources/img/ratings.svg" alt="rating">
-                        <img src="resources/img/ratings.svg" alt="rating">
-                        <img src="resources/img/ratins-none.svg" alt="rating">
+        <div class="features__wrapper">
+            <div class="featured-images">
+                <div class="left hide-flow featured-images__card">
+                    <img class="yellow-black" src="resources/img/yellow-black.svg">
+                    <img class="black-yellow" src="resources/img/black-yellow.svg">
+                    <div class="rating-wrapper">
+                        <div class="rating">
+                            <img src="resources/img/ratings.svg" alt="rating">
+                            <img src="resources/img/ratings.svg" alt="rating">
+                            <img src="resources/img/ratings.svg" alt="rating">
+                            <img src="resources/img/ratings.svg" alt="rating">
+                            <img src="resources/img/ratins-none.svg" alt="rating">
+                        </div>
+                        <p>Restaurants</p>
                     </div>
-                    <p>Restaurants</p>
+                    <a href="#">Browse</a>
                 </div>
-                <a href="#">Browse</a>
-            </div>
-            <div class="middle hide-flow">
-                <img class="yellow-black" src="resources/img/yellow-black.svg">
-                <img class="black-yellow" src="resources/img/black-yellow.svg">
-                <div class="rating-wrapper">
-                    <div class="rating">
-                        <img src="resources/img/ratings.svg" alt="rating">
-                        <img src="resources/img/ratings.svg" alt="rating">
-                        <img src="resources/img/ratings.svg" alt="rating">
-                        <img src="resources/img/ratings.svg" alt="rating">
-                        <img src="resources/img/ratings.svg" alt="rating">
-                    </div>
-                    <p>Salons</p>
-                </div>
-                <a href="#">Browse</a>
-            </div>
-            <div class="right">
-                <div class="top-image hide-flow">
+                <div class="middle hide-flow featured-images__card">
                     <img class="yellow-black" src="resources/img/yellow-black.svg">
                     <img class="black-yellow" src="resources/img/black-yellow.svg">
                     <div class="rating-wrapper">
@@ -105,11 +138,58 @@
                             <img src="resources/img/ratings.svg" alt="rating">
                             <img src="resources/img/ratings.svg" alt="rating">
                         </div>
-                        <p>Cinemas</p>
+                        <p>Salons</p>
                     </div>
-                    <a href="#" class="adjust">Browse</a>
+                    <a href="#">Browse</a>
                 </div>
-                <div class="bottom-image hide-flow">
+                <div class="right  featured-images__card">
+                    <div class="top-image hide-flow">
+                        <img class="yellow-black" src="resources/img/yellow-black.svg">
+                        <img class="black-yellow" src="resources/img/black-yellow.svg">
+                        <div class="rating-wrapper">
+                            <div class="rating">
+                                <img src="resources/img/ratings.svg" alt="rating">
+                                <img src="resources/img/ratings.svg" alt="rating">
+                                <img src="resources/img/ratings.svg" alt="rating">
+                                <img src="resources/img/ratings.svg" alt="rating">
+                                <img src="resources/img/ratings.svg" alt="rating">
+                            </div>
+                            <p>Cinemas</p>
+                        </div>
+                        <a href="#" class="adjust">Browse</a>
+                    </div>
+                    <div class="bottom-image hide-flow">
+                        <img class="yellow-black" src="resources/img/yellow-black.svg">
+                        <img class="black-yellow" src="resources/img/black-yellow.svg">
+                        <div class="rating-wrapper">
+                            <div class="rating">
+                                <img src="resources/img/ratings.svg" alt="rating">
+                                <img src="resources/img/ratings.svg" alt="rating">
+                                <img src="resources/img/ratings.svg" alt="rating">
+                                <img src="resources/img/ratings.svg" alt="rating">
+                                <img src="resources/img/ratings.svg" alt="rating">
+                            </div>
+                            <p>Housing</p>
+                        </div>
+                        <a href="#" class="adjust">Browse</a>
+                    </div>
+                </div>
+                <div class="left hide-flow  featured-images__card">
+                    <img class="yellow-black" src="resources/img/yellow-black.svg">
+                    <img class="black-yellow" src="resources/img/black-yellow.svg">
+                    <div class="rating-wrapper">
+                        <div class="rating">
+                            <img src="resources/img/ratings.svg" alt="rating">
+                            <img src="resources/img/ratings.svg" alt="rating">
+                            <img src="resources/img/ratings.svg" alt="rating">
+                            <img src="resources/img/ratings.svg" alt="rating">
+                            <img src="resources/img/ratins-none.svg" alt="rating">
+                        </div>
+                        <p>Restaurants</p>
+                    </div>
+                    <a href="#">Browse</a>
+                </div>
+                <div class="middle hide-flow featured-images__card">
                     <img class="yellow-black" src="resources/img/yellow-black.svg">
                     <img class="black-yellow" src="resources/img/black-yellow.svg">
                     <div class="rating-wrapper">
@@ -120,13 +200,48 @@
                             <img src="resources/img/ratings.svg" alt="rating">
                             <img src="resources/img/ratings.svg" alt="rating">
                         </div>
-                        <p>Housing</p>
+                        <p>Salons</p>
                     </div>
-                    <a href="#" class="adjust">Browse</a>
+                    <a href="#">Browse</a>
                 </div>
+                <div class="right  featured-images__card">
+                    <div class="top-image hide-flow">
+                        <img class="yellow-black" src="resources/img/yellow-black.svg">
+                        <img class="black-yellow" src="resources/img/black-yellow.svg">
+                        <div class="rating-wrapper">
+                            <div class="rating">
+                                <img src="resources/img/ratings.svg" alt="rating">
+                                <img src="resources/img/ratings.svg" alt="rating">
+                                <img src="resources/img/ratings.svg" alt="rating">
+                                <img src="resources/img/ratings.svg" alt="rating">
+                                <img src="resources/img/ratings.svg" alt="rating">
+                            </div>
+                            <p>Cinemas</p>
+                        </div>
+                        <a href="#" class="adjust">Browse</a>
+                    </div>
+
+                    <div class="bottom-image hide-flow">
+                        <img class="yellow-black" src="resources/img/yellow-black.svg">
+                        <img class="black-yellow" src="resources/img/black-yellow.svg">
+                        <div class="rating-wrapper">
+                            <div class="rating">
+                                <img src="resources/img/ratings.svg" alt="rating">
+                                <img src="resources/img/ratings.svg" alt="rating">
+                                <img src="resources/img/ratings.svg" alt="rating">
+                                <img src="resources/img/ratings.svg" alt="rating">
+                                <img src="resources/img/ratings.svg" alt="rating">
+                            </div>
+                            <p>Housing</p>
+                        </div>
+                        <a href="#" class="adjust">Browse</a>
+                    </div>
+
+                </div>
+
             </div>
         </div>
-        <div class="ellipses-wrapper">
+        <div class="ellipses-wrapper clearfix">
             <div class="ellipses">
                 <div></div>
                 <div></div>
@@ -150,87 +265,175 @@
         <h2>Best rated services & offers</h2>
         <p>Explore some of the best places around you and leave a review</p>
 
-        <div class="card-wrapper">
-            <div class="card hide-flow">
-                <img class="yellow-black" src="resources/img/yellow-black.svg">
-                <img class="black-yellow" src="resources/img/black-yellow.svg">
-                <img src="resources/img/laundry.png" class="image-part" alt="">
-                <div class="city-services">
+            <div class="card-wrapper">
+                <div class="card-wrapper__outer">
+                    <div class="card service__card hide-flow">
+                        <img class="yellow-black" src="resources/img/yellow-black.svg">
+                        <img class="black-yellow" src="resources/img/black-yellow.svg">
+                        <img src="resources/img/laundry.png" class="image-part" alt="">
+                        <div class="city-services">
 
-                    <img class="icon-small" src="resources/img/Vector.svg" alt="">
-                    <p>Ezeudo Cleaners</p>
-                    <button class="card-btn">4.5</button>
-                </div>
-                <div class="city-services">
-                    <img class="icon-small adjust" src="resources/img/location.svg" alt="">
-                    <p>20, Commercial Avenue, <br>Onitsha</p>
-                </div>
-                <div class="city-services">
-                    <img class="icon-small" src="resources/img/phone.svg" alt="">
-                    <p>+234 8034000000</p>
-                </div>
-                <div class="city-services">
-                    <img class="icon-small" src="resources/img/mail.svg" alt="">
-                    <p>info@ecleaners.com</p>
-                </div>
-                <div class="city-services">
-                    <img class="icon-small" src="resources/img/website.svg" alt="">
-                    <p>www.ecleaners.com</p>
+                            <img class="icon-small" src="resources/img/Vector.svg" alt="">
+                            <p>Ezeudo Cleaners</p>
+                            <button class="card-btn">4.5</button>
+                        </div>
+                        <div class="city-services">
+                            <img class="icon-small adjust" src="resources/img/location.svg" alt="">
+                            <p>20, Commercial Avenue,
+                                <br>Onitsha</p>
+                        </div>
+                        <div class="city-services">
+                            <img class="icon-small" src="resources/img/phone.svg" alt="">
+                            <p>+234 8034000000</p>
+                        </div>
+                        <div class="city-services">
+                            <img class="icon-small" src="resources/img/mail.svg" alt="">
+                            <p>info@ecleaners.com</p>
+                        </div>
+                        <div class="city-services">
+                            <img class="icon-small" src="resources/img/website.svg" alt="">
+                            <p>www.ecleaners.com</p>
+                        </div>
+                    </div>
+                    <div class="card service__card">
+                        <img class="yellow-black" src="resources/img/yellow-black.svg">
+                        <img class="black-yellow" src="resources/img/black-yellow.svg">
+                        <img src="resources/img/fancycrave-254180-unsplash.png" class="image-part" alt="">
+                        <div class="city-services">
+                            <img class="icon-small" src="resources/img/Vector.svg" alt="">
+                            <p>Ezeudo Cleaners</p>
+                            <button class="card-btn">4.5</button>
+                        </div>
+                        <div class="city-services">
+                            <img class="icon-small adjust" src="resources/img/location.svg" alt="">
+                            <p>20, Commercial Avenue,
+                                <br>Onitsha</p>
+                        </div>
+                        <div class="city-services">
+                            <img class="icon-small" src="resources/img/phone.svg" alt="">
+                            <p>+234 8034000000</p>
+                        </div>
+                        <div class="city-services">
+                            <img class="icon-small" src="resources/img/mail.svg" alt="">
+                            <p>info@ecleaners.com</p>
+                        </div>
+                        <div class="city-services">
+                            <img class="icon-small" src="resources/img/website.svg" alt="">
+                            <p>www.ecleaners.com</p>
+                        </div>
+                    </div>
+                    <div class="card service__card">
+                        <img class="yellow-black" src="resources/img/yellow-black.svg">
+                        <img class="black-yellow" src="resources/img/black-yellow.svg">
+                        <img src="resources/img/fancycrave-254180-unsplash.png" class="image-part" alt="">
+                        <div class="city-services">
+                            <img class="icon-small" src="resources/img/Vector.svg" alt="">
+                            <p>Ezeudo Cleaners</p>
+                            <button class="card-btn">4.5</button>
+                        </div>
+                        <div class="city-services">
+                            <img class="icon-small adjust" src="resources/img/location.svg" alt="">
+                            <p>20, Commercial Avenue,
+                                <br>Onitsha</p>
+                        </div>
+                        <div class="city-services">
+                            <img class="icon-small" src="resources/img/phone.svg" alt="">
+                            <p>+234 8034000000</p>
+                        </div>
+                        <div class="city-services">
+                            <img class="icon-small" src="resources/img/mail.svg" alt="">
+                            <p>info@ecleaners.com</p>
+                        </div>
+                        <div class="city-services">
+                            <img class="icon-small" src="resources/img/website.svg" alt="">
+                            <p>www.ecleaners.com</p>
+                        </div>
+                    </div>
+                    <div class="card  service__card hide-flow">
+                        <img class="yellow-black" src="resources/img/yellow-black.svg">
+                        <img class="black-yellow" src="resources/img/black-yellow.svg">
+                        <img src="resources/img/laundry.png" class="image-part" alt="">
+                        <div class="city-services">
+
+                            <img class="icon-small" src="resources/img/Vector.svg" alt="">
+                            <p>Ezeudo Cleaners</p>
+                            <button class="card-btn">4.5</button>
+                        </div>
+                        <div class="city-services">
+                            <img class="icon-small adjust" src="resources/img/location.svg" alt="">
+                            <p>20, Commercial Avenue,
+                                <br>Onitsha</p>
+                        </div>
+                        <div class="city-services">
+                            <img class="icon-small" src="resources/img/phone.svg" alt="">
+                            <p>+234 8034000000</p>
+                        </div>
+                        <div class="city-services">
+                            <img class="icon-small" src="resources/img/mail.svg" alt="">
+                            <p>info@ecleaners.com</p>
+                        </div>
+                        <div class="city-services">
+                            <img class="icon-small" src="resources/img/website.svg" alt="">
+                            <p>www.ecleaners.com</p>
+                        </div>
+                    </div>
+                    <div class="card service__card">
+                        <img class="yellow-black" src="resources/img/yellow-black.svg">
+                        <img class="black-yellow" src="resources/img/black-yellow.svg">
+                        <img src="resources/img/fancycrave-254180-unsplash.png" class="image-part" alt="">
+                        <div class="city-services">
+                            <img class="icon-small" src="resources/img/Vector.svg" alt="">
+                            <p>Ezeudo Cleaners</p>
+                            <button class="card-btn">4.5</button>
+                        </div>
+                        <div class="city-services">
+                            <img class="icon-small adjust" src="resources/img/location.svg" alt="">
+                            <p>20, Commercial Avenue,
+                                <br>Onitsha</p>
+                        </div>
+                        <div class="city-services">
+                            <img class="icon-small" src="resources/img/phone.svg" alt="">
+                            <p>+234 8034000000</p>
+                        </div>
+                        <div class="city-services">
+                            <img class="icon-small" src="resources/img/mail.svg" alt="">
+                            <p>info@ecleaners.com</p>
+                        </div>
+                        <div class="city-services">
+                            <img class="icon-small" src="resources/img/website.svg" alt="">
+                            <p>www.ecleaners.com</p>
+                        </div>
+                    </div>
+                    <div class="card  service__card">
+                        <img class="yellow-black" src="resources/img/yellow-black.svg">
+                        <img class="black-yellow" src="resources/img/black-yellow.svg">
+                        <img src="resources/img/fancycrave-254180-unsplash.png" class="image-part" alt="">
+                        <div class="city-services">
+                            <img class="icon-small" src="resources/img/Vector.svg" alt="">
+                            <p>Ezeudo Cleaners</p>
+                            <button class="card-btn">4.5</button>
+                        </div>
+                        <div class="city-services">
+                            <img class="icon-small adjust" src="resources/img/location.svg" alt="">
+                            <p>20, Commercial Avenue,
+                                <br>Onitsha</p>
+                        </div>
+                        <div class="city-services">
+                            <img class="icon-small" src="resources/img/phone.svg" alt="">
+                            <p>+234 8034000000</p>
+                        </div>
+                        <div class="city-services">
+                            <img class="icon-small" src="resources/img/mail.svg" alt="">
+                            <p>info@ecleaners.com</p>
+                        </div>
+                        <div class="city-services">
+                            <img class="icon-small" src="resources/img/website.svg" alt="">
+                            <p>www.ecleaners.com</p>
+                        </div>
+                    </div>
+
                 </div>
             </div>
-            <div class="card">
-                <img class="yellow-black" src="resources/img/yellow-black.svg">
-                <img class="black-yellow" src="resources/img/black-yellow.svg">
-                <img src="resources/img/fancycrave-254180-unsplash.png" class="image-part" alt="">
-                <div class="city-services">
-                    <img class="icon-small" src="resources/img/Vector.svg" alt="">
-                    <p>Ezeudo Cleaners</p>
-                    <button class="card-btn">4.5</button>
-                </div>
-                <div class="city-services">
-                    <img class="icon-small adjust" src="resources/img/location.svg" alt="">
-                    <p>20, Commercial Avenue, <br>Onitsha</p>
-                </div>
-                <div class="city-services">
-                    <img class="icon-small" src="resources/img/phone.svg" alt="">
-                    <p>+234 8034000000</p>
-                </div>
-                <div class="city-services">
-                    <img class="icon-small" src="resources/img/mail.svg" alt="">
-                    <p>info@ecleaners.com</p>
-                </div>
-                <div class="city-services">
-                    <img class="icon-small" src="resources/img/website.svg" alt="">
-                    <p>www.ecleaners.com</p>
-                </div>
-            </div>
-            <div class="card">
-                <img class="yellow-black" src="resources/img/yellow-black.svg">
-                <img class="black-yellow" src="resources/img/black-yellow.svg">
-                <img src="resources/img/fancycrave-254180-unsplash.png" class="image-part" alt="">
-                <div class="city-services">
-                    <img class="icon-small" src="resources/img/Vector.svg" alt="">
-                    <p>Ezeudo Cleaners</p>
-                    <button class="card-btn">4.5</button>
-                </div>
-                <div class="city-services">
-                    <img class="icon-small adjust" src="resources/img/location.svg" alt="">
-                    <p>20, Commercial Avenue, <br>Onitsha</p>
-                </div>
-                <div class="city-services">
-                    <img class="icon-small" src="resources/img/phone.svg" alt="">
-                    <p>+234 8034000000</p>
-                </div>
-                <div class="city-services">
-                    <img class="icon-small" src="resources/img/mail.svg" alt="">
-                    <p>info@ecleaners.com</p>
-                </div>
-                <div class="city-services">
-                    <img class="icon-small" src="resources/img/website.svg" alt="">
-                    <p>www.ecleaners.com</p>
-                </div>
-            </div>
-        </div>
     </section>
 
     <section class="signup">
@@ -247,7 +450,8 @@
 
 
             <div class="signup-text">
-                <h2>Promote your business today <br>with Afiaanyi</h2>
+                <h2>Promote your business today
+                    <br>with Afiaanyi</h2>
                 <button class="large-btn">Signup for an account</button>
             </div>
 
@@ -259,43 +463,58 @@
         <h2>
             What our community is saying
         </h2>
-        <div class="testimonials">
-            <div class="paper leftmost">
-                <img src="resources/img/man.png" alt="">
-                <p>Afiaanyi has taken my business to the<br> next
-                    My dreams of expansion has been
-                    <br>realized</p>
-                <h3><i>- CEO, Don P Ltd</i></h3>
-            </div>
-            <div class="paper left">
-                <img src="resources/img/man.png" alt="">
-                <p>Afiaanyi has taken my business to the <br>next
-                    My dreams of expansion has <br>been
-                    realized</p>
-                <h3><i>- CEO, Don P Ltd</i></h3>
-            </div>
-            <div class="paper center">
-                <img src="resources/img/man.png" alt="">
-                <p>Afiaanyi has taken my business to the next
-                    <br>My dreams of expansion has been
-                    <br>realized</p>
-                <h3><i>- CEO, Don P Ltd</i></h3>
-            </div>
-            <div class="paper right">
-                <img src="resources/img/man.png" alt="">
-                <p>Afiaanyi has taken my business to the <br>next
-                    My dreams of expansion has <br>been
-                    realized</p>
-                <h3><i>- CEO, Don P Ltd</i></h3>
-            </div>
-            <div class="paper rightmost">
-                <img src="resources/img/man.png" alt="">
-                <p>Afiaanyi has taken my business to the<br> next
-                    My dreams of expansion has been
-                    <br>realized</p>
-                <h3><i>- CEO, Don P Ltd</i></h3>
+        <div class="testimonials__wrapper">
+            <div class="testimonials">
+                
+                    <div class="paper">
+                            <img src="resources/img/man.png" alt="">
+                            <p>Afiaanyi has taken my business to the
+                                next My dreams of expansion has been
+                                realized</p>
+                            <h3>
+                                <i>- CEO, Don P Ltd</i>
+                            </h3>
+                        </div>
+                    <div class="paper">
+                            <img src="    padding: 12px 13px;" alt="">
+                            <p>Afiaanyi has taken my business to the
+                                next My dreams of expansion has been
+                                realized</p>
+                            <h3>
+                                <i>- CEO, Don P Ltd</i>
+                            </h3>
+                        </div>
+                <div class="paper">
+                    <img src="resources/img/man.png" alt="">
+                    <p>Afiaanyi has taken my business to the
+                        next My dreams of expansion has been
+                        realized</p>
+                    <h3>
+                        <i>- CEO, Don P Ltd</i>
+                    </h3>
+                </div>
+                <div class="paper">
+                    <img src="resources/img/man.png" alt="">
+                    <p>Afiaanyi has taken my business to the
+                        next My dreams of expansion has
+                        been realized
+                    </p>
+                    <h3>
+                        <i>- CEO, Don P Ltd</i>
+                    </h3>
+                </div>
+                <div class="paper">
+                    <img src="resources/img/man.png" alt="">
+                    <p>Afiaanyi has taken my business to the next
+                        My dreams of expansion has been
+                        realized</p>
+                    <h3>
+                        <i>- CEO, Don P Ltd</i>
+                    </h3>
+                </div>
             </div>
         </div>
+        
     </section>
 
     <section class="community clearfix">
@@ -308,43 +527,49 @@
                 <img src="resources/img/Coming Soon.png" class="image-part" alt="">
                 <p>November 20, 2019</p>
                 <h3>Affiaanyi Official Launch</h3>
-                <p>Our market as it is popularly refered is a brain-child of the illustrious, resourceful and
-                    passiona...<br>
+                <p>Our market as it is popularly refered is a brain-child of the illustrious, resourceful and passiona...
+                    <br>
                     <span class='see-more'>see more</span>
                 </p>
 
-                <p class="comm-likes"><img class="community-icons" src="resources/img/like.svg" alt="">
+                <p class="comm-likes">
+                    <img class="community-icons" src="resources/img/like.svg" alt="">
                     <span>400</span>
                     <img class="community-icons adjust" src="resources/img/view.svg" alt="">
-                    <span>800</span></p>
+                    <span>800</span>
+                </p>
             </div>
             <div class="card adjust">
                 <img src="resources/img/Coming Soon.png" class="image-part" alt="">
                 <p>November 20, 2019</p>
                 <h3>Affiaanyi Official Launch</h3>
-                <p>Our market as it is popularly refered is a brain-child of the illustrious, resourceful and
-                    passiona...<br>
+                <p>Our market as it is popularly refered is a brain-child of the illustrious, resourceful and passiona...
+                    <br>
                     <span class='see-more'>see more</span>
                 </p>
 
-                <p class="comm-likes"><img class="community-icons" src="resources/img/like.svg" alt="">
+                <p class="comm-likes">
+                    <img class="community-icons" src="resources/img/like.svg" alt="">
                     <span>400</span>
                     <img class="community-icons adjust" src="resources/img/view.svg" alt="">
-                    <span>800</span></p>
+                    <span>800</span>
+                </p>
             </div>
             <div class="card adjust">
                 <img src="resources/img/Coming Soon.png" class="image-part" alt="">
                 <p>November 20, 2019</p>
                 <h3>Affiaanyi Official Launch</h3>
-                <p>Our market as it is popularly refered is a brain-child of the illustrious, resourceful and
-                    passiona...<br>
+                <p>Our market as it is popularly refered is a brain-child of the illustrious, resourceful and passiona...
+                    <br>
                     <span class='see-more'>see more</span>
                 </p>
 
-                <p class="comm-likes"><img class="community-icons" src="resources/img/like.svg" alt="">
+                <p class="comm-likes">
+                    <img class="community-icons" src="resources/img/like.svg" alt="">
                     <span>400</span>
                     <img class="community-icons adjust" src="resources/img/view.svg" alt="">
-                    <span>800</span></p>
+                    <span>800</span>
+                </p>
             </div>
         </div>
 
@@ -353,106 +578,193 @@
     <section class="row">
         <div class="contact">
             <div class="one">
-                <p><strong>SUPPORT</strong></p>
+                <p>
+                    <strong>SUPPORT</strong>
+                </p>
 
-                <p><img class="icon-small" src="resources/img/phone.svg" alt="">
-                    +234 803 400 0000</p>
+                <p>
+                    <img class="icon-small" src="resources/img/phone.svg" alt=""> +234 803 400 0000</p>
             </div>
             <div class="two">
-                <p><strong>EMAIL SUPPORT</strong></p>
-                <p><img class="icon-small" src="resources/img/mail.svg" alt="">
-                    info@afiaayan.com</p>
+                <p>
+                    <strong>EMAIL SUPPORT</strong>
+                </p>
+                <p>
+                    <img class="icon-small" src="resources/img/mail.svg" alt=""> info@afiaayan.com
+                </p>
             </div>
             <div class="three">
-                <p><span><strong>GET LATEST DEALS & UPDATES</strong></span><br>
-                    <i>Stay in the loop on all upcoming promotions, <br>
-                        discounts and latest updates.</i></p>
+                <p>
+                    <span>
+                        <strong>GET LATEST DEALS & UPDATES</strong>
+                    </span>
+                    <br>
+                    <i>Stay in the loop on all upcoming promotions,
+                        <br> discounts and latest updates.</i>
+                </p>
             </div>
             <div class="four">
-                <input type="email" id="mail" placeholder="Enter e-mail"><input id="send" type="submit" value="send">
+                <input type="email" id="mail" placeholder="Enter e-mail">
+                <input id="send" type="submit" value="send">
             </div>
         </div>
     </section>
-</body>
 
-<section class="footer hide-flow">
-    <footer class="row">
-        <div class="footer-inner">
-            <div class="space">
-                <ul>
-                    <li class="colored-list">GET TO KNOW US</li>
-                    <li><a href="">About us</a></li>
-                    <li><a href="">Careers</a></li>
-                    <li><a href="">Blog</a></li>
-                    <li><a href="">FAQ</a></li>
-                    <li><a href="">Contact Us</a></li>
-                </ul>
-            </div>
-            <div class="space">
-                <ul>
-                    <li class="colored-list">PAYMENTS</li>
-                    <li><a href="">Mastercard</a></li>
-                    <li><a href="">Verve</li>
-                    <li><a href="">Visa</li>
-                    <li><a href="">Wallet</li>
-                </ul>
-            </div>
-            <div class="space">
-                <ul>
-                    <li class="colored-list">EXPLORE</li>
-                    <li><a href="">Top Brands</a></li>
-                    <li><a href="">Privacy Policy</a></li>
-                    <li><a href="">Disclaimer</a></li>
-                    <li><a href="">Billing Policy</a></li>
-                    <li><a href="">Terms of Use</a></li>
-                    <li><a href="">Advertise with Us</a></li>
-                </ul>
-            </div>
-            <div class="space">
-                <ul>
-                    <li class="colored-list">SELL ON AFIANANYI</li>
-                    <li><a href="">Register your Business</a></li>
-                    <li><a href="">Create a Store</a></li>
-                    <li><a href="">How it works</a></li>
-                    <li><a href="">Trust and Safety</a></li>
-                </ul>
-            </div>
-            <div class="space">
-                <ul>
-                    <li class="colored-list">DELIVERY</li>
-                    <li><a href="">Chisco Express</a></li>
-                </ul>
-            </div>
-            <div class="left-space">
-                <ul>
-                    <li class="colored-list big-para">DOWNLOAD AND CONNECT WITH US</li>
-                </ul>
-                <div class="mobile-app">
+    <section class="footer hide-flow">
+        <footer class="row">
+            <div class="footer-inner">
+                <div class="space">
+                    <ul>
+                        <li class="colored-list">GET TO KNOW US</li>
+                        <li>
+                            <a href="">About us</a>
+                        </li>
+                        <li>
+                            <a href="">Careers</a>
+                        </li>
+                        <li>
+                            <a href="">Blog</a>
+                        </li>
+                        <li>
+                            <a href="">FAQ</a>
+                        </li>
+                        <li>
+                            <a href="">Contact Us</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="space">
+                    <ul>
+                        <li class="colored-list">PAYMENTS</li>
+                        <li>
+                            <a href="">Mastercard</a>
+                        </li>
+                        <li>
+                            <a href="">Verve</a>
+                        </li>
+                        <li>
+                            <a href="">Visa</a>
+                        </li>
+                        <li>
+                            <a href="">Wallet</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="space">
+                    <ul>
+                        <li class="colored-list">EXPLORE</li>
+                        <li>
+                            <a href="">Top Brands</a>
+                        </li>
+                        <li>
+                            <a href="">Privacy Policy</a>
+                        </li>
+                        <li>
+                            <a href="">Disclaimer</a>
+                        </li>
+                        <li>
+                            <a href="">Billing Policy</a>
+                        </li>
+                        <li>
+                            <a href="">Terms of Use</a>
+                        </li>
+                        <li>
+                            <a href="">Advertise with Us</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="space">
+                    <ul>
+                        <li class="colored-list">SELL ON AFIANANYI</li>
+                        <li>
+                            <a href="">Register your Business</a>
+                        </li>
+                        <li>
+                            <a href="">Create a Store</a>
+                        </li>
+                        <li>
+                            <a href="">How it works</a>
+                        </li>
+                        <li>
+                            <a href="">Trust and Safety</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="space">
+                    <ul>
+                        <li class="colored-list">DELIVERY</li>
+                        <li>
+                            <a href="">Chisco Express</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="left-space">
+                    <ul>
+                        <li class="colored-list big-para">DOWNLOAD AND CONNECT WITH US</li>
+                    </ul>
+                    <div class="mobile-app">
+
+                    </div>
+                    <span class="ios">
+                        <a href=""></a>
+                    </span>
+                    <span class="android">
+                        <a href=""></a>
+                    </span>
+                    <p>Follow us:
+                        <span>
+                            <img class="icon-small" src="resources/img/facebook.svg" alt="facebook">
+                        </span>
+                        <span>
+                            <img class="icon-small" src="resources/img/instagram.svg" alt="instagram">
+                        </span>
+                        <span>
+                            <img class="icon-small" src="resources/img/linkedin.svg" alt="linkedin">
+                        </span>
+                        <span>
+                            <img class="icon-small" src="resources/img/twitter.svg" alt="twitter">
+                        </span>
+                    </p>
 
                 </div>
-                <span class="ios"><a href=""></a></span>
-                <span class="android"><a href=""></a></span>
-                <p>Follow us:
-                    <span><img class="icon-small" src="resources/img/facebook.svg" alt="facebook"></span>
-                    <span><img class="icon-small" src="resources/img/instagram.svg" alt="instagram"></span>
-                    <span><img class="icon-small" src="resources/img/linkedin.svg" alt="linkedin"></span>
-                    <span><img class="icon-small" src="resources/img/twitter.svg" alt="twitter"></span>
-                </p>
+            </div>
+            <img class="footer-last-img" src="resources/img/pandora.svg">
+            <img class="footer-last-img" src="resources/img/anambra.svg">
+            <img class="footer-last-img" src="resources/img/awka.svg">
+            <img class="footer-last-img" src="resources/img/onitsha.svg">
+            <img class="footer-last-img" src="resources/img/nccima.svg">
+            <img class="footer-last-img" src="resources/img/oni.svg">
+            <p class="powered">Powered by
+                <img class="logo-by" src="resources/img/logo-by.svg">
+            </p>
+            <p class="copy">Copyright (c) 2018 Afiaanyi. All rights reserved</p>
+        </footer>
+        <img class="yb" src="resources/img/yb.svg">
+        <img class="by" src="resources/img/black-yellow.svg">
 
+    </section>
+    <!-- <aside class="brand-modal-login">
+        <div class="brand-modal-content">
+            <img src="resources/img/logo-black.svg">
+            <h2>Welcome Back!</h2>
+            <span>Login to continue</span>
+            <form id="login-form">
+                <input type="email" class="centered" placeholder="Email">
+                <input type="password" class="centered" placeholder="Password">
+                <input type="checkbox" checked="checked">
+                <span>Forgot Password</span>
+                <input type="submit" value="Login">
+                <p>Social Media Login:</p>
+            </form>
+
+            <div class="brand-social-logins">
+                <div><a href=""></a></div>
+                <div><a href=""></a></div>
+                <div><a href=""></a></div>
             </div>
         </div>
-        <img class="footer-last-img" src="resources/img/pandora.svg">
-        <img class="footer-last-img" src="resources/img/anambra.svg">
-        <img class="footer-last-img" src="resources/img/awka.svg">
-        <img class="footer-last-img" src="resources/img/onitsha.svg">
-        <img class="footer-last-img" src="resources/img/nccima.svg">
-        <img class="footer-last-img" src="resources/img/oni.svg">
-        <p class="powered">Powered by <img class="logo-by" src="resources/img/logo-by.svg"></p>
-        <p class="copy">Copyright (c) 2018 Afiaanyi. All rights reserved</p>
-    </footer>
-    <img class="yb" src="resources/img/yb.svg">
-    <img class="by" src="resources/img/black-yellow.svg">
-
-</section>
+    </aside> -->
+    <script src="resources/js/slider.js"></script>
+</body>
 
 </html>
