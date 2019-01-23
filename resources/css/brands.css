@@ -51,7 +51,7 @@ html {
     height: 100vh;
     width: 28%;        
     background: linear-gradient(0.22deg, rgba(255, 77, 0, 0.5) 0.29%, rgba(255, 77, 0, 0) 99.5%), url(img/mask_group.png);
-    background-position: 100% 100%;
+    background-position: 80% 80%;
     background-size: cover;
 }
 
@@ -132,7 +132,7 @@ box-shadow: 0px 10px 20px rgba(51, 51, 51, 0.2);
 .brand-nav li a:visited {
     text-decoration: none;
     color: #000;
-    font-size: 14px;
+    font-size: 12px;
     padding: 8px 0;
     border-bottom: 2px solid transparent;
     transition-delay: 0.2s;
@@ -173,13 +173,13 @@ box-shadow: 0px 10px 20px rgba(51, 51, 51, 0.2);
 
 .brand-text h1{
     font-family: Adobe Gothic Std;
-    font-size: 64px;
+    font-size: 56px;
     padding-bottom: 13px;
 }
 
 .brand-text p{
     font-family: 'Poppins', sans-serif;
-    font-size: 24px;
+    font-size: 21px;
     font-weight: 300;    
 }
 
@@ -259,17 +259,17 @@ box-shadow: 0px 10px 20px rgba(51, 51, 51, 0.2);
 .whoweare__content{
     float: left;
     width: 50%;
-    padding: 30px 0;
+    padding: 60px 0;
 }
 
 .whoweare-text h3{
-    font-size: 24px;
-    margin: 0;
+    font-size: 18px;
+    margin-top: 2px;
     width: 40%;
 }
 
 .whoweare-text p{
-    font-size: 16px;
+    font-size: 14px;
     padding: 5%  0 5% 5%;
     margin: 5% 5% 0 12%;
     height: 40%;
@@ -277,7 +277,7 @@ box-shadow: 0px 10px 20px rgba(51, 51, 51, 0.2);
 }
 
 .gallery h2{
-    font-size: 28px;
+    font-size: 20px;
     text-align: center;
     margin: 35px 0;
     font-weight: 400;
@@ -375,20 +375,19 @@ section.gallery {
     background-color: #FF4D00;
 }
 
-.team h3{
+.team h2{
     text-align: center;
-    font-size: 28px;
-    font-weight: 400;
+    font-size: 20px;
 }
 
 .team p{
     text-align: center;
-    font-size: 20px;
+    font-size: 16px;
     white-space: nowrap;
 }
 
 .team p span{
-    font-size: 16px;
+    font-size: 13px;
 }
 
 .team-profile{
@@ -436,7 +435,13 @@ pie{
     -o-transform: translateX(-50%);
 }
 
+.pie p {
+    font-size: 14px;
+}
 
+.pie span i{
+    font-size: 12px;
+}
 
 .team-avatar-progress-one{
 
@@ -506,12 +511,12 @@ section.brand-contact{
 }
 
 .brand-contact h2{
-    font-size: 28px;
+    font-size: 22px;
     margin-top: 30px;
 }
 
 .brand-contact p{
-    font-size: 24px;
+    font-size: 18px;
     padding-bottom: 10px;
 }
 
@@ -601,6 +606,10 @@ form#brand-contact #brand-submit-btn{
     -o-transform: translateX(-50%);
 }
 
+#brand-footer-form{
+    padding-bottom: 13px;
+}
+
 #brand-footer-form input{
     padding: 8px 12px;
     margin: 1%;
@@ -623,7 +632,7 @@ input#brand-footer-email::placeholder{
 }
 
 .brand-footer-copy{
-    font-size: 14px;
+    font-size: 12px;
     padding-top: 8%;
 }
 
@@ -677,6 +686,7 @@ textarea:focus {
 
 .brand__powered{
     white-space: nowrap;
+    font-size: 12px;
 }
 
 .powered-img{

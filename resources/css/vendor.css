@@ -1,25 +1,4 @@
-@font-face {
-    font-family: 'Coolvetica';
-    src: url('../../vendor/fonts/coolvetica.ttf');
-    font-weight: normal;
-    font-style: normal;
-}
 
-@font-face {
-    font-family: 'Segoe UI Web (West European)';
-    src: url('https://static2.sharepointonline.com/files/fabric/assets/fonts/segoeui-westeuropean/segoeui-regular.woff2') format('woff2'), 
-    url('https://static2.sharepointonline.com/files/fabric/assets/fonts/segoeui-westeuropean/segoeui-regular.woff') format('woff');
-    font-weight: 400;
-    font-style: normal;
-  }
-  
-  @font-face {
-    font-family: 'Segoe UI Web (West European)';
-    src: url('https://static2.sharepointonline.com/files/fabric/assets/fonts/segoeui-westeuropean/segoeui-semibold.woff2') format('woff2'), 
-    url('https://static2.sharepointonline.com/files/fabric/assets/fonts/segoeui-westeuropean/segoeui-semibold.woff') format('woff');
-    font-weight: 600;
-    font-style: normal;
-  }
 
 * {
     margin: 0;
@@ -1023,3 +1002,4 @@ input:checked + label:after {
 .vendor__img{
     height: 50%;
 }
+
