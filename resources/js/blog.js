@@ -70,3 +70,15 @@ function closeAllSelect(elmnt) {
 /*if the user clicks anywhere outside the select box,
 then close all select boxes:*/
 document.addEventListener("click", closeAllSelect);
+
+
+$(function () {
+
+    $(".first-row__launch-container").click(function() {
+        window.location = $(this).find("a").attr("href"); 
+        return false;
+      });
+
+});
+    
+    
