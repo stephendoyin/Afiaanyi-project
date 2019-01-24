@@ -57,7 +57,7 @@ html {
 }
 
 .row__large{
-    max-width: 70%;
+    max-width: 50%;
     margin: 0 auto;
 }
 
@@ -634,6 +634,8 @@ section.footer {
     content: url(../../resources/img/vendor/search__gold.svg);
     padding-top: 10px;
     z-index: 1;
+    position: absolute;
+    padding-left: 11px;
 }
 
 /* blog Article */
@@ -713,4 +715,26 @@ p img {
 .contact__container{
     padding: 14px 0;
     background: rgba(243, 243, 243, 0.8);
+}
+
+.post__title{
+    font-size: 28px;
+    font-weight: 400;
+    padding: 15px 0;
+}
+
+.post__details{
+    font-size: 12px;
+    font-weight: 500;
+}
+
+.post__details-seperator{
+    padding: 0 14px;
+}
+
+.post__paragraph{
+    font-size: 14px;
+    text-align: justify;
+    line-height: 20px;
+    padding: 19px 0;
 }
