@@ -1,0 +1,400 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i"
+        rel="stylesheet">
+    <style>
+        @import url('https://fonts.googleapis.com/css?family=Lato:100,300,300i,400');
+        @import url(resources/css/blog.css);
+    </style>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <title>Blog</title>
+</head>
+
+<body>
+
+    <header>
+        <nav>
+            <div class="row header__nav-content">
+                <div>
+                    <img src="resources/img/market-logo.svg" class="header__logo" alt="Afiaanyi logo">
+                </div>
+
+                <div>
+                    <ul class="header__nav-list-container">
+                        <li class="header__nav-list">
+                            <a href="" class="header__nav-link">Directory</a>
+                        </li>
+                        <li class="header__nav-list">
+                            <a href="" class="header__nav-link">Shop</a>
+                        </li>
+                        <li class="header__nav-list">
+                            <a href="" class="header__nav-link">Jobs</a>
+                        </li>
+                        <li class="header__nav-list">
+                            <a href="" class="header__nav-link header--outlined">Create A Store</a>
+                        </li>
+                    </ul>
+                </div>
+
+
+                <div class="header__customized-items">
+                    <p class="header__greeting">Welcome <span class="header__username">Stephen!</span></p>
+
+                    <a href="">
+                        <img src="resources/img/man.png" class="header-nav-icon header__avatar" height="35px" width="35px">
+                    </a>
+
+                    <a href="">
+                        <img src="resources/img/gold-favorite.svg" class="header-nav-icon">
+                    </a>
+                    <a href="">
+                        <img src="resources/img/gold-shop-cart.svg" class="header-nav-icon">
+                    </a>
+                    </p>
+                </div>
+            </div>
+        </nav>
+
+        <div class="full--nav row">
+            <ul class="row header__full-nav" style="position:relative">
+                <li class="header__full-nav-list">
+                    <a href="" class="header__full-nav-link">
+                        <img src="resources/img/blog/business.svg">
+                        &nbsp;Business</a>
+                </li>
+                <li class="header__full-nav-list">
+                    <a href="" class="header__full-nav-link">
+                        <img src="resources/img/blog/home-improvement.svg">
+                        &nbsp;Home Improvement</a>
+                </li>
+                <li class="header__full-nav-list">
+                    <a href="" class="header__full-nav-link">
+                        <img src="resources/img/blog/business-services.svg">
+                        &nbsp;Business Services</a>
+                </li>
+                <li class="header__full-nav-list">
+                    <a href="" class="header__full-nav-link">
+                        <img src="resources/img/blog/life-style.svg">
+                        &nbsp;Lifestyle</a>
+                </li>
+                <li class="header__full-nav-list">
+                    <a href="" class="header__full-nav-link">
+                        <img src="resources/img/blog/marketing.svg">
+                        &nbsp;Marketing</a>
+                </li>
+                <li class="header__full-nav-list">
+                    <a href="" class="header__full-nav-link">
+                        <img src="resources/img/blog/financial-services.svg">
+                        &nbsp;Financial Services</a>
+                </li>
+                <li class="header__full-nav-list">
+                    <a href="" class="header__full-nav-link">
+                        <img src="resources/img/blog/tipnguide.svg">
+                        &nbsp;Tips & Guides</a>
+                </li>
+                <li class="header__full-nav-list">
+                    <a href="" class="header__full-nav-link">
+                        <img src="resources/img/blog/new.svg">
+                        &nbsp;News</a>
+                </li>
+                <li class="header__full-nav-list">
+                    <a href="" class="header__full-nav-link">
+                        <img src="resources/img/blog/sales.svg">
+                        &nbsp;Sales</a>
+                </li>
+                <li class="header__full-nav-list">
+                    <a href="" class="header__full-nav-link">
+                        <img src="resources/img/blog/product.svg">
+                        &nbsp;Product</a>
+                </li>
+            </ul>
+
+
+        </div>
+
+
+        <div class="header__lower-nav-outer-container">
+
+            <div class="row header__lower-wrapper">
+                <div class="row header__lower-nav-inner-container">
+
+                    <div>
+                        <ul class="header__lower-nav-list-container">
+                            <li class="header__lower-nav-list">
+                                <a class="header__lower-nav-link" href="">Home</a>
+                                <img src="resources/img/product-list/front-arrow.svg">
+                            </li>
+                            <li class="header__lower-nav-list">
+                                <a href="" class="header__lower-nav-link">Blog
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="header__lower-nav-input-container header__lower--shift">
+
+                        <label for="">Filter:</label>
+                        <div class="custom-select" style="width:200px;">
+                            <select>
+                                <option value="0">Year</option>
+                                <option value="1">Year</option>
+                                <option value="2">Month</option>
+                                <option value="3">Date</option>
+                                <option value="4">Topic</option>
+                            </select>
+                        </div>
+
+                    </div>
+                    <div class="header__lower-nav-input-container">
+
+                        <label for="">Show me posts tagged:</label>
+                        <div class="custom-select" style="width:200px;">
+                            <select>
+                                <option value="0">Any</option>
+                                <option value="0">Any</option>
+                                <option value="1">All tags</option>
+                                <option value="2">Content Strategy</option>
+                                <option value="3">Business</option>
+                                <option value="4">Seo</option>
+                                <option value="4">Social media</option>
+                            </select>
+                        </div>
+
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+    </header>
+
+    <section>
+        <div class="row">
+            <div class="row blog__search">
+                <a class="back__btn" href="">
+                    <img src="resources/img/blog/back-arrow.svg">
+                    <span>Back to Blog</span>
+                </a>
+
+                <div class="blog__search-input">
+                    <input type="search" placeholder="What are you looking for?">
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <section>
+        <div>
+            <h3>Afiaayi Offiacial Launch</h3>
+            <span class="blog__author">Author: Opeyemi</span>
+            <span class="blog__time-stamp">Date: January 19, 2019</span>
+        </div>
+
+        <div>
+            <p>
+                Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+                Lorem Ipsum has been the industry’s standard dummy text ever since
+                the 1500s, when an unknown printer took a galley of type and scrambled
+                it to make a type specimen book. It has survived not only five centuries,
+                but also the leap into electronic typesetting, remaining essentially unchanged.
+                It was popularised in the 1960s with the release of Letraset sheets containing
+                Lorem Ipsum passages, and more recently with desktop publishing software like
+                Aldus PageMaker including versions of Lorem Ipsum.
+            </p>
+            <img src="">
+            <blockquote>
+                “Quote 1 Lorem Ipsum is simply dummy text of the printing
+                and typesetting industry has been the industry’s standard
+                dummy text ever since the 1500s”
+            </blockquote>
+
+            <p>
+                Lorem Ipsum is simply dummy text of the printing and
+                typesetting industry. Lorem Ipsum has been the
+                industry’s standard dummy text ever since the 1500s,
+                when an unknown printer took a galley of type and scrambled
+                it to make a type specimen book. It has survived not only
+                five centuries, but also the leap into electronic typesetting,
+                remaining essentially unchanged. It was popularised in the
+                1960s with the release of Letraset sheets containing Lorem Ipsum passages, and
+                more recently with desktop publishing software like Aldus
+                PageMaker including versions of Lorem Ipsum.
+            </p>
+
+        </div>
+
+        <span>TAGS:</span>TAGS:      
+        <a href>NEWS,</a>
+        <a href>MARKETPLACE,</a>
+        <a href>DIRECTORY,</a>
+        <a href>BUSINESS DIRECTORY,</a>
+        <a href>MARKETPLACE,</a>
+        <a href>ONLINE MARKETPLACE</a>
+
+        <div>
+            <div>
+                <img src="">
+            </div>
+
+            <div>
+                <p>Opeyemi Adeyemo</p>
+                <p>
+                        “Quote 1 Lorem Ipsum is simply dummy text of the 
+                        printing and typesetting industry has been the industry’s 
+                        standard dummy text ever since the 1500s”
+                </p>
+            </div>
+        </div>
+
+        <div>
+            <span class="comment">No comment yet</span>
+            
+        </div>
+
+    </section>
+
+
+    <section class="footer hide-flow">
+        <footer class="row">
+            <div class="footer-inner">
+                <div class="space">
+                    <ul>
+                        <li class="colored-list">GET TO KNOW US</li>
+                        <li>
+                            <a href="">About us</a>
+                        </li>
+                        <li>
+                            <a href="">Careers</a>
+                        </li>
+                        <li>
+                            <a href="">Blog</a>
+                        </li>
+                        <li>
+                            <a href="">FAQ</a>
+                        </li>
+                        <li>
+                            <a href="">Contact Us</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="space">
+                    <ul>
+                        <li class="colored-list">PAYMENTS</li>
+                        <li>
+                            <a href="">Mastercard</a>
+                        </li>
+                        <li>
+                            <a href="">Verve</a>
+                        </li>
+                        <li>
+                            <a href="">Visa</a>
+                        </li>
+                        <li>
+                            <a href="">Wallet</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="space">
+                    <ul>
+                        <li class="colored-list">EXPLORE</li>
+                        <li>
+                            <a href="">Top Brands</a>
+                        </li>
+                        <li>
+                            <a href="">Privacy Policy</a>
+                        </li>
+                        <li>
+                            <a href="">Disclaimer</a>
+                        </li>
+                        <li>
+                            <a href="">Billing Policy</a>
+                        </li>
+                        <li>
+                            <a href="">Terms of Use</a>
+                        </li>
+                        <li>
+                            <a href="">Advertise with Us</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="space">
+                    <ul>
+                        <li class="colored-list">SELL ON AFIANANYI</li>
+                        <li>
+                            <a href="">Register your Business</a>
+                        </li>
+                        <li>
+                            <a href="">Create a Store</a>
+                        </li>
+                        <li>
+                            <a href="">How it works</a>
+                        </li>
+                        <li>
+                            <a href="">Trust and Safety</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="space">
+                    <ul>
+                        <li class="colored-list">DELIVERY</li>
+                        <li>
+                            <a href="">Chisco Express</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="left-space">
+                    <ul>
+                        <li class="colored-list big-para">DOWNLOAD AND CONNECT WITH US</li>
+                    </ul>
+                    <div class="mobile-app">
+
+                    </div>
+
+                    <a href=""><img src="resources/img/ios.svg">
+                    </a>&nbsp;&nbsp;
+                    <a href=""><img src="resources/img/android.svg"></a>
+
+                    <p class="follow__p">Follow us:
+                        <span>
+                            <a href=""><img class="icon-small" src="resources/img/brands/facebook-white.svg" width="22px"
+                                    height="22px" alt="facebook"></a>
+                        </span>
+                        <span>
+                            <a href=""><img class="icon-small" src="resources/img/brands/instagram-white.svg" width="22px"
+                                    height="22px" alt="instagram"></a>
+                        </span>
+                        <span>
+                            <a href=""><img class="icon-small" src="resources/img/brands/linkedin-white.svg" width="22px"
+                                    height="22px" alt="linkedin"></a>
+                        </span>
+                        <span>
+                            <a href=""><img class="icon-small" src="resources/img/brands/twitter-circular-button-white.svg"
+                                    width="22px" height="22px" alt="twitter"></a>
+                        </span>
+                    </p>
+                    <p class="powered">Powered by
+                        <img class="logo-by" src="resources/img/logo-by.svg">
+                    </p>
+                </div>
+            </div>
+
+            <img class="footer-last-img" src="resources/img/pandora.svg">
+            <img class="footer-last-img" src="resources/img/anambra.svg">
+            <img class="footer-last-img" src="resources/img/awka.svg">
+            <img class="footer-last-img" src="resources/img/onitsha.svg">
+            <img class="footer-last-img" src="resources/img/nccima.svg">
+            <img class="footer-last-img" src="resources/img/oni.svg">
+
+            <p class="copy">Copyright (c) 2018 Afiaanyi. All rights reserved</p>
+
+    </section>
+
+    <script src="resources/js/blog.js"></script>
+
+</body>
+
+</html>

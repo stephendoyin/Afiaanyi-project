@@ -13,14 +13,13 @@
     font-style: normal;
   }
   
-  @font-face {
+@font-face {
     font-family: 'Segoe UI Web (West European)';
     src: url('https://static2.sharepointonline.com/files/fabric/assets/fonts/segoeui-westeuropean/segoeui-semibold.woff2') format('woff2'), 
     url('https://static2.sharepointonline.com/files/fabric/assets/fonts/segoeui-westeuropean/segoeui-semibold.woff') format('woff');
     font-weight: 600;
     font-style: normal;
-  }
-
+}
 
 * {
     margin: 0;
@@ -54,6 +53,11 @@ html {
 
 .row {
     max-width: 90%;
+    margin: 0 auto;
+}
+
+.row__large{
+    max-width: 70%;
     margin: 0 auto;
 }
 
@@ -295,6 +299,7 @@ label{
     font-size: 10px;
     font-weight: 400;
     padding: 8px 16px;
+    border-radius: 4px;
     cursor: pointer;
     user-select: none;
   }
@@ -346,19 +351,19 @@ label{
   }
 
   .blog__search{
-        width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
   }
 
   .blog__search-input{
-      display: flex;
-      justify-content: flex-end;
       padding: 15px 0;
   }
 
   .blog__search-input input{
       padding: 10px 16px;
-      width: 400px;
-  }
+      width: 400px; 
+  } 
 
   .first-row__wrapper{
       display: flex;
@@ -371,7 +376,7 @@ label{
   .first-row__blog-lists-wrapper{
       position: relative;
       width: 50%;
-      margin-left: 5%;
+      margin-left: -1%;
   }
 
   .first-row__container{
@@ -533,16 +538,6 @@ input[type=search]{
     -o-border-radius: 4px;
 }
 
-.blog__search-input{
-    position: relative;
-}
-
-.blog__search-input img{
-    position: absolute;
-    top: 25px;
-    right: 34%;
-}
-
 /*footer styles*/
 
 section.footer {
@@ -633,4 +628,89 @@ section.footer {
     height: 25px;
     width: 25px;
     margin-right: 22px;
+}
+
+.blog__search-input:before {
+    content: url(../../resources/img/vendor/search__gold.svg);
+    padding-top: 10px;
+    z-index: 1;
+}
+
+/* blog Article */
+.back__btn{
+    vertical-align: middle;
+    font-size: 12px;
+}
+
+.back__btn img{
+    vertical-align: middle;
+    padding-right: 4px;
+    margin-top: -3.5px;
+}
+
+.contact {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 59px;
+    width: 100%;
+
+}
+
+.contact .one, .contact .two{
+    line-height: 25px;
+}
+
+.one {
+    width: 16%;
+    align-self: center;
+}
+
+.contact p {
+    font-size: 12px;
+    line-height: 26px;
+    font-weight: 500;
+}
+
+p img {
+    vertical-align: middle;
+    margin-left: -2px;
+    margin-right: 4px;
+}
+
+.two {
+    width: 16%;
+    align-self: center
+}
+
+.three {
+    margin-left: 50px;
+}
+
+#send{
+    padding: 11px;
+    border: 0px;
+    border-radius: 0 4px 4px 0;
+    background-color: #d8b027;
+    background-image: url(../img/sent-mail.png);
+    background-size: 21px 21px;
+    background-position: center;
+    background-repeat: no-repeat;
+    color: transparent;
+}
+
+.four{
+    white-space: nowrap;
+}
+
+#mail{
+    padding: 10px;
+    width: 250px;
+    border-radius: 4px 0 0 4px;
+    border: 1px solid #d8b027;
+}
+
+.contact__container{
+    padding: 14px 0;
+    background: rgba(243, 243, 243, 0.8);
 }

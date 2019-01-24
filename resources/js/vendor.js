@@ -344,5 +344,26 @@ $(function () {
     then close all select boxes:*/
     document.addEventListener("click", closeAllSelect);
 
+
 });
 
+$( function() {
+    $( "#slider-range" ).slider({
+      range: true,
+      min: 0,
+      max: 500000,
+      values: [ 0, 500000 ],
+      slide: function( event, ui ) {
+        $( "#amount1" ).val( ui.values[ 0 ]);
+        $( "#amount2" ).val( ui.values[ 1 ]);
+      }
+    });
+    $( "#amount1" ).val($( "#slider-range" ).slider( "values", 0 ) );
+    $( "#amount2" ).val($( "#slider-range" ).slider( "values", 1) );
+
+
+    $("#amount1").bind("change paste keyup", function() {
+        $("#slider-range").slider("", 7000)
+
+     });
+  } );
