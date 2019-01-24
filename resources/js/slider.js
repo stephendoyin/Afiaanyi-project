@@ -91,7 +91,7 @@ $(function () {
 
     function movePrevious() {
         console.log('clicked previous')
-        slideContainer.animate({ left: '0%' }, 2500, function () {
+        slideContainer.animate({ left: '0%' }, 500, function () {
             slideContainer.css('left', '-100%');
             $('.slide--market').first().before($('.slide--market').last());
             $('.legend').last().before($('.legend').first());
@@ -100,7 +100,7 @@ $(function () {
 
     function moveNext() {
         console.log('clicked next')
-        slideContainer.animate({ left: '-200%' }, 2500, function () {
+        slideContainer.animate({ left: '-200%' }, 500, function () {
             slideContainer.css('left', '-100%');
             $('.slide--market').last().before($('.slide--market').first());
             $('.legend').first().before($('.legend').last());
