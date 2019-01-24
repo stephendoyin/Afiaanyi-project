@@ -635,7 +635,9 @@ section.footer {
     padding-top: 10px;
     z-index: 1;
     position: absolute;
-    padding-left: 11px;
+    padding-left: 11
+    
+    px;
 }
 
 /* blog Article */
