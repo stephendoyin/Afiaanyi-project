@@ -61,6 +61,10 @@ html {
     margin: 0 auto;
 }
 
+.row__large--adjusted{
+    max-width: 96%;
+}
+
 nav{
     height: 100px;
     width: 100%;
@@ -634,10 +638,8 @@ section.footer {
     content: url(../../resources/img/vendor/search__gold.svg);
     padding-top: 10px;
     z-index: 1;
+    padding-left: 11px;
     position: absolute;
-    padding-left: 11
-    
-    px;
 }
 
 /* blog Article */
@@ -720,9 +722,13 @@ p img {
 }
 
 .post__title{
-    font-size: 28px;
+    font-size: 24px;
     font-weight: 400;
     padding: 15px 0;
+}
+
+.post__img{
+    padding: 25px 0;
 }
 
 .post__details{
@@ -735,8 +741,246 @@ p img {
 }
 
 .post__paragraph{
-    font-size: 14px;
+    font-size: 16px;
     text-align: justify;
     line-height: 20px;
-    padding: 19px 0;
+    padding: 32px 0;
+    color: #000;
+}
+
+.post__pagagraph--quote{
+    font-size: 14px;
+    padding-bottom: 8px;
+    color: #4A4A4A;
+    font-weight: 300;
+}
+
+.post__tag{
+    font-size: 13px;
+}
+
+.post__tag--links:link,
+.post__tag--links:visited{
+    color: #E6B712;
+}
+
+.post__authors--quote{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border: 1px solid #dedede;
+    padding: 3%;
+    font-size: 14px;
+    border-radius: 1px;
+    -webkit-border-radius: 1px;
+    -moz-border-radius: 1px;
+    -ms-border-radius: 1px;
+    -o-border-radius: 1px;
+    margin-top: 4px;
+}
+
+.post__author-img{
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+}
+
+.post__author, 
+.post__quote{
+    color: #000;
+    font-size: 14px;
+    padding-left: 20px;
+}
+
+.post__author{
+    padding-bottom: 15px;
+}
+
+.comment__box{
+    border: 1px solid #dedede;
+    margin-top: 16px;
+    font-size: 14px;
+    margin-bottom: 30px;
+}
+
+.comment__img{
+    vertical-align: middle;
+    padding-right: 10px;
+}
+
+.comment__count{
+    display: block;
+    width: 100%;
+    border-bottom: 1px solid #dedede;
+    padding: 10px;
+}
+
+.comment__sub-title{
+    padding: 10px 50px;
+    font-weight: 500;
+}
+
+.comment__note{
+    padding-left: 50px;
+}
+
+.comment__container{
+    padding: 10px  30px 30px 50px;
+}
+
+.comment__container textarea{
+    width: 100%;
+    height: 200px;
+    border: 1px solid #dedede;
+    border-radius: 2px;
+    -webkit-border-radius: 2px;
+    -moz-border-radius: 2px;
+    -ms-border-radius: 2px;
+    -o-border-radius: 2px;
+    padding: 13px 15px;
+}
+
+textarea:focus{
+    outline: none;
+}
+
+.comment__check-box-group{
+    display: flex;
+    padding: 10px 0;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.comment__check-box-group div{
+    width: 45%;
+}
+
+.comment__other-info-group{
+    display: flex;
+    padding: 38px 0 0px 0;
+    flex-wrap: wrap;
+}
+
+.comment__other-info-group div{
+    width: 50%;
+    height: 50px;
+}
+
+.comment__other-info-group div input{
+    width: 90%;
+    padding: 9px 13px;
+    border: 1px solid #dedede;
+    border-radius: 2px;
+    -webkit-border-radius: 2px;
+    -moz-border-radius: 2px;
+    -ms-border-radius: 2px;
+    -o-border-radius: 2px;
+}
+
+.comment__other-info-group div input::placeholder,
+.comment__other-info-group div input::value{
+    font-family: "Segoe UI";
+    font-size: 13px;
+}
+
+.comment__other-info-group div input[type=email]{
+    float: right;
+}
+
+.comment__other-info-group div input[type=submit]{
+    cursor: pointer;
+    background: linear-gradient(90deg, #E6B712 31.25%, #CAAA3B 88.19%);
+    border-radius: 4px;
+    box-shadow: none;
+    border: 1px solid #dedede;
+    color: #fff;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    -ms-border-radius: 4px;
+    -o-border-radius: 4px;
+}
+
+
+input[type=checkbox]{
+    padding: 0;
+    height: initial;
+    width: initial;
+    margin-bottom: 0;
+    display: none;
+    cursor: pointer;
+}
+
+.label:before {
+    content: '';
+    -webkit-appearance: none;
+    background-color: transparent;
+    border: 1px solid #c4c4c4;
+    padding: 6px;
+    display: inline-block;
+    position: relative;
+    vertical-align: top;
+    cursor: pointer;
+    margin-top: 1px;
+    margin-right: 5px;
+}
+
+.label {
+    position: relative;
+    cursor: pointer;
+}
+
+input:checked + label:after {
+    content: '';
+    display: block;
+    position: absolute;
+    top: 2px;
+    left: 3px;
+    width: 3px;
+    height: 8px;
+    margin-left: 1px;
+    border: 1px solid #555;
+    border-width: 0 2px 2px 0;
+    transform: rotate(45deg);
+}
+
+.related-post__container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+/* .related-post__post{
+    width: 30%;
+} */
+
+.related-post__container div{
+    width: 48%;
+}
+
+.related-post{
+    padding: 50px 0;
+    margin-bottom: 30px;
+}
+
+.related-post__title{
+    padding: 14px 0;
+    font-size: 22px;
+    font-weight: 400;
+}
+
+.related-post__post p{
+    font-size: 14px;
+    text-align: justify;
+}
+
+.related-post__post img{
+    width: 100%;
+    height: 80%;
+}
+
+input::placeholder{
+    font-family: "Segoe UI";
 }

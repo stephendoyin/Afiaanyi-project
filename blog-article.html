@@ -129,7 +129,7 @@
                                 <img src="resources/img/product-list/front-arrow.svg">
                             </li>
                             <li class="header__lower-nav-list">
-                                <a href="" class="header__lower-nav-link">Blog
+                                <a href="blog.html" class="header__lower-nav-link">Blog
                                 </a>
                             </li>
                         </ul>
@@ -190,62 +190,71 @@
     <section>
         <div class="row__large post">
 
-            <h1 class="post__title">Afiaayi Offiacial Launch</h1>
-            <div class="post__details">
-                <span class="post__author story__author">Author: Opeyemi</span>
-                <span class="post__details-seperator">-</span>
-                <span class="post__time-stamp">Date: January 19, 2019</span>
+            <div class="row__large--adjusted">
+                <h1 class="post__title">Afiaayi Offiacial Launch</h1>
+                <div class="post__details">
+                    <span class="">Author: Opeyemi</span>
+                    <span class="post__details-seperator">-</span>
+                    <span class="post__time-stamp">Date: January 19, 2019</span>
+                </div>
+
+                <div class="post__content">
+                    <p class="post__paragraph">
+                        Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+                        Lorem Ipsum has been the industry’s standard dummy text ever since
+                        the 1500s, when an unknown printer took a galley of type and scrambled
+                        it to make a type specimen book. It has survived not only five centuries,
+                        but also the leap into electronic typesetting, remaining essentially unchanged.
+                        It was popularised in the 1960s with the release of Letraset sheets containing
+                        Lorem Ipsum passages, and more recently with desktop publishing software like
+                        Aldus PageMaker including versions of Lorem Ipsum.
+                    </p>
+                    <a href="">
+                        <img src="resources/img/blog/post-img.jpg" width="100%" class="post__img">
+                    </a>
+                    <blockquote cite="" class="post__paragraph post__pagagraph--quote">
+                        “Quote 1 Lorem Ipsum is simply dummy text of the printing
+                        and typesetting industry has been the industry’s standard
+                        dummy text ever since the 1500s”
+                    </blockquote>
+
+                    <p class="post__paragraph">
+                        Lorem Ipsum is simply dummy text of the printing and
+                        typesetting industry. Lorem Ipsum has been the
+                        industry’s standard dummy text ever since the 1500s,
+                        when an unknown printer took a galley of type and scrambled
+                        it to make a type specimen book. It has survived not only
+                        five centuries, but also the leap into electronic typesetting,
+                        remaining essentially unchanged. It was popularised in the
+                        1960s with the release of Letraset sheets containing Lorem Ipsum passages, and
+                        more recently with desktop publishing software like Aldus
+                        PageMaker including versions of Lorem Ipsum.
+                    </p>
+
+                </div>
+
+                <p class="post__tag">
+                    <span>TAGS:</span>
+                    <a class="post__tag--links" href="">NEWS,</a>
+                    <a class="post__tag--links" href="">MARKETPLACE,</a>
+                    <a class="post__tag--links" href="">DIRECTORY,</a>
+                    <a class="post__tag--links" href="">BUSINESS DIRECTORY,</a>
+                    <a class="post__tag--links" href="">MARKETPLACE,</a>
+                    <a class="post__tag--links" href="">ONLINE MARKETPLACE</a>
+                </p>
+
             </div>
 
-            <div>
-                <p class="post__paragraph">
-                    Lorem Ipsum is simply dummy text of the printing and typesetting industry.
-                    Lorem Ipsum has been the industry’s standard dummy text ever since
-                    the 1500s, when an unknown printer took a galley of type and scrambled
-                    it to make a type specimen book. It has survived not only five centuries,
-                    but also the leap into electronic typesetting, remaining essentially unchanged.
-                    It was popularised in the 1960s with the release of Letraset sheets containing
-                    Lorem Ipsum passages, and more recently with desktop publishing software like
-                    Aldus PageMaker including versions of Lorem Ipsum.
-                </p>
-                <img src="" class="post__img">
-                <blockquote cite="" class="post__paragraph post__pagagraph--quote">
-                    “Quote 1 Lorem Ipsum is simply dummy text of the printing
-                    and typesetting industry has been the industry’s standard
-                    dummy text ever since the 1500s”
-                </blockquote>
 
-                <p  class="post__paragraph">
-                    Lorem Ipsum is simply dummy text of the printing and
-                    typesetting industry. Lorem Ipsum has been the
-                    industry’s standard dummy text ever since the 1500s,
-                    when an unknown printer took a galley of type and scrambled
-                    it to make a type specimen book. It has survived not only
-                    five centuries, but also the leap into electronic typesetting,
-                    remaining essentially unchanged. It was popularised in the
-                    1960s with the release of Letraset sheets containing Lorem Ipsum passages, and
-                    more recently with desktop publishing software like Aldus
-                    PageMaker including versions of Lorem Ipsum.
-                </p>
 
-            </div>
-
-            <p><span>TAGS:</span>TAGS:
-            <a href>NEWS,</a>
-            <a href>MARKETPLACE,</a>
-            <a href>DIRECTORY,</a>
-            <a href>BUSINESS DIRECTORY,</a>
-            <a href>MARKETPLACE,</a>
-            <a href>ONLINE MARKETPLACE</a></p>
-
-            <div class="">
+            <div class="post__authors--quote">
                 <div>
-                    <img src="">
+                    <img src="resources/img/blog/user.png" class="post__author-img">
                 </div>
 
                 <div>
-                    <p>Opeyemi Adeyemo</p>
-                    <p>
+                    <p class="post__author">Opeyemi Adeyemo</p>
+                    <p class="post__quote">
                         “Quote 1 Lorem Ipsum is simply dummy text of the
                         printing and typesetting industry has been the industry’s
                         standard dummy text ever since the 1500s”
@@ -253,16 +262,117 @@
                 </div>
             </div>
 
-            <div>
-                <span class="comment">No comment yet</span>
+            <div class="comment__box">
+                <span class="comment__count">
+                    <img src="resources/img/blog/comment-icon-grey.svg" class="comment__img"> No comment yet
+                </span>
+                <div>
+                    <p class="comment__sub-title">
+                        Leave a Reply
+                    </p>
+                    <span class="comment__note">
+                        Your Email Address will not be published
+                    </span>
+
+                    <div class="comment__container">
+                        <form id="comment__form">
+                            <textarea id="comment" placeholder="Your Comment"></textarea>
+                            <div class="comment__check-box-group">
+                                <div>
+                                    <input type="checkbox" id="non-robot">
+                                    <label for="non-robot" class="label">I am not a robot</label>
+                                </div>
+                                <div>
+                                    <input type="checkbox" id="mailing-list">
+                                    <label for="mailing-list" class="label">Add me to your mailing list</label>
+                                </div>
+
+                            </div>
+
+                            <div class="comment__other-info-group">
+                                <div>
+                                    <input type="text" placeholder="Name">
+                                </div>
+                                <div>
+                                    <input type="email" placeholder="Email">
+                                </div>
+                                <div>
+                                    <input type="submit" value="Submit Comment">
+                                </div>
+                            </div>
+
+
+                        </form>
+
+
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="row__large--adjusted related-post">
+                <h3 class="related-post__title">
+                    Related News
+                </h3>
+                <div class="related-post__container">
+                    <div class="related-post__post">
+                        <a href="">
+                            <img src="resources/img/blog/related-one.jpg">
+                            <p>
+                                “Quote 1 Lorem Ipsum is simply dummy text of the printing.
+                            </p>
+                        </a>
+                    </div>
+                    <div class="related-post__post">
+                        <a href="">
+                            <img src="resources/img/blog/related-two.jpg">
+                            <p>
+                                “Quote 1 Lorem Ipsum is simply dummy text of the printing.
+                            </p>
+                        </a>
+                    </div>
+                </div>
 
             </div>
+
 
         </div>
 
 
     </section>
 
+    <section class="contact__container">
+        <div class="contact row">
+            <div class="one">
+                <p>
+                    <strong>SUPPORT</strong><br>
+
+                    <img class="" src="resources/img/phone.svg" alt=""> +234 803 400 0000
+                </p>
+            </div>
+            <div class="two">
+                <p>
+                    <strong>EMAIL SUPPORT</strong>
+                </p>
+                <p>
+                    <img class="" src="resources/img/mail.svg" alt=""> info@afiaayan.com
+                </p>
+            </div>
+            <div class="three">
+                <p>
+                    <span>
+                        <strong>GET LATEST DEALS & UPDATES</strong>
+                    </span>
+                    <br>
+                    <i>Stay in the loop on all upcoming promotions,
+                        <br> discounts and latest updates.</i>
+                </p>
+            </div>
+            <div class="four">
+                <input type="email" id="mail" placeholder="Enter e-mail"><input id="send" type="submit" value="send">
+            </div>
+        </div>
+    </section>
 
     <section class="footer hide-flow">
         <footer class="row">

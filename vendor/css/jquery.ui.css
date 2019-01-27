@@ -938,11 +938,13 @@ body .ui-tooltip {
 works properly when clicked or hovered */
 html .ui-button.ui-state-disabled:hover,
 html .ui-button.ui-state-disabled:active {
-	border: 1px solid #fff;
+	/* border: 1px solid #fff; */
 	background: linear-gradient(90deg, #E6B712 31.25%, #CAAA3B 88.19%);
 	font-weight: normal;
 	color: #454545;
+	box-shadow: 2px 1px 1px 0px rgba(0,0,0,.6);
 }
+
 .ui-state-default a,
 .ui-state-default a:link,
 .ui-state-default a:visited,

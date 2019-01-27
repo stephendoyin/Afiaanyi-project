@@ -23,10 +23,10 @@
         <nav>
             <div class="header__top-container">
                 <div class="row header__nav-content">
-                    <div>
+                    <div class="header__logo-container">
                         <img src="resources/img/market-logo.svg" class="header__logo" alt="Afiaanyi logo">
                     </div>
-                    <div>
+                    <div class="header__form-input-container">
                         <input type="search" class="header__form-input header__input-nav" placeholder="Search for products, brands and categories">
                         <input type="submit" class="header__submit">
                     </div>
@@ -1025,6 +1025,7 @@
 
     <section>
         <div class="product__section-container row">
+
             <aside class="product__navigations">
                 <div class="filters">
                     <h6 class="filter__title">Filters</h6>
@@ -1064,8 +1065,9 @@
                 <form>
                     <div class="form__sections">
                         <div>
-                            <span class="--title">Shipped from</span><span class="right">-</span><br /><br />
-                            <div class="inset">
+                            <span class="--title">Shipped from</span><span class="minus__ship right">&#8212;</span>
+                            <span class="right plus__ship">&#43;</span><br /><br />
+                            <div class="inset ship--toggle">
                                 <input type="checkbox" id="Nigeria">
                                 <label for="Nigeria" class="input__text">Nigeria</label>
                                 <span class="right">(100000)</span>
@@ -1077,12 +1079,13 @@
 
 
                         <div class="">
-                            <span class="--title">Size</span><span class="right">-</span><br /><br />
-                            <div class="search__container">
+                            <span class="--title">Size</span><span class="right minus__size">&#8212;</span>
+                            <span class="right plus__size">&#43;</span><br /><br />
+                            <div class="search__container  size--toggle">
                                 <input type="search" id="form__size-search" placeholder="Search size">
                                 <img src="resources/img/vendor/search__gold.svg">
                             </div>
-                            <div class="inset form__sections--scroll">
+                            <div class="inset form__sections--scroll animated fadeIn size--toggle">
                                 <div class="spacer">
                                     <input type="checkbox" id="large">
                                     <label for="large" class="input__text">L</label>
@@ -1135,9 +1138,11 @@
                     <div class="form__sections">
 
                         <div class="">
-                            <span class="--title">Colour</span><span class="right">-</span><br /><br />
+                            <span class="--title">Colour</span><span class="right minus__colour">&#8212;</span>
+                            <span class="right plus__colour">&#43;</span>
+                            <br /><br />
 
-                            <div class="inset form__sections--scroll">
+                            <div class="inset form__sections--scroll animated fadeIn colour--toggle">
                                 <div class="spacer">
                                     <input type="checkbox" id="multi">
                                     <label for="multi" class="input__text">Multi</label>
@@ -1185,9 +1190,10 @@
                     <div class="form__sections">
 
                         <div class="">
-                            <span class="--title">Brand</span><span class="right">-</span><br /><br />
+                            <span class="--title">Brand</span><span class="right minus__brand">&#8212;</span>
+                            <span class="right plus__brand">&#43;</span><br /><br />
 
-                            <div class="inset form__sections--scroll">
+                            <div class="inset form__sections--scroll animated fadeIn brand--toggle">
                                 <div class="spacer">
                                     <input type="checkbox" id="Generic">
                                     <label for="Generic" class="input__text">Generic</label>
@@ -1225,26 +1231,31 @@
                     <div class="form__sections">
 
                         <div class="">
-                            <span class="--title">Price</span><span class="right">-</span><br />
-                            <div style="padding: 14px">
-                                <div id="slider-range"></div>
+                            <span class="--title">Price</span><span class="right minus__price">&#8212;</span>
+                            <span class="right plus__price">&#43;</span><br />
+                            <div class="price__centering price--toggle animated fadeIn">
+                                <div style="padding: 15px">
+                                    <div id="slider-range"></div>
+                                </div>
+                                <div class="range__input">
+                                    <span>₦</span><input type="text" id="amount1">
+    
+    
+                                    <span>₦</span><input type="text" id="amount2">
+    
+                                </div>
                             </div>
-                            <div class="range__input">
-                                <span>₦</span><input type="text" id="amount1">
-
-
-                                <span>₦</span><input type="text" id="amount2">
-
-                            </div>
+                            
                         </div>
 
                     </div>
                     <div class="form__sections">
 
                         <div class="">
-                            <span class="--title">Seller Score</span><span class="right">-</span><br /><br />
+                            <span class="--title">Seller Score</span><span class="right minus__score">&#8212;</span>
+                            <span class="right  plus__score">&#43;</span><br /><br />
 
-                            <div class=" form__sections--scroll inset">
+                            <div class=" form__sections--scroll  animated fadeIn score--toggle inset">
                                 <div class="seller__score-container">
                                     <div class="seller__progress">
                                         <div class="seller__progression seller__progression--four">
@@ -1295,9 +1306,11 @@
                     <div class="form__sections">
 
                         <div class="">
-                            <span class="--title">Ratings</span><span class="right">-</span><br /><br />
+                            <span class="--title">Ratings</span><span class="right minus__ratings">&#8212;</span>
+                            <span class="right plus__ratings">&#43;</span>
+                            <br /><br />
 
-                            <div class=" form__sections--scroll">
+                            <div class=" form__sections--scroll  animated fadeIn ratings--toggle">
                                 <div class="spacer">
                                     <span class="input__text inset">
                                         <img src="resources/img/ratings.svg" height="13px" width="13px" alt="rating">
@@ -1354,9 +1367,11 @@
                     <div class="form__sections">
 
                         <div class="">
-                            <span class="--title">Material Family</span><span class="right">-</span><br /><br />
+                            <span class="--title">Material Family</span><span class="minus__material right">&#8212;</span>
+                            <span class="plus__material right">&#43;</span>
+                            <br /><br />
 
-                            <div class="inset form__sections--scroll">
+                            <div class="inset form__sections--scroll  animated fadeIn material--toggle">
                                 <div class="spacer">
                                     <input type="checkbox" id="textile">
                                     <label for="textile" class="input__text">Textile</label>
@@ -1394,9 +1409,11 @@
                     <div class="form__sections">
 
                         <div class="">
-                            <span class="--title">Discount</span><span class="right">-</span><br /><br />
+                            <span class="--title">Discount</span><span class="right minus__discount">&#8212;</span>
+                            <span class="right plus__discount">&#43;</span>
+                            <br /><br />
 
-                            <div class="inset form__sections--scroll">
+                            <div class="inset form__sections--scroll  animated fadeIn discount--toggle">
                                 <div class="spacer">
                                     <input type="checkbox" id="90">
                                     <label for="90" class="input__text">80% - 99%</label>
@@ -1425,6 +1442,7 @@
                 </form>
 
             </aside>
+            
             <div class="outer__product-container">
                 <div class="product__container">
                     <div class="title-page__nav">
@@ -1434,11 +1452,14 @@
                         </div>
 
                         <div class="product__pagination-container">
-                            <div class="product__pages">
+                            <div class="product__pages product__pages--active">
                                 1
                             </div>
                             <div class="product__pages">
                                 2
+                            </div>
+                            <div class="product__pages">
+                                3
                             </div>
                             <div class="product__pages ellipses">
                                 ...
@@ -1459,11 +1480,14 @@
                 </div>
 
                 <div class="product__pagination-container">
-                    <div class="product__pages">
+                    <div class="product__pages product__pages--active">
                         1
                     </div>
                     <div class="product__pages">
                         2
+                    </div>
+                    <div class="product__pages">
+                        3
                     </div>
                     <div class="product__pages ellipses">
                         ...
@@ -1472,7 +1496,7 @@
                         22
                     </div>
                     <div class="product__pages">
-                        <a>></a>
+                        >
                     </div>
                 </div>
 
