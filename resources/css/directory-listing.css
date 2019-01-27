@@ -1,0 +1,291 @@
+/*Generic Css rules */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.clearfix {
+    zoom: 1
+}
+
+.clearfix::after {
+    content: '.';
+    clear: both;
+    display: block;
+    height: 0;
+    visibility: hidden;
+}
+
+h1{
+    margin: 0;
+}
+
+html {
+    background-color: #ffffff;
+    color: #000;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 10px;
+    font-weight: 300;
+}
+
+
+.clearfix {
+    zoom: 1
+}
+
+aside{
+    position: relative;
+}
+
+.clearfix::after {
+    content: '.';
+    clear: both;
+    display: block;
+    height: 0;
+    visibility: hidden;
+}
+
+.row {
+    max-width: 90%;
+    margin: 0 auto;
+}
+
+
+
+/* Header css rules */
+
+header{
+    position: relative;
+}
+
+.header__top-container{
+    position: fixed;
+    width: 100%;
+    z-index: 30;
+    background: white;
+    
+}
+
+.header__top-container--shadow{
+    box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.05);
+}
+
+nav{
+    height: 100px;
+    width: 100%;
+}
+
+.header__logo{
+    height: 90px;
+    width: 90px;
+}
+
+
+.header__form-input{
+    padding: 8px;
+    border: 1px solid #d8b027;
+}
+
+.header__form-input--left{
+    border-radius: 4px 0 0 4px;
+    width: 250px;
+    white-space: nowrap;
+    overflow: hidden;
+}
+
+.header__form-input--middle,
+.header__form-input--right{
+    width: 120px;
+}
+
+.header__submit{
+    padding: 6px;
+    border-radius: 0 4px 4px 0;
+    border: 1px solid #d8b027;
+    background-color: #d8b027;
+    background-image: url(../img/search.png);
+    background-size: 21px 21px;
+    background-position: center;
+    background-repeat: no-repeat;
+    color: transparent;
+}
+
+
+.header__input-nav{
+    float: left;
+}
+
+.header__customized-items{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header__form-input::placeholder{
+    font-family: 'Montserrat';
+    font-size: 11px;
+    color: #000;
+    font-weight: 500;
+}
+
+.header__form-input-container{
+    display: flex;
+}
+
+.header__nav-content{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+}
+
+.header__nav-list-container{
+    list-style: none;
+}
+
+.header__nav-list{
+    display: inline-block;
+    text-decoration: none;
+    padding: 0 12px;
+}
+
+.header__nav-list--divider{
+    border-right: 1px solid #000;
+}
+
+.header__nav-link:link,
+.header__nav-link:visited {
+    text-decoration: none;
+    color: #000;
+    font-family: Montserrat;
+    font-size: 12px;
+    font-weight: 500;
+}
+
+.header__nav-link:hover{
+    color: #d8b027;
+}
+
+.header--outlined{
+    padding-right: 0;
+    margin-right: 0;
+}
+/* drop down select in header */
+
+/*the container must be positioned relative:*/
+.header__form-select {
+    position: relative;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  }
+  
+  .header__form-select select {
+    display: none; /*hide original SELECT element:*/
+  }
+  
+  .select-selected {
+    border: 1px solid #DEDEDE;
+  }
+  
+  /*style the arrow inside the select element:*/
+  .select-selected {
+    content: "";
+    background-image: url(../img/dropdown.svg);
+    background-position: 97% 50%;
+    background-repeat: no-repeat;
+    background-size: 10px;
+    padding: 24px;
+  }
+  
+  
+  /*style the items (options), including the selected item:*/
+  .select-items div,.select-selected {
+    color: #000;
+    font-size: 12px;
+    font-weight: 300;
+    padding: 10px 10px;
+    cursor: pointer;
+    user-select: none;
+    font-family: 'Montserrat';
+  }
+  
+  /*style items (options):*/
+  .select-items {
+    position: absolute;
+    font-family: 'Montserrat';
+    background-color: #fff;
+    top: 98%;
+    border: 1px solid #dedede;
+    right: 0;
+    left: 0;
+    z-index: 9;
+  }
+  
+  /*hide the items when the select box is closed:*/
+  .select-hide {
+    display: none;
+  }
+  
+  .select-items div:hover, .same-as-selected {
+    background-color: #d8b027;
+    color: white;
+  }
+
+  /*hero rules*/
+
+  .hero{
+    position: relative;
+    width: 100%;
+    height: 195px;
+    background: rgba(0, 0, 0, .5);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.hero__title{
+    position: absolute;
+    left: 50%;
+    top: 70%;
+    font-size: 24px;
+    color: white;
+    transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%);
+    -moz-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    -o-transform: translate(-50%, -50%);
+}
+
+.hero__where{
+    display:inline-block;
+    padding: 6px;
+    font-size: 14px;
+    color: white;
+    position: relative;
+    top: 13%;
+    left: 4%;
+    background: rgba(0, 0, 0, 0.08);
+    backdrop-filter: blur(10px);
+}
+
+.main-page{
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: 100vh;
+}
+
+.side-bar{
+    width: 25%;
+    background: red;
+
+    height: 100vh;
+}
+
+.main-body{
+    width: 75%;
+    background: blue;
+
+    height: 100vh;
+}

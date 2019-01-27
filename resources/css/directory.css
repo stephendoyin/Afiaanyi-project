@@ -90,18 +90,18 @@ nav{
 
 .header__form-input--left{
     border-radius: 4px 0 0 4px;
-    width: 264px;
+    width: 250px;
     white-space: nowrap;
     overflow: hidden;
 }
 
 .header__form-input--middle,
 .header__form-input--right{
-    width: 144px;
+    width: 130px;
 }
 
 .header__submit{
-    padding: 11px;
+    padding: 6px;
     border-radius: 0 4px 4px 0;
     border: 1px solid #d8b027;
     background-color: #d8b027;
@@ -128,6 +128,10 @@ nav{
     font-size: 11px;
     color: #000;
     font-weight: 500;
+}
+
+.header__form-input-container{
+    display: flex;
 }
 
 .header__nav-content{
@@ -229,7 +233,7 @@ nav{
   .hero{
     position: relative;
     width: 100%;
-    height: 275px;
+    height: 265px;
     background: url(../img/directory/hero_directory.png), rgba(0, 0, 0, .5);
     background-position: center;
     background-size: cover;
@@ -238,6 +242,18 @@ nav{
 
 .hero__text-content{
     font-size: 20px;
+}
+
+.hero__where{
+    display:inline-block;
+    padding: 6px;
+    font-size: 14px;
+    color: white;
+    position: relative;
+    top: 13%;
+    left: 4%;
+    background: rgba(0, 0, 0, 0.08);
+    backdrop-filter: blur(10px);
 }
 
 .info-header{
