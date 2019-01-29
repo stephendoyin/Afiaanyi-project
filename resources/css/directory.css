@@ -296,7 +296,7 @@ nav{
     font-size: 13px;
 }
 
-.info-card__content, span{
+.info-card__content, .info-card__icon{
     display: flex;
     justify-content: center;
     align-items: center;
