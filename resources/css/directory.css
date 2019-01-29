@@ -214,6 +214,8 @@ nav{
     top: 98%;
     border: 1px solid #dedede;
     right: 0;
+    height: 165px;
+    overflow: scroll;
     left: 0;
     z-index: 9;
   }
@@ -271,6 +273,7 @@ nav{
     line-height: 24px;
     font-size: 16px;
     color: #fff;
+    text-align: center;
 }
 
 .info-cards__container{
@@ -351,7 +354,8 @@ img.info-card__icon{
     width: 100%;
     justify-content: flex-end;
     align-items: center;
-    padding: 30px 17px;
+    padding: 20px 17px;
+
 }
 
 .info-card__lower-container{
@@ -441,6 +445,7 @@ section.footer {
     position: relative;
     background-color: #414040;
     padding: 17px 0;
+    overflow: hidden;
 }
 
 .follow__p{
@@ -567,3 +572,42 @@ section.footer {
     letter-spacing: 4px;
     align-self: center;
 }
+
+.yb{
+    height: 116px;
+    width: 288px;
+    right: -10px;
+    bottom: -10px;
+    position: absolute;
+    z-index: 99;
+}
+
+.by{
+    height: 116px;
+    width: 288px;
+    right: -105px;
+    bottom: 10px;
+    z-index: 1;
+    transform: rotate(90deg);
+    position: absolute;
+}
+
+.select-items::-webkit-scrollbar {
+    width: 3px;
+    height: 5px;
+  }
+  
+  /* Track */
+  .select-items::-webkit-scrollbar-track {
+    background: #f1f1f1; 
+  }
+   
+  /* Handle */
+  .select-items::-webkit-scrollbar-thumb {
+    background: #CAAA3B;
+  }
+  
+  /* Handle on hover */
+  .select-items::-webkit-scrollbar-thumb:hover {
+    background: #555; 
+  }

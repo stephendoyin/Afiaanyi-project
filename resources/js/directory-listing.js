@@ -69,10 +69,86 @@ function closeAllSelect(elmnt) {
     }
 }
 
-let select = document.querySelectorAll(".select-selected");
+let select = document.querySelectorAll("header .select-selected");
 select[0].classList.add('header__form-input--left');
 select[1].classList.add('header__form-input--middle');
 select[2].classList.add('header__form-input--right');
 /*if the user clicks anywhere outside the select box,
 then close all select boxes:*/
 document.addEventListener("click", closeAllSelect);
+
+$(function () {
+    let cardCount = 6;
+
+    let container = document.querySelector(".info-cards__container");
+
+    let card = `
+    <div class="info-card__container">
+
+                        <div class="card">
+                            <div class="info-card__upper-section">
+                                <img class="info-card__logo" width="60px" height="60px" src="resources/img/directory/comp-icon.svg">
+                                <p class="info-card__content">GG Nweze Automobile</p>
+                                <p class="info-card__content">
+                                    <span class="info-card__rating">
+                                        1/4
+                                    </span>
+                                    <span>0 review</span>
+                                    <span>
+                                        <img height="12px" width="12px" class="info-card__icon info-card__icon--left-space"
+                                            src="resources/img/directory-listing/like.svg">
+                                        0 likes
+                                    </span>
+                                </p>
+
+                                <p class="info-card__location">
+                                    <img class="info-card__icon  height=" 13px" width="13px" src="resources/img/directory-listing/location.svg">
+                                    <span>
+                                        40, Awka Road, Awka, Anambra State
+                                    </span>
+                                </p>
+
+                                <p class="info-card__hire">
+                                    <img class="info-card__icon height=" 13px" width="13px" src="resources/img/directory-listing/hired.svg">
+                                    <span>Hired 1 time</span>
+                                </p>
+
+                                <p class="info-card__responds">
+                                    <img class="info-card__icon height=" 13px" width="13px" src="resources/img/directory-listing/response.png">
+                                    <span>responds in 3hrs</span>
+                                </p>
+
+                                <p class="info-card__visited">
+                                    <img class="info-card__icon height=" 13px" width="13px" src="resources/img/directory-listing/group.svg">
+                                    <span>
+                                        visited 82 times
+                                    </span>
+                                </p>
+                            </div>
+
+                            <div class="info-card__discription">
+                                Description: GG Nweze Automoblie is an automotive
+                                company offering sales of automotive accessories,
+                                gaskets, fire extinguishers, bolt and nuts...
+
+                            </div>
+
+                            <div class="info-card__services">
+                                Services: sales of automotive accessories, gaskets,
+                                fire extinguishers,
+
+                            </div>
+
+                            <button class="btn">
+                                Contact
+                            </button>
+
+                        </div>
+                    </div>
+    `;
+
+    for (let x = 0; x < cardCount; x++){
+        container.innerHTML += card;
+    }
+});
+

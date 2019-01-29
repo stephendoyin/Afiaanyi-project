@@ -13,7 +13,7 @@
         @import url(resources/css/brands.css);
         @import url(vendor/css/ionicons.min.css);
     </style>
-
+    <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
     <title>Brands</title>
 
 </head>
@@ -21,7 +21,9 @@
 <body class="branded">
     <div class="page__container">
         <div class="page__first-column">
+
             <div class="social--box">
+
                 <div class="logo--circle">
                     <img src="resources/img/market-logo.svg">
                 </div>
@@ -43,11 +45,12 @@
                 <p class="first-col__copyright">(c) Copyright 2019. Afiaanyi.com</p>
             </div>
         </div>
+
         <div class="page__second-column">
-            <header class="row header-brand">
+            <header class="header-brand header-brand--shrink">
                 <nav class="nav-brand">
                     <div class="row brand-menu">
-                        <img src="resources/img/logo-black.svg" alt="Afi Logo" class="brand-logo">
+                        <img src="resources/img/FS Logo.png" alt="Afi Logo" class="brand-logo">
                         <ul class="brand-nav">
                             <li class="divider">
                                 <a href="#">Home</a>
@@ -67,28 +70,6 @@
                         </ul>
                     </div>
                 </nav>
-                <!-- <div class="sub-navigation">
-                    <div class="row">
-                        <ul class="row brand-sub-nav">
-                            <li>
-                                <a href="#">Home</a>
-                            </li>
-                            <li>
-                                <a href="#">About</a>
-                            </li>
-                            <li>
-                                <a href="#">Gallery</a>
-                            </li>
-                            <li>
-                                <a href="#">Our Team</a>
-                            </li>
-                            <li>
-                                <a href="#">Contact Us</a>
-                            </li>
-                        </ul>
-                    </div>
-
-                </div> -->
 
                 <div class="brand-text">
                     <h1>
@@ -149,23 +130,30 @@
                 <h2>
                     GALLERY
                 </h2>
-                <div class="gallery-img">
-                    <div class="gallery-img-one">
-                        <div></div>
-                    </div>
+                <div class="gallery__wrap">
+                    <div class="gallery-img">
+                        <div class="gallery__img gallery-img-one">
+                            <div></div>
+                        </div>
 
-                    <!-- <div class="gallery-img-two">
-                        <div></div>
-                    </div> -->
+                        <div class="gallery__img gallery-img-one">
+                            <div></div>
+                        </div>
 
-                    <div class="gallery-img-three">
-                        <div> </div>
+                        <div class="gallery__img gallery-img-three">
+                            <div></div>
+                        </div>
+
+                        <div class="gallery__img gallery-img-three">
+                            <div> </div>
+                        </div>
                     </div>
                 </div>
 
-                <div class="gallery-label">
-                    <div class="gallery-label-active"></div>
-                    <div></div>
+
+                <div class="gallery-label__container">
+                    <div class="gallery-label gallery-label__active"></div>
+                    <div class="gallery-label "></div>
                 </div>
 
             </section>
@@ -247,7 +235,7 @@
             </section>
 
             <footer class="brand-footer">
-                <div class="brand-footer-container row">
+                <div class="brand-footer__outer-container row">
                     <div class="brand-footer__container">
                         <ul class="brand-footer__list-container">
                             <li class="brand-footer__list">
@@ -269,32 +257,34 @@
                     </div>
                     <div class="brand-footer-suscribe">
 
-
                         <form id="brand-footer-form">
-                            <span>SUSCRIBE FOR OUR NEWSLETTER</span>
+                            <p>SUSCRIBE FOR OUR NEWSLETTER</p>
                             <input type="email" placeholder="Enter Email" id="brand-footer-email">
                             <input type="submit" value="SUSCRIBE NOW" id="brand-footer-send">
                         </form>
 
-                        <p class="brand-footer-copy">Copyright (c) 2018. FurniShop. All Rights Reserved</p>
+
+
                     </div>
+
                     <div class="brand-footer-social-links">
-                        <img class="social-link" src="resources/img/brands/facebook-white.svg" width="22px" height="22px" alt="facebook"><br>
-                        <img class="social-link" src="resources/img/brands/instagram-white.svg" width="22px" height="22px" alt="instagram"><br>
-                        <img class="social-link" src="resources/img/brands/linkedin-white.svg" width="22px" height="22px" alt="linkedin"><br>
-                        <img class="social-link" src="resources/img/brands/twitter-circular-button-white.svg" width="22px" height="22px"
-                            alt="twitter"><br>
-                        <p class="brand__powered">Powered By <img class="powered-img" src="resources/img/logo-by.svg"></p>
+                        <img class="social-link" src="resources/img/brands/facebook-white.svg" width="22px" height="22px"
+                            alt="facebook"><br>
+                        <img class="social-link" src="resources/img/brands/instagram-white.svg" width="22px" height="22px"
+                            alt="instagram"><br>
+                        <img class="social-link" src="resources/img/brands/linkedin-white.svg" width="22px" height="22px"
+                            alt="linkedin"><br>
+                        <img class="social-link" src="resources/img/brands/twitter-circular-button-white.svg" width="22px"
+                            height="22px" alt="twitter">
+
                     </div>
 
                 </div>
-                
+                <p class="brand-footer-copy">Copyright (c) 2018. FurniShop. All Rights Reserved</p>
 
+        </footer>
 
-            </footer>
-        </div>
-    </div>
-
+        <script src="resources/js/brand.js"></script>
 </body>
 
 

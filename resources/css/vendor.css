@@ -252,7 +252,7 @@ nav{
     text-decoration: none;
     color: #000;
     padding: 14px 0;
-    font-size: 12px;
+    font-size: 13px;
     font-weight: normal;
     word-spacing: -1px
 }
@@ -391,13 +391,14 @@ label{
   }
 
   .product__navigations{
-      width: 25%;
+    width: 22%;
       padding-right: 20px;
   }
 
   .outer__product-container{
-      width: 75%;
+      width: 78%;
   }
+
 
   .product__container{
     background: #FFFFFF;
@@ -459,6 +460,11 @@ box-shadow: -11px 15px 32px -27px rgba(0,0,0,0.51);
     -o-transition: all .4s linear;
 }
 
+.product__card:hover .img__overlay{
+    filter: brightness(.4);
+    -webkit-filter: brightness(.4);
+}
+
 .product-modal{
     display: none;
 }
@@ -504,8 +510,8 @@ position: relative;
 }
 
 .brand__name{
-font-size: 0.9rem;
-line-height: 1rem;
+    font-size: 0.9rem;
+    line-height: 2rem;
 }
 
 .ratings-numbers{
@@ -529,8 +535,15 @@ margin: 10px 0;
 color: #000;
 font-weight: 500;
 }
+
+.percentage__off{
+    padding: 4px;
+    margin-top: 6px;
+}
+
 .full__brand-name{
-line-height: 1.8rem;
+    line-height: 1.8rem;
+    font-weight: 700;
 }
 
 .ratings img:first-child{
@@ -539,7 +552,6 @@ margin-left: -2px;
 
 .percentage__off{
 border: 1px solid #CAAA3B;
-padding-left: 2px;
 }
 
 .paper{
@@ -837,7 +849,7 @@ padding: 30px 0;
 .drop-down__content li a{ 
     text-decoration: none;
     color: black;
-    font-size: 10px;
+    font-size: 11px;
     white-space: nowrap;
     line-height: 18px;
 }
@@ -1006,7 +1018,7 @@ select:focus {
     background-color: #fff;
     top: 98%;
     border: 1px solid #dedede;
-    left: 56px;
+    left: 0;
     right: 0;
     z-index: 9;
   }
@@ -1129,6 +1141,7 @@ section.footer {
     position: relative;
     background-color: #414040;
     padding: 17px 0;
+    overflow: hidden;
 }
 
 .follow__p{
@@ -1272,4 +1285,23 @@ section.footer {
 .minus__size, .plus__size,
 .minus__ship, .plus__ship{
     cursor: pointer;
+}
+
+.yb{
+    height: 116px;
+    width: 288px;
+    right: -10px;
+    bottom: -10px;
+    position: absolute;
+    z-index: 99;
+}
+
+.by{
+    height: 116px;
+    width: 288px;
+    right: -105px;
+    bottom: 10px;
+    z-index: 1;
+    transform: rotate(90deg);
+    position: absolute;
 }

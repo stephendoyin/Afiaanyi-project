@@ -598,6 +598,7 @@ section.footer {
     position: relative;
     background-color: #414040;
     padding: 17px 0;
+    overflow: hidden;
 }
 
 .follow__p{
@@ -723,4 +724,23 @@ p img {
 .contact__container{
     padding: 14px 0;
     background: rgba(243, 243, 243, 0.8);
+}
+
+.yb{
+    height: 116px;
+    width: 288px;
+    right: -10px;
+    bottom: -10px;
+    position: absolute;
+    z-index: 99;
+}
+
+.by{
+    height: 116px;
+    width: 288px;
+    right: -105px;
+    bottom: 10px;
+    z-index: 1;
+    transform: rotate(90deg);
+    position: absolute;
 }

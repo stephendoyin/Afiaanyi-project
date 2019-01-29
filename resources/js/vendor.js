@@ -346,7 +346,9 @@ $(function () {
                                 <div class="badge__new-container">
                                 <div class="badge__new">NEW</div>
                                 </div>
-                                    <img src="${vendors[i].img}" alt="product">
+                                <div class="img__overlay">
+                                    <img src="${vendors[i].img}" class="product__img" alt="product">
+                                </div>
                                     <span class="product__badge"></span>
                                 </div>
 

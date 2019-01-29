@@ -594,6 +594,7 @@ section.footer {
     position: relative;
     background-color: #414040;
     padding: 17px 0;
+    overflow: hidden;
 }
 
 .follow__p{
@@ -741,9 +742,9 @@ p img {
 }
 
 .post__paragraph{
-    font-size: 16px;
+    font-size: 14px;
     text-align: justify;
-    line-height: 20px;
+    line-height: 26px;
     padding: 32px 0;
     color: #000;
 }
@@ -757,6 +758,7 @@ p img {
 
 .post__tag{
     font-size: 13px;
+    line-height: 26px;
 }
 
 .post__tag--links:link,
@@ -771,6 +773,7 @@ p img {
     border: 1px solid #dedede;
     padding: 3%;
     font-size: 14px;
+    line-height: 20px;
     border-radius: 1px;
     -webkit-border-radius: 1px;
     -moz-border-radius: 1px;
@@ -983,4 +986,23 @@ input:checked + label:after {
 
 input::placeholder{
     font-family: "Segoe UI";
+}
+
+.yb{
+    height: 116px;
+    width: 288px;
+    right: -10px;
+    bottom: -10px;
+    position: absolute;
+    z-index: 99;
+}
+
+.by{
+    height: 116px;
+    width: 288px;
+    right: -105px;
+    bottom: 10px;
+    z-index: 1;
+    transform: rotate(90deg);
+    position: absolute;
 }
