@@ -69,10 +69,6 @@ function closeAllSelect(elmnt) {
     }
 }
 
-let select = document.querySelectorAll("header .select-selected");
-select[0].classList.add('header__form-input--left');
-select[1].classList.add('header__form-input--middle');
-select[2].classList.add('header__form-input--right');
 /*if the user clicks anywhere outside the select box,
 then close all select boxes:*/
 document.addEventListener("click", closeAllSelect);
@@ -150,5 +146,37 @@ $(function () {
     for (let x = 0; x < cardCount; x++){
         container.innerHTML += card;
     }
+
+    $(function () {
+        //caches a jQuery object containing the header element
+        var header = $(".header__top-container");
+        $(window).scroll(function () {
+            var scroll = $(window).scrollTop();
+    
+            if (scroll >= 210) {
+                header.addClass('header__top-container--shadow');
+                let img = document.querySelector(".header__top-container img");
+                img.src = "resources/img/logo-white.png";
+                document.querySelector(".greeting").classList.add("greeting--bg");
+                document.querySelector(".user__name").classList.add("user__name--bg");
+                let linksHeader = document.querySelectorAll("a.header__nav-link");
+                for(let i = 0; i < linksHeader.length; i++){
+                    linksHeader[i].classList.add("header__nav-link--bg");
+                }
+            } else {
+                header.removeClass('header__top-container--shadow');
+                let img = document.querySelector(".header__top-container img");
+                img.src = "resources/img/market-logo.svg";
+                document.querySelector(".greeting").classList.remove("greeting--bg");
+                document.querySelector(".user__name").classList.remove("user__name--bg");
+                let linksHeader = document.querySelectorAll("a.header__nav-link");
+                for(let i = 0; i < linksHeader.length; i++){
+                    linksHeader[i].classList.remove("header__nav-link--bg");
+                }
+            }
+        });
+    });
+    
+
 });
 

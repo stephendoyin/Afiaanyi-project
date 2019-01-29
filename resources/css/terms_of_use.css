@@ -1,0 +1,339 @@
+@font-face {
+    font-family: 'Coolvetica';
+    src: url('../../vendor/fonts/coolvetica.ttf');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Segoe UI Web (West European)';
+    src: url('https://static2.sharepointonline.com/files/fabric/assets/fonts/segoeui-westeuropean/segoeui-regular.woff2') format('woff2'), 
+    url('https://static2.sharepointonline.com/files/fabric/assets/fonts/segoeui-westeuropean/segoeui-regular.woff') format('woff');
+    font-weight: 400;
+    font-style: normal;
+  }
+  
+@font-face {
+    font-family: 'Segoe UI Web (West European)';
+    src: url('https://static2.sharepointonline.com/files/fabric/assets/fonts/segoeui-westeuropean/segoeui-semibold.woff2') format('woff2'), 
+    url('https://static2.sharepointonline.com/files/fabric/assets/fonts/segoeui-westeuropean/segoeui-semibold.woff') format('woff');
+    font-weight: 600;
+    font-style: normal;
+}
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+h1{
+    margin: 0;
+}
+
+html {
+    background-color: #ffffff;
+    color: #000;
+    font-family: 'Segoe UI', sans-serif;
+    font-size: 16px;
+    font-weight: 300;
+}
+
+
+.clearfix {
+    zoom: 1
+}
+
+aside{
+    position: relative;
+}
+
+.clearfix::after {
+    content: '.';
+    clear: both;
+    display: block;
+    height: 0;
+    visibility: hidden;
+}
+
+.row {
+    max-width: 90%;
+    margin: 0 auto;
+}
+
+
+
+/* Header css rules */
+
+header{
+    position: relative;
+}
+
+.header__top-container{
+    position: fixed;
+    width: 100%;
+    z-index: 30;
+    background: white;
+    
+}
+
+.header__top-container--shadow{
+    box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.05);
+}
+
+nav{
+    height: 100px;
+    width: 100%;
+}
+
+.header__logo{
+    height: 90px;
+    width: 90px;
+}
+
+.header__form-input-container{
+    display: flex;
+
+}
+
+.header__form-input{
+    padding: 8px;
+    border: 1px solid #d8b027;
+    border-radius: 4px 0 0 4px;
+    width: 304px;
+    -webkit-border-radius: 4px 0 0 4px;
+    -moz-border-radius: 4px 0 0 4px;
+    -ms-border-radius: 4px 0 0 4px;
+    -o-border-radius: 4px 0 0 4px;
+}
+
+
+.header__submit{
+    padding: 8px;
+    border-radius: 0 4px 4px 0;
+    border: 1px solid #d8b027;
+    background-color: #d8b027;
+    background-image: url(../img/search.png);
+    background-size: 21px 21px;
+    background-position: center;
+    background-repeat: no-repeat;
+    color: transparent;
+}
+
+.location_select{
+    color: black;
+    font-weight: 400;
+    font-size: 12px;
+    padding: 4px 0;
+}
+
+.greeting{
+    font-size: 12px;
+    font-weight: 400;
+    color: black;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.user__name{
+    color: red;
+}
+
+.header__customized-items{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header__form-input::placeholder{
+    font-family: 'Montserrat';
+    font-size: 11px;
+    color: #000;
+    font-weight: 500;
+}
+
+.header__nav-content{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+}
+
+.header__nav-list-container{
+    list-style: none;
+}
+
+.header__nav-list{
+    display: inline-block;
+    text-decoration: none;
+    margin: 0px 4px;
+}
+
+.header__nav-link:link,
+.header__nav-link:visited {
+    text-decoration: none;
+    color: #000;
+    font-family: Montserrat;
+    font-size: 12px;
+    margin-right: inherit;
+    font-weight: 500;
+}
+
+.header__nav-link:hover{
+    color: #CAAA3B;
+}
+
+.header--outlined{
+    border: 1px solid #CAAA3B;
+    padding: 8px 25px;
+    border-radius: 4px;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    -ms-border-radius: 4px;
+    -o-border-radius: 4px;
+}
+
+.header--outlined:hover{
+    color: white;
+    background: #CAAA3B;
+
+}
+
+.header__avatar{
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+}
+
+.header__side-list{
+    position: absolute;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    right: 0;
+}
+
+.header__nav__list{
+    text-decoration: none;
+    font-family: Monserrat;
+    padding: 0 17px;
+}
+
+.header-nav-icon{
+    margin-left: 12px;
+}
+
+.header__username{
+    color: red;
+}
+
+.hero{
+    position: relative;
+    width: 100%;
+    height: 450px;
+    background: linear-gradient(rgba(0, 0, 0, .4), rgba(0, 0, 0, .4)), url(../img/terms_of_use/termsofuse-hero.png); 
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.hero__text-box{
+    position: absolute;
+    left: 50%;
+    top: 12%;
+    transform: translateX(-50%);
+    -webkit-transform: translateX(-50%);
+    -moz-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+    -o-transform: translateX(-50%);
+}
+
+.hero__content-title{
+    width: 100%;
+    text-align: center;
+    color: white;
+    font-size: 32px;
+    font-weight: 500;
+}
+
+.hero__list-box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.hero__list-container{
+    padding: 6%;
+}
+
+.hero__list{
+    list-style: none;
+    white-space: nowrap;
+}
+
+.hero__list a:link,
+.hero__list a:visited{
+    color: #fff;
+    font-size: 1rem;
+    margin-bottom: 12px;
+    text-decoration: none;
+    display: inline-block;
+    border-bottom: 1px solid #fff;
+}
+
+.hero__list a:hover{
+    color: #d8b027;
+    border-bottom: 1px solid #d8b027;
+    transition-duration: all .5s;
+}
+
+.terms__wrapper{
+    width: 65%;
+    margin: 0 auto;
+    padding: 5%;
+    position: absolute;
+    top: 77%;
+    left: 50%;
+    transform: translateX(-50%);
+    -webkit-transform: translateX(-50%);
+    -moz-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+    -o-transform: translateX(-50%);
+    z-index: 4;
+    background: #FFFFFF;
+    box-shadow: 0px 4px 4px rgba(243, 0, 0, 0.16);
+    border-radius: 4px;
+}
+
+.terms__content{
+    font-weight: 500;
+    line-height: 27px;
+    font-size: 14px;
+    padding-bottom: 5%;
+}
+
+.dropdown__title{
+    font-family: "Segoe UI";
+    font-size: 0.875rem;
+    color: rgba(243, 29, 0, 0.9);
+    font-weight: 500;
+    padding-bottom: 10px;
+    cursor: pointer;
+}
+
+.dropdown__title img{
+    margin-right: 16px;
+    cursor: pointer;
+}
+
+.terms__dropdown{
+    font-family: Segoe UI;
+    line-height: 24px;
+    padding: 0px 32px 16px 32px;
+    font-size: 14px;
+    color: #333333;
+}

@@ -64,8 +64,7 @@ header{
     position: fixed;
     width: 100%;
     z-index: 30;
-    background: white;
-    
+    background: white;  
 }
 
 .header__top-container--shadow{
@@ -151,9 +150,6 @@ nav{
     padding: 0 14px;
 }
 
-.header__nav-list--divider{
-    border-right: 1px solid #000;
-}
 
 .header__nav-link:link,
 .header__nav-link:visited {
@@ -300,7 +296,7 @@ nav{
     font-size: 13px;
 }
 
-.info-card__content span{
+.info-card__content, span{
     display: flex;
     justify-content: center;
     align-items: center;
@@ -324,8 +320,7 @@ img.info-card__icon{
     padding: 0 10% 18px 10%;
 }
 
-.info-card__upper-section p,
-.info-card__logo{
+.info-card__upper-section p{
     width: 100%;
 }
 
@@ -611,3 +606,4 @@ section.footer {
   .select-items::-webkit-scrollbar-thumb:hover {
     background: #555; 
   }
+

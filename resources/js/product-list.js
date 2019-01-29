@@ -148,13 +148,15 @@ $(function () {
                                 </div>
                             </div>
                             <div class="paper">
-                                <div class="product-image">
-                                <div class="badge__new-container">
-                                <div class="badge__new">NEW</div>
-                                </div>
-                                    <img src="${imgs[i]}" alt="product">
-                                    <span class="product__badge"></span>
-                                </div>
+                            <div class="product-image">
+                            <div class="badge__new-container">
+                            <div class="badge__new">NEW</div>
+                            </div>
+                            <div class="img__overlay">
+                                <img src="${imgs[i]}" class="product__img" alt="product">
+                            </div>
+                                <span class="product__badge"></span>
+                            </div>
 
                                 <div>
                                 <span class="brand__name">Google</span>
