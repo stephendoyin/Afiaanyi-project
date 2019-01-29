@@ -91,20 +91,20 @@ let card = `
                         <img class="info-card__logo" width="60px" height="60px" src="resources/img/directory/comp-icon.svg">
                         <p class="info-card__title">Rufus Thomas And Company Limited</p>
                         <p class="info-card__content">
-                            <span><img class="info-card__icon" src="resources/img/directory/star.svg">4/5 rating</span>
-                            <span><img class="info-card__icon info-card__icon--left-space" src="resources/img/directory/like.svg">1
+                            <span class="info-horizontal"><img class="info-card__icon" src="resources/img/directory/star.svg">4/5 rating</span>
+                            <span class="info-horizontal"><img class="info-card__icon info-card__icon--left-space" src="resources/img/directory/like.svg">1
                                 review</span>
-                            <span><img class="info-card__icon info-card__icon--left-space" src="resources/img/directory/hired.svg">hired
+                            <span class="info-horizontal"><img class="info-card__icon info-card__icon--left-space" src="resources/img/directory/hired.svg">hired
                                 1 time</span>
                         </p>
                         <p class="info-card__content">
-                            <span><img class="info-card__icon" src="resources/img/directory/verified.svg">Verified info</span>
-                            <span><img class="info-card__icon info-card__icon--left-space" src="resources/img/directory/checked.svg">Phone
+                            <span class="info-horizontal"><img class="info-card__icon" src="resources/img/directory/verified.svg">Verified info</span>
+                            <span class="info-horizontal"><img class="info-card__icon info-card__icon--left-space" src="resources/img/directory/checked.svg">Phone
                                 number</span>
                         </p>
                         <p class="info-card__content">
-                            <span><img class="info-card__icon" src="resources/img/directory/checked.svg">Email Address</span>
-                            <span><img class="info-card__icon info-card__icon--left-space" src="resources/img/directory/checked.svg">Bank
+                            <span class="info-horizontal"><img class="info-card__icon" src="resources/img/directory/checked.svg">Email Address</span>
+                            <span class="info-horizontal"><img class="info-card__icon info-card__icon--left-space" src="resources/img/directory/checked.svg">Bank
                                 Details</span>
                         </p>
                     </div>
