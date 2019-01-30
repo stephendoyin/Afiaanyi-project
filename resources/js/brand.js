@@ -6,10 +6,9 @@ function secondSlide() {
         secondSlide.css('left', '-54%');
 
         $('.gallery__img').first().before($('.gallery__img').last());
-        $('.gallery__img').last().after($('.gallery__img ').first());
+        $('.gallery-label').last().after($('.gallery-label').first());
     });
 }
-
 
 
 
@@ -22,8 +21,23 @@ function secondSlide() {
             thirdSlide.css('left', '-54%');
 
             $('.gallery__img').last().after($('.gallery__img ').first());
+            $('.gallery-label').first().before($('.gallery-label').last());
         });
     }
 
     setInterval(thirdSlider, 9000);
 
+    
+
+        next = document.querySelector(".next");
+        previous = document.querySelector(".previous");
+
+        previous.addEventListener("click", function(){
+            console.log("it")
+            secondSlide();
+        });
+        next.addEventListener("click", function(){
+
+            thirdSlider();
+
+        });

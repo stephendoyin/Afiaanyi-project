@@ -50,7 +50,7 @@ html {
     left: 0;
     height: 100vh;
     width: 23%;        
-    background: linear-gradient(0.22deg, rgba(255, 77, 0, 0.5) 0.29%, rgba(255, 77, 0, 0) 99.5%), url(../img/brands/bg.png);
+    background: rgba(0, 0, 0, 0.3), url(../img/brands/bg.png);
     background-position: center;
     background-size: cover;
 }
@@ -65,7 +65,6 @@ html {
 .social--box{
     width: 100%;
     height: 40%;
-    position: absolute;
     background: #FFFFFF;
     border: 2px solid #FCFCFC;
     box-sizing: border-box;
@@ -101,7 +100,7 @@ box-shadow: 0px 10px 20px rgba(51, 51, 51, 0.2);
 }
 
 .header-brand {
-    background-image: linear-gradient(0.22deg, rgba(255, 77, 0, 0.5) 0.29%, rgba(255, 77, 0, 0) 99.5%), url(img/apartment-3564955_1920.jpg);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(img/apartment-3564955_1920.jpg);
     height: 100vh;
     background-size: cover;
     background-position: center;
@@ -115,7 +114,7 @@ box-shadow: 0px 10px 20px rgba(51, 51, 51, 0.2);
 }
 
 .nav-brand {
-    background: rgba(255, 255, 255, 0.9);
+    background: rgba(255, 255, 255, 1);
     padding: 5px 0;
 }
 
@@ -296,7 +295,7 @@ box-shadow: 0px 10px 20px rgba(51, 51, 51, 0.2);
 .gallery__wrap{
     position: relative;
     width: 100%;
-    padding: 3%;
+    padding: 6%;
     overflow: hidden;
 }
 
@@ -394,7 +393,8 @@ section.gallery {
     width: 10px;
     border-radius: 50%;
     margin: 30px 4px;
-    background-color: #92B1D6;;
+    background-color: #92B1D6;
+    cursor: pointer;
 }
 
 .gallery-label__active {
@@ -637,11 +637,12 @@ form#brand-contact #brand-submit-btn{
 #brand-footer-form{
     padding-bottom: 13px;
     font-size: 12px;
+    margin-left: -45px;
 }
 
 #brand-footer-form input{
-    padding: 8px 12px;
-    margin: 1%;
+    padding: 7px 12px;
+    /* margin: 1%; */
     border-radius: 60px;
     border: none;
     -webkit-border-radius: 60px;
@@ -793,4 +794,41 @@ textarea:focus {
     top: 0;
     left: 0;
     background: linear-gradient(0.22deg, rgba(255, 77, 0, 0.5) 0.29%, rgba(255, 77, 0, 0) 99.5%), url(../img/brands/bg.png);
+}
+
+.brand-suscribe{
+    padding-bottom: 14px;
+    font-size: 14px;
+}
+
+img.previous {
+    cursor: pointer;
+    position: absolute;
+    top: 45%;
+    z-index: 9;
+    left: 2%;
+}
+
+img.next {
+    cursor: pointer;
+    position: absolute;
+    top: 45%;
+    right: 2%;
+    z-index: 9;
+}
+
+img.next:focus{
+    outline: none;
+}
+
+.bg--box{
+    height: 60%;
+    background: url(../img/brands/Mask\ Group.png);
+    background-size: 100% 100%;
+
+}
+
+.gallery h2{
+    margin-bottom: 0;
+    padding-bottom: 0;
 }

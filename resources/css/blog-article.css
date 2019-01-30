@@ -1006,3 +1006,28 @@ input::placeholder{
     transform: rotate(90deg);
     position: absolute;
 }
+
+.blog__hero-small{
+    height: 110px;
+    width: 100%;
+    color: white;
+    /* background-color: red; */
+    background: url(../img/directory-listing/header__bar.jpg);
+    position: relative;
+    text-align: center;
+}
+
+.blog__hero-small-title{
+    position: relative;
+    font-size: 26px;
+    top: 50%;
+    transform: translateY(-50%);
+    -webkit-transform: translateY(-50%);
+    -moz-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    -o-transform: translateY(-50%);
+}
+
+.sub__nav{
+    margin-right: 29px;
+}
