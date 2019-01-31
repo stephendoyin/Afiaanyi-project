@@ -198,6 +198,10 @@ nav {
     background-repeat: no-repeat;
 }
 
+input:focus{
+    outline: none;
+}
+
 .greeting--bg {
     color: white
 }
@@ -272,7 +276,7 @@ nav {
     align-items: center;
 }
 
-.rating__num{
+.rating__num {
     background: linear-gradient(90deg, #E6B712 31.25%, #CAAA3B 88.19%);
     border-radius: 1px;
     height: 30px;
@@ -286,19 +290,70 @@ nav {
     margin-left: 90px;
 }
 
-.review__num{
+.review__num {
     font-size: 18px;
     font-weight: 600;
     padding-left: 12px;
 }
 
-.flex-wrapper{
+.flex-wrapper {
     display: flex;
     justify-content: space-between;
+}
+
+.company__card-wrapper {
+    width: 53%;
+    background: #FFFFFF;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.16);
+    border-radius: 4px;
+    padding: 2%;
+}
+
+.company__aside {
+    width: 47%;
+    background: red;
+}
+
+.name__value {
+    display: flex;
+    justify-content: flex-start;
     align-items: center;
 }
 
-.company__card-wrapper{
-    width: 55%;
-    padding: 32px;
+.name__logo {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+
+.card-inner__title2 {
+    font-weight: 500;
+    font-size: 18px;
+}
+
+.name__value .card__logo {
+    font-weight: 500;
+    font-size: 18px;
+}
+
+.logo__container{
+    width: 25%;
+}
+
+.card-inner__label{
+    font-size: 13px;
+    width: 25%;
+    font-weight: 500;
+}
+
+.card-inner__value{
+    font-size: 13px;
+    font-weight: 500;
+    width: 75%;
+    line-height: 24px;
+}
+
+.card__shared{
+    width: 5%;
 }
