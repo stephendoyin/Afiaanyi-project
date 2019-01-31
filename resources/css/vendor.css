@@ -403,8 +403,8 @@ label{
   .product__container{
     background: #FFFFFF;
     -webkit-box-shadow: -11px 15px 32px -27px rgba(0,0,0,0.51);
--moz-box-shadow: -11px 15px 32px -27px rgba(0,0,0,0.51);
-box-shadow: -11px 15px 32px -27px rgba(0,0,0,0.51);
+    -moz-box-shadow: -11px 15px 32px -27px rgba(0,0,0,0.51);
+    box-shadow: -11px 15px 32px -27px rgba(0,0,0,0.51);
     width: 100%;
   }
 
