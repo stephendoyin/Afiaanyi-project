@@ -62,7 +62,7 @@ $(function () {
             document.querySelector(".greeting").classList.add("greeting--bg");
             document.querySelector(".user__name").classList.add("user__name--bg");
             let linksHeader = document.querySelectorAll("a.header__nav-link");
-            for(let i = 0; i < linksHeader.length; i++){
+            for (let i = 0; i < linksHeader.length; i++) {
                 linksHeader[i].classList.add("header__nav-link--bg");
             }
         } else {
@@ -72,9 +72,49 @@ $(function () {
             document.querySelector(".greeting").classList.remove("greeting--bg");
             document.querySelector(".user__name").classList.remove("user__name--bg");
             let linksHeader = document.querySelectorAll("a.header__nav-link");
-            for(let i = 0; i < linksHeader.length; i++){
+            for (let i = 0; i < linksHeader.length; i++) {
                 linksHeader[i].classList.remove("header__nav-link--bg");
             }
         }
     });
+});
+
+let slideInnerContainer = $(".sliderContainer");
+let slideOuterContainer = $(".slider__container");
+
+let slides = $(".slider__self-container");
+
+let widthOfInnerContainer = slides.length * 50;
+
+let finalWidth = widthOfInnerContainer + "%";
+
+slideInnerContainer.css("width", finalWidth);
+
+
+
+
+function nextSlider() {
+    slideInnerContainer.animate({ left: '-100%' }, 400, function () {
+        slideInnerContainer.css('left', '-50%');
+        $('.slider__self-container').last().after($('.slider__self-container').first());
+
+    });
+}
+
+setInterval(nextSlider, 8000);
+
+
+function previousSlider() {
+    slideInnerContainer.animate({ left: '0%' }, 400, function () {
+        slideInnerContainer.css('left', '-50%');
+        $('.slider__self-container').first().before($('.slider__self-container').last());
+    });
+}
+
+document.querySelector(".previous").addEventListener("click", function(){
+    previousSlider();
+});
+
+document.querySelector(".next").addEventListener("click", function(){
+    nextSlider();
 });
