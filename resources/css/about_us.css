@@ -242,8 +242,10 @@ input:focus {
 /*style items (options):*/
 
 .header__top-container--shadow {
-    background: url(../img/directory-listing/header__bar.jpg);
+    background: url(../img/header__bar.jpg);
     box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.05);
+    background-position: 100% 100%;
+    background-size: cover;
 }
 
 .btn {
@@ -451,6 +453,22 @@ input:focus {
     margin-right: 5%;
 }
 
+.stacked__row-wrapper{
+    position: relative;
+}
+
+.first__row-grd{
+    position: absolute;
+    top: 30%;
+    left: -1%;
+}
+
+.sec__row-grd{
+    position: absolute;
+    right: 0;
+    top: 30%;
+}
+
 .section-rows {
     padding-top: 84px;
     padding-bottom: 24px;
@@ -487,6 +505,12 @@ input:focus {
     background-size: cover;
     right: 0;
     bottom: 0;
+}
+
+.section-row__second-bg--readjusted{
+    background: url(../img/stone.jpg);
+    background-position: 100% 100%;
+    background-size: cover; 
 }
 
 .section-right-container--adjusted {
@@ -532,11 +556,24 @@ input:focus {
     padding-bottom: 44px;
 }
 
+.people__content-box-outer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 .people__content-box {
     width: 50%;
     text-align: center;
-    padding: 16px;
-    padding-bottom: 32px;
+    padding-bottom: 5%;
+}
+
+.people__content-box--left {
+    padding-right: 5%;  
+}
+
+.people__content-box--right {
+    padding-left: 5%;  
 }
 
 .user__specifics {
@@ -544,6 +581,10 @@ input:focus {
     line-height: 25px;
     font-size: 14px;
     padding-bottom: 9px;
+}
+
+.user__specifics--bolder{
+    font-weight: 500;
 }
 
 .image__container{
@@ -576,18 +617,6 @@ input:focus {
     -o-border-radius: 50%;
 }
 
-.people__content-box-outer{
-    display: flex;
-    align-items: center;
-}
-
-.people__content-box-outer--left{
-    margin-right: 4%;
-}
-
-.people__content-box-outer--right{
-    margin-left: 4%;
-}
 
 
 section.footer {
@@ -760,8 +789,25 @@ section.footer {
 
 .last__section{
     padding-bottom: 20px;
+    position: relative
 }
 
 .people__section-container{
     padding-top: 48px;
+}
+
+.third__row-grd{
+    position: absolute;
+    left: 0;
+    bottom: 9%;
+}
+
+.about-us__reads{
+    position: relative;
+}
+
+.grd{
+    position: absolute;
+    right: -2%;
+    top: -2%;
 }
