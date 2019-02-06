@@ -903,7 +903,7 @@ justify-content: space-between;
 .market__nav--second-row{
     background: rgba(59, 89, 152, 0.8);
     width: 30%;
-    padding-bottom: 2px;
+    padding-bottom: 1px;
 }
 
 .market-brand__logo img{
