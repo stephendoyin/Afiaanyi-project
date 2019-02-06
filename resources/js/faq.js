@@ -11,7 +11,7 @@ let general = [
     },
     {
         title: `I cannot access my Afiaanyi account?`,
-        content: `Are you signed up? If not, Go to afiaanyi.com and Click on the “Create an account” link at the upper right corner of your screen, input your afiaanyi.com registered email and password and submit. If you are signed in, your name will appear at the top right corner if it does not it means you are not signed up. Click on the sign up link and fill the form to register as a user.`
+        content: `Are you signed up? If not, Go to afiaanyi.com and Click on the "Create an account" link at the upper right corner of your screen, input your afiaanyi.com registered email and password and submit. If you are signed in, your name will appear at the top right corner if it does not it means you are not signed up. Click on the sign up link and fill the form to register as a user.`
     },
     {
         title: `How do I reset my Password?`,
@@ -23,7 +23,7 @@ let general = [
     },
     {
         title: `I have stopped receiving your daily newsletter?`,
-        content: `Firstly, check your spam mails, it’s possible you have unsubscribed. To subscribe again Go to afiaanyi.com and scroll to the end of the page. Input your email in the box and submit.`
+        content: `Firstly, check your spam mails, it's possible you have unsubscribed. To subscribe again Go to afiaanyi.com and scroll to the end of the page. Input your email in the box and submit.`
     },
     {
         title: `How do I contact Afiaanyi customer support?`,
@@ -54,12 +54,12 @@ let payment = [
         content: `Yes, your card details are safe with us. We are in partnership with InterSwitch, which uses SSL Technology to protect your card information.`
     },
     {
-        title: `Why can’t I use my Debit card?`,
+        title: `Why can't I use my Debit card?`,
         content: `There could be a series of reasons you cannot use your debit card. We would advise you get your Ipin for visa cards and one time password (OTP) for mastercard to enable you make purchases online. For further details please contact your bank.`
     },
     {
         title: `Can I merge 2 methods of Payment?`,
-        content: `Yes, you can. You can merge wallet and card payments. All you have to do when you get to our payment option is to tick the box “Use wallet” and select your preferred options to make a purchase.`
+        content: `Yes, you can. You can merge wallet and card payments. All you have to do when you get to our payment option is to tick the box "Use wallet" and select your preferred options to make a purchase.`
     }
 ];
 
@@ -89,7 +89,7 @@ let wallet = [
 
 let returns = [
     {
-        title: `Afiaanyi’s return policy`,
+        title: `Afiaanyi's return policy`,
         content: `At Afiaanyi, customer satisfaction is key and we ensure what you ordered is what you get but things do get wrong. All returns are made directly to the merchants.
         <br><br>
         All products sold on afiaanyi.com are covered under our 3-7 Day Refund Guarantee. Notify the Merchant of any problems, damages or defects within 3 days of receipt and ensure a return is made within 7 days of receipt. The merchant will give a feedback within 2 days of receipt.`
@@ -145,7 +145,7 @@ let warranty = [
 let list = [general, payment, wallet, returns, products, serviceDeals, warranty]
 let faqWrapper = document.querySelector(".faq__wrapper");
 let cards = document.querySelectorAll(".card");
-let image = document.querySelectorAll(".card__content img")
+let img = document.querySelectorAll(".card__content img")
 
 
 
@@ -180,9 +180,9 @@ window.addEventListener("load", function () {
 });
 
 let cardIcons = [
-    "resources/img/general--white.svg",
+    "resources/img/general.svg",
     "resources/img/payment.svg",
-    "resources/img/wallet.png",
+    "resources/img/wallet.svg",
     "resources/img/shipping.svg",
     "resources/img/return.svg",
     "resources/img/product.svg",
@@ -190,19 +190,43 @@ let cardIcons = [
     "resources/img/warranty.svg"
 ];
 
+let cardIconWhite = [
+    "resources/img/general--white.svg",
+    "resources/img/payment--white.svg",
+    "resources/img/wallet--white.svg",
+    "resources/img/shipping--white.svg",
+    "resources/img/return--white.svg",
+    "resources/img/product--white.svg",
+    "resources/img/services-agreement--white.svg",
+    "resources/img/warranty--white.svg"
+];
+
 
 for (let a = 0; a < cards.length; a++) {
     cards[a].addEventListener("click", function () {
+
+        for (let i = 0; i < cards.length; i++) {
+            if (a !== i) {
+                img[i].src = cardIcons[i];
+                cards[i].classList.remove("card__active");
+            } else {
+                img[i].src = cardIconWhite[i];
+                cards[i].classList.add("card__active");
+            }
+        }
+
         clickedCard = list[a];
-        loadFaqs(clickedCard, a);
+        loadFaqs(clickedCard);
     });
 }
 
 
 
 
+
+
 //for general cards
-function loadFaqs(clickedCard, a) {
+function loadFaqs(clickedCard) {
     for (let i = 0; i < clickedCard.length; i++) {
         //remove content from faq
         if (i < 1) {
@@ -265,7 +289,7 @@ $(function () {
             document.querySelector(".greeting").classList.add("greeting--bg");
             document.querySelector(".user__name").classList.add("user__name--bg");
             let linksHeader = document.querySelectorAll("a.header__nav-link");
-            for(let i = 0; i < linksHeader.length; i++){
+            for (let i = 0; i < linksHeader.length; i++) {
                 linksHeader[i].classList.add("header__nav-link--bg");
             }
         } else {
@@ -275,7 +299,7 @@ $(function () {
             document.querySelector(".greeting").classList.remove("greeting--bg");
             document.querySelector(".user__name").classList.remove("user__name--bg");
             let linksHeader = document.querySelectorAll("a.header__nav-link");
-            for(let i = 0; i < linksHeader.length; i++){
+            for (let i = 0; i < linksHeader.length; i++) {
                 linksHeader[i].classList.remove("header__nav-link--bg");
             }
         }

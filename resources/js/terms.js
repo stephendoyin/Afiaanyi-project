@@ -41,12 +41,12 @@ $('a[href*="#"]')
                     // Callback after animation
                     // Must change focus!
                     var $target = $(target);
-                    $target.focus();
+                    // $target.focus();
                     if ($target.is(":focus")) { // Checking if the target was focused
                         return false;
                     } else {
                         $target.attr('tabindex', '-1'); // Adding tabindex for elements not focusable
-                        $target.focus(); // Set focus again
+                        // $target.focus(); // Set focus again
                     };
                 });
             }
@@ -79,7 +79,7 @@ $(function () {
             document.querySelector(".greeting").classList.add("greeting--bg");
             document.querySelector(".user__name").classList.add("user__name--bg");
             let linksHeader = document.querySelectorAll("a.header__nav-link");
-            for(let i = 0; i < linksHeader.length; i++){
+            for (let i = 0; i < linksHeader.length; i++) {
                 linksHeader[i].classList.add("header__nav-link--bg");
             }
         } else {
@@ -89,7 +89,7 @@ $(function () {
             document.querySelector(".greeting").classList.remove("greeting--bg");
             document.querySelector(".user__name").classList.remove("user__name--bg");
             let linksHeader = document.querySelectorAll("a.header__nav-link");
-            for(let i = 0; i < linksHeader.length; i++){
+            for (let i = 0; i < linksHeader.length; i++) {
                 linksHeader[i].classList.remove("header__nav-link--bg");
             }
         }
@@ -100,15 +100,15 @@ $(function () {
 
 
 
-$(".terms__outer-wrapper").waypoint(function(direction){
-    if(direction == "down"){
+$(".terms__outer-wrapper").waypoint(function (direction) {
+    if (direction == "down") {
         $(".header__top-container").addClass("header__top-container--fixed");
-    } else{
+    } else {
         $(".header__top-container").removeClass("header__top-container--fixed");
     }
-},{
-    offset: "60px;"
-})
+}, {
+        offset: "60px;"
+    })
 
 
 

@@ -651,7 +651,7 @@ slides{
 
 .market__product-wrapper{
     display: flex;
-    justify-content: center;
+    justify-content: flex-start;
     flex-wrap: wrap;
     width: 80%;
     position: relative;
@@ -833,6 +833,83 @@ justify-content: space-between;
     font-family: Segoe UI;
     line-height: 20px;
     font-size: 13px;
+    font-weight: 500;
+    color: white;
+    height: 74px;
     text-transform: uppercase;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* background: linear-gradient(90deg, #C4C4C4 13.75%, rgba(65, 64, 64, 0.5) 93.43%); */
+}
+
+.market__nav{
+    width: 20%;
+    margin-right: 1.5%;
+    border-radius: 8px;
     background: linear-gradient(90deg, #C4C4C4 13.75%, rgba(65, 64, 64, 0.5) 93.43%);
+    -webkit-border-radius: 8px;
+    -moz-border-radius: 8px;
+    -ms-border-radius: 8px;
+    -o-border-radius: 8px;
+}
+
+.market__nav--list-container{
+    background: #ffffff;
+    width: 98%;
+    margin-bottom: 2%;
+    border-radius: 8px;
+    -webkit-border-radius: 8px;
+    -moz-border-radius: 8px;
+    -ms-border-radius: 8px;
+    -o-border-radius: 8px;
+    padding: 14px 0 40px 0;
+}
+
+.market__nav-list{
+    list-style: none;
+    padding: 0 14px;
+}
+
+.market__nav-link,
+.market__nav-visited{
+    color: #000;
+    text-decoration: none;
+    line-height: 43px;
+    font-size: 12px;
+    font-weight: 600;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.market__nav-link:hover{
+    padding-left: 12px;
+    color: #E6B712;
+    transition: .3s;
+    -webkit-transition: .3s;
+    -moz-transition: .3s;
+    -ms-transition: .3s;
+    -o-transition: .3s;
+}
+
+.market-brand__logo{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.market__nav--second-row{
+    background: rgba(59, 89, 152, 0.8);
+    width: 30%;
+    padding-bottom: 2px;
+}
+
+.market-brand__logo img{
+    margin: 20px 0;
+}
+
+.market__nav-outer-container{
+    width: 60%;
 }

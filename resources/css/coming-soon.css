@@ -102,13 +102,14 @@ aside{
 .main__notified{
     font-size: 1.125rem;
     font-weight: 600;
-    padding: 3% 0;
+    padding: 8% 0;
 }
 
 .main__middle-content{
+    width: 50%;
     position: relative;
     top: 13%;
-    left: 10.5%;
+    /* left: 10.5%; */
     transform: scale(.9);
     -webkit-transform: scale(.9);
     -moz-transform: scale(.9);
@@ -122,7 +123,7 @@ input[type=email]{
     background: #FFFFFF;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.1);
     border-radius: 4px;
-    width: 400px;
+    width: 320px;
     font-family: "Montserrat";
 }
 
@@ -184,7 +185,6 @@ p.social--box img{
 
 .back__container{
     display: flex;
-    height: 100px;
     align-items: center;
 }
 
@@ -197,4 +197,43 @@ a:visited{
   color: black;
   text-decoration: none;
   font-weight: 600;
+}
+
+.middle__content-box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%);
+    -moz-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    -o-transform: translate(-50%, -50%);
+}
+
+.marketplace{
+    width: 380px;
+}
+
+.marketplace__container{
+    text-align: right;
+}
+
+.input__wrapper{
+    white-space: nowrap;
+}
+
+.btn__back{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: black;
+    box-shadow: none;
+    background: transparent;
+    cursor: pointer;
+    border: none;
+    padding: 14px 20px;
+    white-space: nowrap;
 }

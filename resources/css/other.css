@@ -215,7 +215,7 @@ input[type="search"]::-webkit-search-decoration, input[type="search"]::-webkit-s
     background-repeat: no-repeat;
 }
 
-.hero__box{
+.hero__box {
     position: absolute;
     top: 50%;
     left: 50%;
@@ -227,7 +227,7 @@ input[type="search"]::-webkit-search-decoration, input[type="search"]::-webkit-s
     -o-transform: translate(-50%, -50%);
 }
 
-.hero__title{
+.hero__title {
     color: white;
     font-size: 26px;
 }
@@ -323,7 +323,7 @@ input:focus {
     justify-content: center;
     align-items: center;
     width: 50px;
-    height: 36px;
+    height: 31px;
     color: white;
     font-size: 18px;
     font-weight: normal;
@@ -490,7 +490,7 @@ input:focus {
 
 .rating__num--adjusted {
     margin-left: 0;
-    height: 40px;
+    height: 34px;
 }
 
 .reviews__title {
@@ -527,10 +527,10 @@ input:focus {
 }
 
 .review__text-num {
-    font-size: 16px;
+    font-size: 14px;
     display: block;
-    margin-top: -7px;
-    font-weight: 500;
+    margin-top: -9px;
+    font-weight: 400;
 }
 
 .review__box {
@@ -683,7 +683,6 @@ img.info-card__icon {
 .info-card__logo {
     margin-top: 16px;
 }
-
 
 .info-card__upper-section {
     width: 100%;
@@ -892,10 +891,6 @@ p img {
     font-weight: 500;
 }
 
-.first-star-rating{
-    margin-top: 4px;
-}
-
-.mobile-app{
+.mobile-app {
     display: flex;
 }
