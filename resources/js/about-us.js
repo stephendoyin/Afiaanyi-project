@@ -28,3 +28,49 @@ $(function () {
     });
 });
 
+
+
+let slideOuterContainer = $(".people__content-box-outer");
+let slideInnerContainer = $(".people__inner-container");
+
+let slides = $(".people__content-box");
+
+let widthOfInnerContainer = slides.length * 25;
+
+let finalWidth = widthOfInnerContainer + "%";
+
+slideInnerContainer.css("width", finalWidth);
+
+
+
+
+function nextSlider() {
+    slideInnerContainer.animate({ left: '-50%' }, 400, function () {
+        slideInnerContainer.css('left', '-25%');
+        $('.people__content-box').last().after($('.people__content-box').first());
+
+    });
+}
+
+setInterval(nextSlider, 8000);
+
+
+function previousSlider() {
+    slideInnerContainer.animate({ left: '0%' }, 400, function () {
+        slideInnerContainer.css('left', '-25%');
+        $('.people__content-box').first().before($('.people__content-box').last());
+    });
+}
+
+document.querySelector(".previous").addEventListener("click", function(){
+    previousSlider();
+});
+
+document.querySelector(".next").addEventListener("click", function(){
+    nextSlider();
+});
+
+
+$(".hero--btn").click(function(){
+    $("html, body").animate({scrollTop: $(".about__outer-wrapper").offset().top-100}, 1000)
+});

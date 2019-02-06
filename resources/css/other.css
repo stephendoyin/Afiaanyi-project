@@ -208,11 +208,28 @@ input[type="search"]::-webkit-search-decoration, input[type="search"]::-webkit-s
 .hero {
     position: relative;
     width: 100%;
-    height: 265px;
+    height: 88px;
     background: url(../img/directory/hero_directory.png), rgba(0, 0, 0, .5);
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
+}
+
+.hero__box{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    text-align: center;
+    transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%);
+    -moz-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    -o-transform: translate(-50%, -50%);
+}
+
+.hero__title{
+    color: white;
+    font-size: 26px;
 }
 
 input:focus {
@@ -248,14 +265,6 @@ input:focus {
     background-size: cover;
 }
 
-.where__text {
-    color: #000;
-    font-weight: 500;
-    line-height: normal;
-    font-size: 10px;
-    padding-top: 23px;
-}
-
 .ratings__reviews {
     display: flex;
     justify-content: flex-start;
@@ -265,8 +274,8 @@ input:focus {
 
 .btn {
     border: 1px solid #CAAA3B;
-    height: 40px;
-    width: 200px;
+    height: 35px;
+    width: 162px;
     font-size: 13px;
     display: flex;
     justify-content: center;
@@ -288,23 +297,23 @@ input:focus {
 }
 
 .name__company h3 {
-    font-size: 22px;
+    font-size: 18px;
     font-weight: 500;
 }
 
 .section {
     background: #fafafa;
-    line-height: 40px;
 }
 
 .ratings {
-    width: 24px;
-    margin: 16px 8px 0 0;
+    width: 16px;
+    margin: 5px 4px 0 0;
 }
 
 .ratin__values {
     display: flex;
     align-items: center;
+    margin-top: 1rem;
 }
 
 .rating__num {
@@ -314,16 +323,17 @@ input:focus {
     justify-content: center;
     align-items: center;
     width: 50px;
+    height: 36px;
     color: white;
     font-size: 18px;
     font-weight: normal;
-    margin-left: 90px;
+    margin-left: 30px;
 }
 
 .review__num {
-    font-size: 18px;
+    font-size: 16px;
     font-weight: 600;
-    padding-left: 12px;
+    padding-left: 8px;
 }
 
 .flex-wrapper {
@@ -365,9 +375,9 @@ input:focus {
     align-items: center;
 }
 
-.card-inner__title2 {
+.card-inner__title {
     font-weight: 500;
-    font-size: 18px;
+    font-size: 16px;
 }
 
 .name__value .card__logo {
@@ -383,7 +393,8 @@ input:focus {
     font-size: 13px;
     width: 25%;
     padding-left: 20px;
-    font-weight: 500;
+    font-weight: 600;
+    padding-bottom: 7px;
 }
 
 .card-inner__value {
@@ -394,14 +405,18 @@ input:focus {
     display: flex;
     justify-content: flex-start;
     align-items: center;
+    padding-bottom: 7px;
+    text-align: justify;
 }
 
 .space {
-    width: 9%;
+    width: 29%;
+    white-space: nowrap;
 }
 
 .space__more {
-    width: 40%;
+    width: 8%;
+    margin-left: -120px;
 }
 
 .map {
@@ -411,7 +426,7 @@ input:focus {
 }
 
 .map-img {
-    width: 100%;
+    width: 96%;
 }
 
 .slider__container {
@@ -475,11 +490,11 @@ input:focus {
 
 .rating__num--adjusted {
     margin-left: 0;
-    height: 50px;
+    height: 40px;
 }
 
 .reviews__title {
-    font-size: 21px;
+    font-size: 18px;
     font-weight: 500;
     padding-bottom: 15px;
 }
@@ -512,9 +527,9 @@ input:focus {
 }
 
 .review__text-num {
-    font-size: 18px;
+    font-size: 16px;
     display: block;
-    margin-top: -23px;
+    margin-top: -7px;
     font-weight: 500;
 }
 
@@ -545,6 +560,7 @@ input:focus {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    padding-bottom: 18px;
 }
 
 .review__date {
@@ -561,7 +577,8 @@ input:focus {
 
 .review__user-name {
     font-weight: 500;
-    font-size: 16px;
+    margin-bottom: 9px;
+    font-size: 14px;
 }
 
 .user__reviewed {
@@ -575,7 +592,7 @@ input:focus {
 }
 
 .user__avatar {
-    margin: 7px 9px;
+    margin: 0 7px 9px 9px;
 }
 
 .review__content {
@@ -595,9 +612,10 @@ button:hover {
 }
 
 .related__review {
-    font-size: 22px;
+    font-size: 18px;
     font-weight: 500;
-    padding-top: 70px;
+    padding-top: 50px;
+    padding-bottom: 12px;
 }
 
 .info-cards__container {
@@ -612,7 +630,7 @@ button:hover {
 .info-card__container {
     width: 32%;
     text-align: center;
-    padding-top: 25px;
+    padding-bottom: 25px;
 }
 
 .info-card__content {
@@ -665,6 +683,7 @@ img.info-card__icon {
 .info-card__logo {
     margin-top: 16px;
 }
+
 
 .info-card__upper-section {
     width: 100%;
@@ -806,7 +825,7 @@ section.footer {
     font-weight: 500;
 }
 
-.one p img, .two p img {
+p img {
     vertical-align: middle;
     margin-left: -2px;
     margin-right: 4px;
@@ -838,9 +857,8 @@ section.footer {
 }
 
 #mail {
-    padding: 9.5px;
+    padding: 10px;
     width: 250px;
-    font-size: 11px;
     border-radius: 4px 0 0 4px;
     border: 1px solid #d8b027;
 }
@@ -853,7 +871,7 @@ section.footer {
 .yb {
     height: 116px;
     width: 288px;
-    right: -25px;
+    right: -10px;
     bottom: -10px;
     position: absolute;
     z-index: 99;
@@ -861,9 +879,9 @@ section.footer {
 
 .by {
     height: 116px;
-    width: 267px;
-    right: -78px;
-    bottom: 33px;
+    width: 288px;
+    right: -105px;
+    bottom: 10px;
     z-index: 1;
     transform: rotate(90deg);
     position: absolute;
@@ -872,4 +890,12 @@ section.footer {
 .social {
     font-size: 13px;
     font-weight: 500;
+}
+
+.first-star-rating{
+    margin-top: 4px;
+}
+
+.mobile-app{
+    display: flex;
 }

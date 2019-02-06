@@ -61,6 +61,7 @@
                                 <img src="resources/img/man.png" class="header-nav-icon header__avatar" height="35px"
                                     width="35px">
                             </a>
+                            <img class="notify" src="resources/img/notify.svg">
                         </p>
                     </div>
 
@@ -87,59 +88,137 @@
                     <a class="city__clear">Clear</p>
                 </div>
 
-                <form action="#">
-                    <p class="location_select">
-                        <input type="radio" id="test1" name="radio-group" checked>
-                        <label for="test1">Njikoka (418)</label>
-                    </p>
-                    <p class="location_select">
-                        <input type="radio" id="test2" name="radio-group">
-                        <label for="test2">Oyi (280)</label>
-                    </p>
-                    <p class="location_select">
-                        <input type="radio" id="test3" name="radio-group">
-                        <label for="test3">Ekwusigo (256)</label>
-                    </p>
+                <div class="categories side-bar__section">
+                    <form id="search-form">
+                        <input type="text" class="term" id="tested" name="Search" placeholder="Search" autocomplete="on" />
+                    </form>
 
-                    <p class="location_select">
-                        <input type="radio" id="test4" name="radio-group">
-                        <label for="test4">Ihiala (173)</label>
-                    </p>
+                    <div class="side-bar__section--first">
+                            <p class="location__result">
+                                    Ogbaru (142)
+                            </p>
 
-                    <p class="location_select">
-                        <input type="radio" id="test5" name="radio-group">
-                        <label for="test5">Ogbaru (142)</label>
-                    </p>
-                </form>
+                            <p class="location__result">
+                                    Ihiala (173)
+                            </p>
+
+                            <p class="location__result">
+                                    Ekwusigo (256)   
+                            </p>
+
+                            <p class="location__result">
+                                   Oyi (280)
+                            </p>
+                            
+
+                            <p class="location__result">
+                                    Njikoka (418)
+                             </p>
+                    </div>
+
+
+                </div>
+
 
                 <div class="categories side-bar__section">
                     <h3 class="categories__title">Categories</h3>
-                    <p class="categories__clear"><a href="">Car Spare Part</a></p>
-                    <p class="categories__clear"><a href="">Mechanics</a></p>
-                    <p class="categories__clear"><a href="">Car Dealers</a></p>
-                    <p class="categories__clear"><a href="">Body Shops</a></p>
-                    <p class="categories__clear"><a href="">Manufacturers</a></p>
-                    <p class="categories__clear"><a href="">Car Rentals</a>a</p>
+                    <form action="#">
+                        <p class="location_select">
+                            <input type="radio" id="test-cat1" name="radio-group" checked>
+                            <label for="test-cat1">Car Spare Part</label>
+                        </p>
+                        <p class="location_select">
+                            <input type="radio" id="test-cat2" name="radio-group">
+                            <label for="test-cat2">Mechanics</label>
+                        </p>
+                        <p class="location_select">
+                            <input type="radio" id="test-cat3" name="radio-group">
+                            <label for="test-cat3">Car Dealers</label>
+                        </p>
+
+                        <p class="location_select">
+                            <input type="radio" id="test-cat4" name="radio-group">
+                            <label for="test-cat4">Body Shops</label>
+                        </p>
+
+                        <p class="location_select">
+                            <input type="radio" id="test-cat5" name="radio-group">
+                            <label for="test-cat5">Manufacturers</label>
+                        </p>
+
+                        <p class="location_select">
+                            <input type="radio" id="test-cat6" name="radio-group">
+                            <label for="test-cat6">Car Rentals</label>
+                        </p>
+                    </form>
                 </div>
 
                 <div class="categories side-bar__section">
                     <h3 class="services__title">Services</h3>
-                    <p class="services__clear"><a href="">Mechanics</a></p>
-                    <p class="services__clear"><a href="">Technicians</a></p>
-                    <p class="services__clear"><a href="">Insurance Consultancy</a></p>
-                    <p class="services__clear"><a href="">General Insurance</a></p>
-                    <p class="services__clear"><a href="">Health Insurance</a></p>
-                    <p class="services__clear"><a href="">Surveying</a></p>
-                    <p class="services__clear"><a href="">Motor Insurance</a></p>
+                    <form action="#">
+                        <p class="location_select">
+                            <input type="radio" id="test-c1" name="radio-group" checked>
+                            <label for="test-c1">Mechanics</label>
+                        </p>
+                        <p class="location_select">
+                            <input type="radio" id="test-c2" name="radio-group">
+                            <label for="test-c2">Technicians</label>
+                        </p>
+                        <p class="location_select">
+                            <input type="radio" id="test-c3" name="radio-group">
+                            <label for="test-c3">Insurance Consultancy</label>
+                        </p>
+
+                        <p class="location_select">
+                            <input type="radio" id="test-c4" name="radio-group">
+                            <label for="test-c4">Health Insurance</label>
+                        </p>
+
+                        <p class="location_select">
+                            <input type="radio" id="test-c5" name="radio-group">
+                            <label for="test-c5">Surveying</label>
+                        </p>
+
+                        <p class="location_select">
+                            <input type="radio" id="test-c6" name="radio-group">
+                            <label for="test-c6">Motor Insurance</label>
+                        </p>
+                    </form>
                 </div>
 
                 <div class="categories side-bar__section">
                     <h3 class="services__title">Car Spare Parts</h3>
-                    <p class="services__clear"><a href="">Sovenir Items</a></p>
-                    <p class="services__clear"><a href="">Souvenir Items</a></p>
-                    <p class="services__clear"><a href="">Interlocking Paving Stone</a></p>
-                    <p class="services__clear"><a href="">Computer</a></p>
-                    <p class="services__clear"><a href="">Cake</a></p>
+
+                    <form action="#">
+                        <p class="location_select">
+                            <input type="radio" id="test-cc1" name="radio-group" checked>
+                            <label for="test-cc1">Car Spare Parts</label>
+                        </p>
+                        <p class="location_select">
+                            <input type="radio" id="test-cc2" name="radio-group">
+                            <label for="test-cc2">Sovenir Items</label>
+                        </p>
+                        <p class="location_select">
+                            <input type="radio" id="test-cc3" name="radio-group">
+                            <label for="test-cc3">Souvenir Items</label>
+                        </p>
+
+                        <p class="location_select">
+                            <input type="radio" id="test-cc4" name="radio-group">
+                            <label for="test-cc4">Interlocking Paving Stone</label>
+                        </p>
+
+                        <p class="location_select">
+                            <input type="radio" id="test-cc5" name="radio-group">
+                            <label for="test-cc5">Computer</label>
+                        </p>
+
+                        <p class="location_select">
+                            <input type="radio" id="test-cc6" name="radio-group">
+                            <label for="test-cc6">Cake</label>
+                        </p>
+                    </form>
+
                 </div>
 
             </div>
@@ -207,9 +286,9 @@
 
     <section class="review__container">
         <div class="review__inner-container row">
-            <h2 class="reviews__title">Custom Reviews</h2>
+            <h2 class="reviews__title">CUSTOMERS REVIEW</h2>
+            <div class="review__underline"></div>
             <h3 class="reviews__subtitle">Automotive in Anambra</h3>
-            <img src="resources/img/Line 3.svg" class="line" width="100%">
             <div class="reviews">
                 <div class="review">
                     <h4 class="review__title">Godpower Jeremiah reviewed Proton Security Services Limited</h4>
@@ -293,7 +372,7 @@
 
         <div class="row features">
             <h3 class="feature__title">
-                Why Choose us
+                Why Choose Us!
             </h3>
 
             <div class="features__container">

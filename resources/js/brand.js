@@ -1,7 +1,7 @@
 function secondSlide() {
     let secondSlide = $('.gallery-img');
 
-    secondSlide.animate({ left: '0%' }, 2000, function () {
+    secondSlide.animate({ left: '0%' }, 500, function () {
 
         secondSlide.css('left', '-54%');
 
@@ -16,7 +16,7 @@ function secondSlide() {
     function thirdSlider() {
         let thirdSlide = $('.gallery-img');
 
-        thirdSlide.animate({ left: '-108%' }, 2000, function () {
+        thirdSlide.animate({ left: '-108%' }, 500, function () {
 
             thirdSlide.css('left', '-54%');
 

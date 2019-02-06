@@ -180,3 +180,34 @@ $(function () {
 
 });
 
+let searchLists = ['Ogbaru (142)','Ihiala (173)','Ekwusigo (256)', 'Oyi (280)', 'Njikoka (418)'];
+
+let newSearch = []; 
+for(let i = 0; i < searchLists.length; i++){
+    newSearch.push(searchLists[i].toLowerCase());
+}
+
+let el = document.querySelector(".side-bar__section--first");
+
+$('#search-form .term').bind('input', function(){
+    let newList = newSearch.filter(returnfiltered);
+    console.log(document.querySelector("#tested").value)
+    for(let i = 0; i < newList.length; i++){
+        
+        if(i < 1){
+            el.innerHTML = "";
+        }
+        el.innerHTML += `
+        <p class="location__result">
+                ${newList[i].charAt(0).toUpperCase() + newList[i].slice(1)}         
+        </p>
+        `
+
+    }
+    
+});
+
+function returnfiltered(searchList){
+    return searchList.includes(document.querySelector("#tested").value)
+    // === document.querySelector("#tested").value.slice(0, 1).toUpperCase();
+}

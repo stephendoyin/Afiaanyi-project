@@ -8,12 +8,15 @@
         rel="stylesheet">
     <link href="vendor/css/animate.css" rel="stylesheet">
     <link rel="stylesheet" href="vendor/css/jquery.ui.css">
+    <link rel="stylesheet" href="vendor/css/rate.css">
     <style>
         @import url('https://fonts.googleapis.com/css?family=Lato:100,300,300i,400');
     </style>
     <link href="resources/css/other.css" rel="stylesheet">
     <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
     <script src="vendor/js/jquery.ui.js"></script>
+    <script src="vendor/js/rate.min.js"></script>
+    <script src="vendor/js/iconfont.js"></script>
     <title>Other Business</title>
 </head>
 
@@ -76,7 +79,9 @@
         </nav>
 
         <div class="hero">
-
+            <div class="hero__box">
+                <h1 class="hero__title">Car Repairs</h1>
+            </div>
         </div>
 
 
@@ -84,23 +89,13 @@
 
     <section class="section">
         <div class="row">
-            <div>
-                <p class="where__text">Anambra » Automotive » Car Repairs » Rufus Thomas & Company Ltd.</p>
-            </div>
 
             <div class="ratings__reviews">
                 <div class="name__company">
                     <h3>RUFUS THOMAS & COMPANY LTD.</h3>
                     <div class="ratin__values">
-                        <div>
-                            <img src="resources/img/ratings.svg" class="ratings" alt="rating">
-                            <img src="resources/img/ratings.svg" class="ratings" alt="rating">
-                            <img src="resources/img/ratings.svg" class="ratings" alt="rating">
-                            <img src="resources/img/ratings.svg" class="ratings" alt="rating">
-                            <img src="resources/img/ratins-none.svg" class="ratings" alt="rating">
+                        <div id="rateBox"></div>
 
-
-                        </div>
 
 
                         <div class="rating__num">4.0</div>
@@ -159,18 +154,15 @@
                                 eiusmod tempor incididunt ut
                                 labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation
                                 ullamco
-                                laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit
-                                in
-                                voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat
-                                cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                                laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor
+
                             </p>
                         </div>
 
                         <div class="name__value">
                             <p class="card-inner__label">Working Hours:</p>
-                            <span class="card-inner__value"><span class="space">Monday</span>
-                                <span class="space">-</span>
-                                <span class="space">Friday:</span>
+                            <span class="card-inner__value">
+                                <span class="space">Monday to Friday</span>
                                 <span class="space"></span>
                                 <span class="space space__more">08:00 AM to 07:00 PM</span>
                             </span>
@@ -178,9 +170,8 @@
 
                         <div class="name__value">
                             <p class="card-inner__label">Working Hours:</p>
-                            <span class="card-inner__value"><span class="space">Monday</span>
-                                <span class="space">-</span>
-                                <span class="space">Friday:</span>
+                            <span class="card-inner__value">
+                                <span class="space">Monday to Friday</span>
                                 <span class="space"></span>
                                 <span class="space space__more">08:00 AM to 07:00 PM</span>
                             </span>
@@ -248,11 +239,8 @@
                         4.0
                     </div>
                     <div class="review__rating">
-                        <img src="resources/img/ratings.svg" alt="rating">
-                        <img src="resources/img/ratings.svg" alt="rating">
-                        <img src="resources/img/ratings.svg" alt="rating">
-                        <img src="resources/img/ratings.svg" alt="rating">
-                        <img src="resources/img/ratins-none.svg" alt="rating">
+                        <div id="second-rateBox"></div>
+
                         <span class="review__text-num">1 Review</span>
                     </div>
                 </div>
@@ -266,62 +254,13 @@
 
 
             <div class="review__box">
-                <div class="review__per-user">
-                    <div class="review__box-header-outer">
-
-                        <div class="review__box-header">
-                            <div class="rate__stars">
-                                <img src="resources/img/ratings.svg" alt="rating">
-                                <img src="resources/img/ratings.svg" alt="rating">
-                                <img src="resources/img/ratings.svg" alt="rating">
-                                <img src="resources/img/ratings.svg" alt="rating">
-                                <img src="resources/img/ratins-none.svg" alt="rating">
-                            </div>
-                            <div>
-                                <div class="rating__num rating__num--boxed">
-                                    4.0
-                                </div>
-                            </div>
-                        </div>
-
-                        <div>
-                            <p class="review__date">30 January, 2019</p>
-                        </div>
-
-                    </div>
-
-
-                    <div class="user__reviewed">
-                        <img src="resources/img/user__avatar.svg" class="user__avatar">
-
-                        <div>
-                            <h4 class="review__user-name">James Doe</h4>
-                            <p class="review__content">
-                                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-                                incididunt
-                                ut labore et dolore magna aliqua.
-                            </p>
-                        </div>
-
-                    </div>
-
-
-
-                </div>
-
-
 
                 <div class="review__per-user">
                     <div class="review__box-header-outer">
 
                         <div class="review__box-header">
-                            <div class="rate__stars">
-                                <img src="resources/img/ratings.svg" alt="rating">
-                                <img src="resources/img/ratings.svg" alt="rating">
-                                <img src="resources/img/ratings.svg" alt="rating">
-                                <img src="resources/img/ratings.svg" alt="rating">
-                                <img src="resources/img/ratins-none.svg" alt="rating">
-                            </div>
+                            <div id="third-rateBox"></div>
+
                             <div>
                                 <div class="rating__num rating__num--boxed">
                                     4.0
@@ -552,30 +491,28 @@
                         <li class="colored-list big-para">DOWNLOAD AND CONNECT WITH US</li>
                     </ul>
                     <div class="mobile-app">
-
+                            <a href=""><img src="resources/img/ios.svg">
+                            </a>&nbsp;&nbsp;
+                            <a href=""><img src="resources/img/android.svg"></a>
                     </div>
 
-                    <a href=""><img src="resources/img/ios.svg">
-                    </a>&nbsp;&nbsp;
-                    <a href=""><img src="resources/img/android.svg"></a>
-
                     <p class="follow__p">Follow us:
-
-                        <a href=""><img class="icon-small" src="resources/img/brands/facebook-white.svg" width="22px"
-                                height="22px" alt="facebook"></a>
-
-
-                        <a href=""><img class="icon-small" src="resources/img/brands/instagram-white.svg" width="22px"
-                                height="22px" alt="instagram"></a>
-
-
-                        <a href=""><img class="icon-small" src="resources/img/brands/linkedin-white.svg" width="22px"
-                                height="22px" alt="linkedin"></a>
-
-
-                        <a href=""><img class="icon-small" src="resources/img/brands/twitter-circular-button-white.svg"
-                                width="22px" height="22px" alt="twitter"></a>
-
+                        <span>
+                            <a href=""><img class="icon-small" src="resources/img/brands/facebook-white.svg" width="22px"
+                                    height="22px" alt="facebook"></a>
+                        </span>
+                        <span>
+                            <a href=""><img class="icon-small" src="resources/img/brands/instagram-white.svg" width="22px"
+                                    height="22px" alt="instagram"></a>
+                        </span>
+                        <span>
+                            <a href=""><img class="icon-small" src="resources/img/brands/linkedin-white.svg" width="22px"
+                                    height="22px" alt="linkedin"></a>
+                        </span>
+                        <span>
+                            <a href=""><img class="icon-small" src="resources/img/brands/twitter-circular-button-white.svg"
+                                    width="22px" height="22px" alt="twitter"></a>
+                        </span>
                     </p>
                     <p class="powered">Powered by
                         <img class="logo-by" src="resources/img/logo-by.svg">
@@ -591,9 +528,6 @@
             <p class="copy">Copyright (c) 2018 Afiaanyi. All rights reserved</p>
             <img class="yb" src="resources/img/yb.svg">
             <img class="by" src="resources/img/black-yellow.svg">
-    </section>
-
-
     </section>
 
     <script src="resources/js/other-business.js"></script>

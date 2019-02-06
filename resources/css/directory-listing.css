@@ -69,7 +69,7 @@ header{
 }
 
 .header__top-container--shadow{
-    background: url(../img/directory-listing/header__bar.jpg);
+    background: url(../img/header__bar.jpg);
     box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.05);
 }
 
@@ -308,7 +308,6 @@ nav{
     align-self: flex-start;
     font-weight: 500;
     padding: 55px 0 40px 0;
-    border-bottom: 1px solid #c4c4c4;
     border-radius: 4px;
     -webkit-border-radius: 4px;
     -moz-border-radius: 4px;
@@ -320,13 +319,6 @@ nav{
     color: #E6B712;
 }
 
-/* .city__name,
-.services__clear,
-.categories__clear{
-    line-height: 24px;
-    font-size: 12px;
-    color: #000;
-} */
 
 .city__name a,
 .services__clear a,
@@ -344,10 +336,11 @@ nav{
 .services__title{
     font-size: 14px;
     font-weight: 500;
-    margin-bottom: 16px;
+    margin-bottom: 7px;
     padding: 7px 0 4px 0;
     border-bottom: 1px solid #c4c4c4;
     color: #000;
+    margin-top: 7px;
 }
 
 .sort__pagination{
@@ -539,18 +532,33 @@ section.review__container{
     width: 100%;
     position: relative;
     padding-bottom: 64px;
+    overflow: hidden;
 }
 
 div.review{
     width: 50%;
-    padding: 5% 5%;
+    padding: 2% 5%;
     padding-bottom: 0%;
 }
 
 .reviews__title{
-    font-size: 24px;
-    padding: 32px 0 0 32px; 
+    font-size: 20px;
+    padding: 10px 14px;
     font-weight: 500;
+    border: 2px solid #CAAA3B;
+    display: inline-block;
+    position: relative;
+    z-index: 4;
+    margin: 24px 0 5px 16px;
+    background: #fff;
+}
+
+.review__underline{
+    border: 1px solid #CAAA3B;
+    position: absolute;
+    top: 8.5%;
+    width: 100%;
+    margin-left: 15px;
 }
 
 .reviews__subtitle{
@@ -615,6 +623,7 @@ div.review{
     width: 100%;
     display: flex; 
     flex-wrap: wrap;
+    padding: 0 0 0 5%;
 }
 
 .features{
@@ -640,15 +649,11 @@ div.review{
 
 .feature{
     width: 33%;
-    padding: 16px 0 26px 5%;
+    padding-right: 5%;
 }
 
 .feature img{
     padding-top: 43px;
-}
-
-.feature:nth-child(3) {
-    padding-right: 5%;
 }
 
 .features__outer-container{
@@ -906,4 +911,33 @@ section.footer {
     -moz-border-radius: 50%;
     -ms-border-radius: 50%;
     -o-border-radius: 50%;
+}
+
+#tested{
+    width: 100%;
+    padding: 8px 13px;
+    margin-bottom: 5px;
+    border-radius: 2px;
+    -webkit-border-radius: 2px;
+    -moz-border-radius: 2px;
+    -ms-border-radius: 2px;
+    -o-border-radius: 2px;
+    border: 1px solid #E6B712;
+    margin-top: 5px;
+}
+
+input:focus{
+    outline: none;
+}
+
+.location__result{
+    padding: 4px 0 8px 2px;
+    color: rgb(53, 51, 51);
+    font-size: 13px;
+    font-weight: 400;
+}
+
+.notify{
+    margin-left: 14px;
+    cursor: pointer;
 }
