@@ -580,6 +580,7 @@ input:focus {
 
 .rating__num--boxed {
     margin-left: 5px;
+    margin-top: -5px;
 }
 
 .rate__stars {
