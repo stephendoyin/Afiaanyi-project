@@ -855,7 +855,6 @@ form#brand-contact{
 .working__time p{
     color: black;
     font-size: 14px;
-    width: 40%;
     padding-bottom: 6.5px;
     display: flex;
     justify-content: flex-start;
@@ -863,5 +862,4 @@ form#brand-contact{
 
 p.time__para{
     font-weight: 600;
-    width: 35%;
 }
