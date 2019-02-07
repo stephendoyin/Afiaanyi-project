@@ -352,10 +352,10 @@ input:focus {
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 50px;
-    height: 31px;
+    width: 40px;
+    height: 27px;
     color: white;
-    font-size: 18px;
+    font-size: 16px;
     font-weight: normal;
     margin-left: 30px;
 }
