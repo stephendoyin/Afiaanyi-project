@@ -3,68 +3,83 @@
 
 <head>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Poppins:400,500,600" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Montserrat:200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i"
         rel="stylesheet">
-    <link href="vendor/css/animate.css" rel="stylesheet">
     <style>
         @import url('https://fonts.googleapis.com/css?family=Lato:100,300,300i,400');
+        @import url(resources/css/vendor.css);
         @import url(resources/css/faq.css);
+        @import url(resources/css/cart.css);
     </style>
     <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
-    <title>Blog</title>
+    <title>Cart</title>
 </head>
 
 <body>
     <header>
         <nav>
-            <div class="row header__nav-content">
-                <div>
-                    <img src="resources/img/market-logo.svg" class="header__logo" alt="Afiaanyi logo">
-                </div>
-                <div>
-                    <input type="search" class="header__form-input header__input-nav" placeholder="Search for products, brands and categories">
-                    <input type="submit" class="header__submit">
-                </div>
+            <div class="header__top-container">
+                <div class="row header__nav-content">
+                    <div class="header__logo-container">
+                        <img src="resources/img/market-logo.svg" class="header__logo" alt="Afiaanyi logo">
+                    </div>
+                    <div class="header__form-input-container">
+                        <input type="search" class="header__form-input header__input-nav" placeholder="Search for products, brands and categories">
+                        <input type="submit" class="header__submit">
+                    </div>
 
-                <div>
-                    <ul class="header__nav-list-container">
-                        <li class="header__nav-list">
-                            <a href="" class="header__nav-link">Directory</a>
-                        </li>
-                        <li class="header__nav-list">
-                            <a href="" class="header__nav-link">Shop</a>
-                        </li>
-                        <li class="header__nav-list">
-                            <a href="" class="header__nav-link">Jobs</a>
-                        </li>
-                        <li class="header__nav-list">
-                            <a href="" class="header__nav-link header--outlined">Create A Store</a>
-                        </li>
-                    </ul>
-                </div>
+                    <div>
+                        <ul class="header__nav-list-container">
+                            <li class="header__nav-list">
+                                <a href="" class="header__nav-link">Directory</a>
+                            </li>
+                            <li class="header__nav-list">
+                                <a href="" class="header__nav-link">Top Brands</a>
+                            </li>
+                            <li class="header__nav-list">
+                                <a href="" class="header__nav-link">Shop</a>
+                            </li>
+                            <li class="header__nav-list">
+                                <a href="" class="header__nav-link">Jobs</a>
+                            </li>
+                            <li class="header__nav-list">
+                                <a href="" class="header__nav-link header--outlined">Create A Store</a>
+                            </li>
+                        </ul>
+                    </div>
 
 
-                <div class="header__customized-items">
-                    <p class="header__greeting">Welcome <span class="header__username">Stephen!</span></p>
+                    <div class="header__customized-items">
+                        <p class="header__greeting">Welcome <span class="header__username">&nbsp;Stephen!</span></p>
 
-                    <a href="">
-                        <img src="resources/img/man.png" class="header-nav-icon header__avatar" height="35px" width="35px">
-                    </a>
+                        <a href="">
+                            <img src="resources/img/man.png" class="header-nav-icon header__avatar" height="35px" width="35px">
+                        </a>
 
-                    <a href="">
-                        <img src="resources/img/gold-favorite.svg" class="header-nav-icon">
-                    </a>
-                    <a href="">
-                        <img src="resources/img/gold-shop-cart.svg" class="header-nav-icon">
-                    </a>
-                    </p>
+                        <a href="">
+                            <img src="resources/img/gold-favorite.svg" class="header-nav-icon">
+                        </a>
+                        <a href="">
+                            <img src="resources/img/gold-shop-cart.svg" class="header-nav-icon">
+                            <sup class="cart__label">3</sup>
+                        </a>
+
+                        <a href="">
+                            <img src="resources/img/notify.svg" class="header-nav-icon">
+                        </a>
+
+                        </p>
+                    </div>
                 </div>
             </div>
+
         </nav>
 
         <div class="full--nav">
             <ul class="row header__full-nav" style="position:relative">
+
                 <li class="header__full-nav-list">
                     <a href="" class="header__full-nav-link ">
                         <img src="resources/img/product-list/product-images/phoneandtablet.svg">
@@ -142,7 +157,7 @@
                                     <li><a href="">Pest Control</a></li>
                                 </ul>
                             </div>
-                            <div>
+                            <div class="drop-down__column">
                                 <h4 class="drop-drop__list-title">Plastic & Paper Products</h4>
                                 <ul>
                                     <li><a href="">Storage Bags</a></li>
@@ -154,6 +169,7 @@
                         </div>
                     </div>
                 </li>
+
                 <li class="header__full-nav-list">
                     <a href="" class="header__full-nav-link">
                         <img src="resources/img/product-list/product-images/computing.svg">
@@ -231,7 +247,7 @@
                                     <li><a href="">Pest Control</a></li>
                                 </ul>
                             </div>
-                            <div>
+                            <div class="drop-down__column">
                                 <h4 class="drop-drop__list-title">Plastic & Paper Products</h4>
                                 <ul>
                                     <li><a href="">Storage Bags</a></li>
@@ -243,6 +259,7 @@
                         </div>
                     </div>
                 </li>
+
                 <li class="header__full-nav-list">
                     <a href="" class="header__full-nav-link">
                         <img src="resources/img/product-list/product-images/fashion.svg">
@@ -320,7 +337,7 @@
                                     <li><a href="">Pest Control</a></li>
                                 </ul>
                             </div>
-                            <div>
+                            <div class="drop-down__column">
                                 <h4 class="drop-drop__list-title">Plastic & Paper Products</h4>
                                 <ul>
                                     <li><a href="">Storage Bags</a></li>
@@ -332,6 +349,7 @@
                         </div>
                     </div>
                 </li>
+
                 <li class="header__full-nav-list">
                     <a href="" class="header__full-nav-link">
                         <img src="resources/img/product-list/product-images/healthandbeauty.svg">
@@ -409,7 +427,8 @@
                                     <li><a href="">Pest Control</a></li>
                                 </ul>
                             </div>
-                            <div>
+
+                            <div class="drop-down__column">
                                 <h4 class="drop-drop__list-title">Plastic & Paper Products</h4>
                                 <ul>
                                     <li><a href="">Storage Bags</a></li>
@@ -418,9 +437,11 @@
                                     <li><a href="">Toilet Papers & Tissues</a></li>
                                 </ul>
                             </div>
+
                         </div>
                     </div>
                 </li>
+
                 <li class="header__full-nav-list">
                     <a href="" class="header__full-nav-link">
                         <img src="resources/img/product-list/product-images/gaming.svg">
@@ -498,7 +519,7 @@
                                     <li><a href="">Pest Control</a></li>
                                 </ul>
                             </div>
-                            <div>
+                            <div class="drop-down__column">
                                 <h4 class="drop-drop__list-title">Plastic & Paper Products</h4>
                                 <ul>
                                     <li><a href="">Storage Bags</a></li>
@@ -510,6 +531,7 @@
                         </div>
                     </div>
                 </li>
+
                 <li class="header__full-nav-list">
                     <a href="" class="header__full-nav-link">
                         <img src="resources/img/product-list/product-images/grocery.svg">
@@ -588,7 +610,7 @@
                                     <li><a href="">Pest Control</a></li>
                                 </ul>
                             </div>
-                            <div>
+                            <div class="drop-down__column">
                                 <h4 class="drop-drop__list-title">Plastic & Paper Products</h4>
                                 <ul>
                                     <li><a href="">Storage Bags</a></li>
@@ -600,6 +622,7 @@
                         </div>
                     </div>
                 </li>
+
                 <li class="header__full-nav-list">
                     <a href="" class="header__full-nav-link">
                         <img src="resources/img/product-list/product-images/toykidandbabies.svg">
@@ -677,7 +700,8 @@
                                     <li><a href="">Pest Control</a></li>
                                 </ul>
                             </div>
-                            <div>
+
+                            <div class="drop-down__column">
                                 <h4 class="drop-drop__list-title">Plastic & Paper Products</h4>
                                 <ul>
                                     <li><a href="">Storage Bags</a></li>
@@ -689,6 +713,7 @@
                         </div>
                     </div>
                 </li>
+
                 <li class="header__full-nav-list">
                     <a href="" class="header__full-nav-link">
                         <img src="resources/img/product-list/product-images/hometools.svg">
@@ -766,7 +791,7 @@
                                     <li><a href="">Pest Control</a></li>
                                 </ul>
                             </div>
-                            <div>
+                            <div class="drop-down__column">
                                 <h4 class="drop-drop__list-title">Plastic & Paper Products</h4>
                                 <ul>
                                     <li><a href="">Storage Bags</a></li>
@@ -778,6 +803,7 @@
                         </div>
                     </div>
                 </li>
+
                 <li class="header__full-nav-list">
                     <a href="" class="header__full-nav-link">
                         <img src="resources/img/product-list/product-images/sportandoutdoor.svg">
@@ -855,7 +881,7 @@
                                     <li><a href="">Pest Control</a></li>
                                 </ul>
                             </div>
-                            <div>
+                            <div class="drop-down__column">
                                 <h4 class="drop-drop__list-title">Plastic & Paper Products</h4>
                                 <ul>
                                     <li><a href="">Storage Bags</a></li>
@@ -867,6 +893,7 @@
                         </div>
                     </div>
                 </li>
+
                 <li class="header__full-nav-list">
                     <img src="resources/img/product-list/product-images/other.svg">
                     &nbsp;
@@ -944,7 +971,7 @@
                                     <li><a href="">Pest Control</a></li>
                                 </ul>
                             </div>
-                            <div>
+                            <div class="drop-down__column">
                                 <h4 class="drop-drop__list-title">Plastic & Paper Products</h4>
                                 <ul>
                                     <li><a href="">Storage Bags</a></li>
@@ -961,154 +988,145 @@
 
 
         </div>
-       
 
-        <div class="lower-nav">
-            <div class="row lower-nav__container">
-                <div class="lower-nav__left-nav">
-                    <ul class="lower-nav-list__container">
-                        <li class="lower-nav__list lower-nav__list--crumbs">
-                            <a href="" class="lower-nav__link">Home&nbsp;&nbsp;</a>
-                        </li>
-                        <li class="lower-nav__list lower-nav__list--crumbs">
-                            <a href="" class="lower-nav__link">Fashion&nbsp;&nbsp;</a>
-                        </li>
-                        <li class="lower-nav__list lower-nav__list--crumbs">
-                            <a href="" class="lower-nav__link">Women's Fashion&nbsp;&nbsp;</a>
-                        </li>
-                        <li class="lower-nav__list">
-                            <a href="" class="lower-nav__link">Clothings&nbsp;&nbsp;</a>
-                        </li>
-                    </ul>
-                </div>
-
-                <div class="lower-nav__sort-container">
-                    <span for="" class="sort">Sort By</span>
-                    <div class="custom-select" style="width:200px;">
-                        <select>
-                            <option value="0">Highest Price</option>
-                            <option value="1">Highest Price</option>
-                            <option value="2">Lowest Price</option>
-                            <option value="3">Newest</option>
-                            <option value="4">Most Popular</option>
-                            <option value="5">Best Rating</option>
-                        </select>
-                    </div>
-                </div>
-
-            </div>
-        </div>
 
     </header>
-
-
-    <section class="card__section">
-
-
-        <div class="hide__scroll">
-
-            <div class="card-w">
-
-                <div class="card__outer-wrapper">
-
-                    <div class="card card__active">
-                        <div class="card__content">
-                            <img src="resources/img/general--white.svg" class="img__card" alt="general">
-                            <p>General</p>
-                        </div>
-                    </div>
-
-                    <div class="card">
-                        <div class="card__content">
-                            <img src="resources/img/payment.svg" class="img__card" alt="Payment">
-                            <p>Payment</p>
-                        </div>
-                    </div>
-
-                    <div class="card">
-                        <div class="card__content">
-                            <img src="resources/img/wallet.svg" class="img__card" alt="wallet">
-                            <p>Wallet</p>
-                        </div>
-                    </div>
-
-                    <div class="card">
-                        <div class="card__content">
-                            <img src="resources/img/shipping.svg" class="img__card" alt="shipping">
-                            <p>Shipping/ Delivery</p>
-                        </div>
-                    </div>
-
-                    <div class="card card">
-                        <div class="card__content">
-                            <img src="resources/img/return.svg" class="img__card" alt="">
-                            <p>Returns policy</p>
-                        </div>
-                    </div>
-
-                    <div class="card">
-                        <div class="card__content">
-                            <img src="resources/img/product.svg" alt="product">
-                            <p>Products</p>
-                        </div>
-                    </div>
-
-                    <div class="card">
-                        <div class="card__content">
-                            <img src="resources/img/services-agreement.svg" class="img__card" alt="Services">
-                            <p>Services Deal</p>
-                        </div>
-                    </div>
-
-                    <div class="card">
-                        <div class="card__content">
-                            <img src="resources/img/warranty.svg" alt="warranty">
-                            <p>Warranty</p>
-                        </div>
-                    </div>
-
-                </div>
-
-            </div>
-
-        </div>
-
-
-
-    </section>
-
 
     <section>
 
         <div class="row">
 
-            <div class="faq__wrapper">
+            <div class="row">
+
+                <p class="notify__text">Your cart has been updated!</p>
+
+                <h3 class="cart-item__title">
+                    Cart (1 Item)
+                </h3>
+                <p class="shipping__text">
+                    Free Shipping Criteria
+                </p>
+
+                <div class="item__container">
+
+                    <div class="cart__title">
+                        <h3 class="item__title">
+                            Item
+                        </h3>
+                        <h3 class="item__title">Quantity</h3>
+                        <h3 class="item__title">Unit Price</h3>
+                        <h3 class="item__title">Subtotal</h3>
+
+                    </div>
 
 
-                <div class="faq">
 
-                    <h3 class="faq__title">
-                        Do I need to have a Afiaanyi.com account to make a Purchase?
-                        <img class="faq__arrow faq__arrow--opened" src="resources/img/arrow__down.svg">
-                    </h3>
+                    <div class="item__paper">
 
-                    <p class="faq__content">
-                        Yes, you do. Registration is free of charge, click sign up on the upper right hand of the
-                        screen, fill your details and submit. Verify your account through the verification link sent to
-                        your mail and then proceed to make a purchase.
+                        <div class="item__details-container">
+                            <div class="item__details">
+
+                                <div class="item__img-container">
+
+                                    <img src="resources/img/phone-item.jpg" class="item__img" alt="item picture">
+
+                                </div>
+
+                                <div class="item__text_container">
+
+                                    <p class="item__seller">Seller: Intel Telcom</p>
+                                    <p class="item__name">ALCATEL 7-1, 4GB RAM, 64GB INTERNAL MEMORY</p>
+
+                                    <div class="item__actions">
+                                        <button class="item__action">
+                                            <span class="item__action-icon"><img class="icon__small" src="resources/img/gold-favorite.svg"></span>
+                                            <span class="item__action-text">ADD TO SAVED ITEMS</span>
+                                        </button>
+                                        <button class="item__action">
+                                            <span class="item__action-icon"><img class="icon__small" src="resources/img/trash.svg"></span>
+                                            <span class="item__action-text">REMOVE</span>
+                                        </button>
+                                    </div>
+
+                                </div>
+
+                            </div>
+                        </div>
+
+
+                        <div class="item__quantity-container">
+                            <div class="item__details">
+
+                                <div class="quantity__inner-cont">
+                                    <div class="quantity">
+                                        <input type="number" class="input__quantity" min="1" max="9" step="1" value="1">
+                                    </div>
+                                </div>
+
+
+                            </div>
+                        </div>
+
+                        <div class="item__quantity-container">
+                            <div class="item__details">
+                                <div class="quantity__inner-cont">
+                                    <p class="quantity__price">
+                                        &#x20A6;34,000
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+
+
+                        <div class="item__quantity-container item__quantity-container--right">
+                            <div class="item__details">
+                                <div class="quantity__inner-cont">
+
+                                    <p class="quantity__price quantity__price--sub">
+                                        &#x20A6;34,000
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+
+                </div>
+
+                <div class="lower__section">
+                    <div class="lower__price-total">
+                        <p class="lower__price-label">
+                            Total:
+                        </p>
+
+                        <p class="lower__price-value">
+                            &#x20A6;34,000
+                        </p>
+                    </div>
+
+                </div>
+
+                <div class="lower__section lower__section--space">
+                    <p class="lower__shipping-status">
+                        Free Shipping Eligibility Status
                     </p>
+                </div>
+
+                <div class="lower__section lower__section--space">
+
+                    <a href="" class="low__btn">
+                        <span>CONTINUE SHOPPING</span>
+                    </a>
+
+                    <a href="" class="low__btn">
+                        <span>CHECKOUT</span>
+                    </a>
 
                 </div>
 
             </div>
 
         </div>
-
-
-    </section>
-
-
-    <script src="resources/js/faq.js"></script>
 
     </section>
 
@@ -1283,8 +1301,6 @@
         </footer>
     </section>
 
-    <script src="vendor/js/jquery.waypoints.min.js"></script>
-    <script src="resources/js/product-list.js"></script>
+    <script src="resources/js/cart.js"></script>
+    <!-- <script src="resources/js/faq.js"></script> -->
 </body>
-
-</html>
