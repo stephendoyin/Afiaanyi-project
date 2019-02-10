@@ -1,0 +1,9 @@
+{
+    "editor.fontSize": 16,
+    "editor.renderWhitespace": "all",
+    "editor.cursorStyle": "block",
+    "editor.wordWrap": "on",
+    "editor.formatOnType": true,
+    "editor.formatOnPaste": true,
+    "editor.formatOnSave": true
+}

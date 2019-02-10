@@ -500,24 +500,3 @@ $(function () {
 });
 
 
-// $(function () {
-//     //caches a jQuery object containing the header element
-//     var header = $(".header__top-container");
-//     $(window).scroll(function () {
-//         var scroll = $(window).scrollTop();
-//         let aside = document.querySelector(".scroll__relative");
-//         let productList = document.querySelector(".outer__product-container");
-//         if (scroll >= 222) {
-//             console.log(scroll);
-//             aside.classList.add("scroll__fixed");
-//             productList.classList.add("outer__product-container--scrolled");
-//         } else{
-//             aside.classList.remove("scroll__fixed");
-//             productList.classList.remove("outer__product-container--scrolled");
-//         }
-           
-         
-//     });
-
-// });
-

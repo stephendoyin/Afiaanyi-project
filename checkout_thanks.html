@@ -1,0 +1,544 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Poppins:400,500,600" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i" rel="stylesheet">
+    <style>
+        @import url('https://fonts.googleapis.com/css?family=Lato:100,300,300i,400');
+        @import url(vendor/css/animate.css);
+        @import url(resources/css/faq.css);
+        @import url(resources/css/cart.css);
+        @import url(resources/css/modal.css);
+        @import url(resources/css/checkout.css);
+        @import url(resources/css/checkout_thanks.css);
+    </style>
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
+    <title>Cart</title>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div class="header__top-container">
+                <div class="row header__nav-content">
+
+                    <div class="header__logo-container">
+                        <img src="resources/img/market-logo.svg" class="header__logo" alt="Afiaanyi logo">
+                    </div>
+
+                    <div class="header__form-input-container">
+                        <input type="search" class="header__form-input header__input-nav" placeholder="Search for companies and services">
+                        <input type="submit" class="header__submit">
+                    </div>
+
+                    <div>
+                        <ul class="header__nav-list-container">
+                            <li class="header__nav-list header__nav-list--divider">
+                                <a href="" class="header__nav-link">Directory</a>
+                            </li>
+                            <li class="header__nav-list header__nav-list--divider">
+                                <a href="" class="header__nav-link">Top Brands</a>
+                            </li>
+                            <li class="header__nav-list header__nav-list--divider">
+                                <a href="" class="header__nav-link">Shop</a>
+                            </li>
+                            <li class="header__nav-list header__nav-list--divider">
+                                <a href="" class="header__nav-link">Jobs</a>
+                            </li>
+                            <li class="header__nav-list">
+                                <a href="" class="header__nav-link header--outlined">Create A Store</a>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="header__customized-items">
+                        <p class="header__greeting">Welcome <span class="header__username">&nbsp;Stephen!</span></p>
+
+                        <a href="">
+                            <img src="resources/img/man.png" class="header-nav-icon header__avatar" height="35px" width="35px">
+                        </a>
+
+                        <a href="">
+                            <img src="resources/img/gold-favorite.svg" class="header-nav-icon">
+                        </a>
+                        <a href="">
+                            <img src="resources/img/gold-shop-cart.svg" class="header-nav-icon">
+                            <sup class="cart__label">3</sup>
+                        </a>
+
+                        <a href="">
+                            <img src="resources/img/notify.svg" class="header-nav-icon">
+                        </a>
+
+                        </p>
+                    </div>
+
+                </div>
+            </div>
+        </nav>
+
+    </header>
+
+
+    <section>
+
+        <div class="body_row">
+
+            <div class="row main_container">
+
+                <div class="thanks_container">
+
+                    <div class="check_mark_svg_container">
+
+                        <svg width="125" height="125" viewBox="0 0 125 125" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M62.4999 0C27.9838 0 0 27.9826 0 62.4999C0 97.0171 27.9838 125 62.4999 125C97.0198 125 125 97.0171 125 62.4999C125 27.9826 97.0186 0 62.4999 0ZM51.0348 94.6048L23.5148 67.086L32.6874 57.9134L51.0348 76.2597L92.3123 34.981L101.485 44.1536L51.0348 94.6048Z" fill="url(#paint0_linear)" />
+                            <defs>
+                                <linearGradient id="paint0_linear" x1="39.0624" y1="125" x2="110.243" y2="125" gradientUnits="userSpaceOnUse">
+                                    <stop stop-color="#E6B712" />
+                                    <stop offset="1" stop-color="#CAAA3B" />
+                                </linearGradient>
+                            </defs>
+                        </svg>
+
+                    </div>
+
+                    <div>
+                        <p class="thanks__text">
+                            Thank You!
+                        </p>
+
+                        <div class="thanks__order_num">
+                            Order No: 00000001
+                        </div>
+                    </div>
+
+                </div>
+
+                <h3 class="steps__title">
+                    NEXT STEPS
+                </h3>
+
+                <div class="details-box">
+
+                    <div>
+                        <div class="details-box__header details-box__header--order">
+
+                            <h3 class="details-box__header-title">
+                                <span class="details-box__numbering">1.</span>
+                                CONFIRMATION
+                            </h3>
+
+                        </div>
+
+                        <div class="details-content details-content--row">
+                            <p class="details-content__text">Congratulations! Your order was successfully submitted. A confirmation email has been sent to you
+                                and our Customer Service may contact you to verify your order.</p>
+
+                        </div>
+                    </div>
+
+                    <div>
+                        <div class="details-box__header details-box__header--order">
+
+                            <h3 class="details-box__header-title">
+                                <span class="details-box__numbering">2.</span>
+                                SHIPPING
+                            </h3>
+
+                        </div>
+
+                        <div class="details-content details-content--row">
+                            <p class="details-content__text">Your order will be prepared for shipment once it is confirmed. You will receive shopping updates soon.</p>
+
+                        </div>
+                    </div>
+
+                    <div>
+                        <div class="details-box__header details-box__header--order">
+
+                            <h3 class="details-box__header-title">
+                                <span class="details-box__numbering">3.</span>
+                                MY ACCOUNT
+                            </h3>
+
+                        </div>
+
+                        <div class="details-content details-content--row">
+                            <p class="details-content__text">You can follow the status of your order by clicking on “My Orders” in your account.</p>
+
+                        </div>
+                    </div>
+
+                </div>
+
+                <button class="chkout-btn chkout-btn--color">
+                    <span>CONTINUE SHOPPING</span>
+                </button>
+
+                <h3 class="steps__title">
+                    ORDER SUMMARY
+                </h3>
+
+                <div class="details-box">
+                    <div class="details-box__header details-box__header--order">
+                        <h3 class="details-box__header-title">
+                            YOUR ORDER (5 Item)
+                        </h3>
+
+                    </div>
+
+                    <div class="details-content details-content--row">
+
+                        <div class="product_container_side">
+
+                            <div class="product_summary_list">
+                                <div class="summary_product_container">
+
+                                    <div class="summary_product__img-container">
+
+                                        <img src="resources/img/phone-item.jpg" class="item__img" alt="item picture">
+
+                                    </div>
+
+                                    <div class="summary_product_details">
+
+
+                                        <p class="details-content__text details-content__text--black">
+                                            ALCATEL 7-1, 4GB RAM, 64GB INTERNAL MEMORY
+                                        </p>
+
+                                        <p class="checkout-calc__p checkout-calc__p--currency checkout-calc__p--no-space">
+                                            &#x20A6;&nbsp;34,000
+                                        </p>
+
+                                        <p class="checkout-calc__p checkout-calc__p--no-space item__quant">Qty: 1</p>
+                                    </div>
+
+                                </div>
+                            </div>
+
+                            <div class="product_summary_list">
+                                <div class="summary_product_container">
+
+                                    <div class="summary_product__img-container">
+
+                                        <img src="resources/img/phone-item.jpg" class="item__img" alt="item picture">
+
+                                    </div>
+
+                                    <div class="summary_product_details">
+
+
+                                        <p class="details-content__text details-content__text--black">
+                                            ALCATEL 7-1, 4GB RAM, 64GB INTERNAL MEMORY
+                                        </p>
+
+                                        <p class="checkout-calc__p checkout-calc__p--currency checkout-calc__p--no-space">
+                                            &#x20A6;&nbsp;34,000
+                                        </p>
+
+                                        <p class="checkout-calc__p checkout-calc__p--no-space item__quant">Qty: 1</p>
+                                    </div>
+
+                                </div>
+                            </div>
+
+                            <div class="product_summary_list">
+                                <div class="summary_product_container">
+
+                                    <div class="summary_product__img-container">
+
+                                        <img src="resources/img/phone-item.jpg" class="item__img" alt="item picture">
+
+                                    </div>
+
+                                    <div class="summary_product_details">
+
+
+                                        <p class="details-content__text details-content__text--black">
+                                            ALCATEL 7-1, 4GB RAM, 64GB INTERNAL MEMORY
+                                        </p>
+
+                                        <p class="checkout-calc__p checkout-calc__p--currency checkout-calc__p--no-space">
+                                            &#x20A6;&nbsp;34,000
+                                        </p>
+
+                                        <p class="checkout-calc__p checkout-calc__p--no-space item__quant">Qty: 1</p>
+                                    </div>
+
+                                </div>
+                            </div>
+
+                            <div class="product_summary_list">
+                                <div class="summary_product_container">
+
+                                    <div class="summary_product__img-container">
+
+                                        <img src="resources/img/phone-item.jpg" class="item__img" alt="item picture">
+
+                                    </div>
+
+                                    <div class="summary_product_details">
+
+
+                                        <p class="details-content__text details-content__text--black">
+                                            ALCATEL 7-1, 4GB RAM, 64GB INTERNAL MEMORY
+                                        </p>
+
+                                        <p class="checkout-calc__p checkout-calc__p--currency checkout-calc__p--no-space">
+                                            &#x20A6;&nbsp;34,000
+                                        </p>
+
+                                        <p class="checkout-calc__p checkout-calc__p--no-space item__quant">Qty: 1</p>
+                                    </div>
+
+                                </div>
+                            </div>
+
+                            <div class="product_summary_list">
+                                <div class="summary_product_container">
+
+                                    <div class="summary_product__img-container">
+
+                                        <img src="resources/img/phone-item.jpg" class="item__img" alt="item picture">
+
+                                    </div>
+
+                                    <div class="summary_product_details">
+
+
+                                        <p class="details-content__text details-content__text--black">
+                                            ALCATEL 7-1, 4GB RAM, 64GB INTERNAL MEMORY
+                                        </p>
+
+                                        <p class="checkout-calc__p checkout-calc__p--currency checkout-calc__p--no-space">
+                                            &#x20A6;&nbsp;34,000
+                                        </p>
+
+                                        <p class="checkout-calc__p checkout-calc__p--no-space item__quant">Qty: 1</p>
+                                    </div>
+
+                                </div>
+                            </div>
+
+                        </div>
+
+
+
+                        <div>
+
+                            <div>
+
+
+                                <div class="upper_calc">
+                                    <div class="checkout-calc">
+
+                                        <p class="checkout-calc__p checkout-calc__p--no-space">Subtotal</p>
+                                        <p class="checkout-calc__p">&#x20A6;&nbsp;34,000</p>
+
+                                    </div>
+                                    <div class="checkout-calc">
+
+                                        <p class="checkout-calc__p checkout-calc__p--no-space">Shipping Amount</p>
+                                        <p class="checkout-calc__p">&#x20A6;&nbsp;500</p>
+
+                                    </div>
+                                </div>
+                                <div class="checkout-calc">
+
+                                    <p class="checkout-calc__p checkout-calc__p--total" style="padding-left: 0">Total</p>
+                                    <p class="checkout-calc__p checkout-calc__p--currency">₦&nbsp;34,500</p>
+                                </div>
+
+
+
+                            </div>
+
+
+                        </div>
+
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <section class="contact__container">
+        <div class="contact row">
+            <div class="one">
+                <p>
+                    <strong>SUPPORT</strong><br>
+
+                    <img class="" src="resources/img/phone.svg" alt=""> +234 803 400 0000
+                </p>
+            </div>
+            <div class="two">
+                <p>
+                    <strong>EMAIL SUPPORT</strong>
+                </p>
+                <p>
+                    <img class="" src="resources/img/mail.svg" alt=""> info@afiaayan.com
+                </p>
+            </div>
+            <div class="three">
+                <p>
+                    <span>
+                        <strong>GET LATEST DEALS & UPDATES</strong>
+                    </span>
+                    <br>
+                    <i>Stay in the loop on all upcoming promotions,
+                        <br> discounts and latest updates.</i>
+                </p>
+            </div>
+            <div class="four">
+                <input type="email" id="mail" placeholder="Enter e-mail"><input id="send" type="submit" value="send">
+            </div>
+        </div>
+
+
+    </section>
+
+    <section class="footer hide-flow">
+        <footer class="row">
+            <div class="footer-inner">
+                <div class="space">
+                    <ul>
+                        <li class="colored-list">GET TO KNOW US</li>
+                        <li>
+                            <a href="">About us</a>
+                        </li>
+                        <li>
+                            <a href="">Careers</a>
+                        </li>
+                        <li>
+                            <a href="">Blog</a>
+                        </li>
+                        <li>
+                            <a href="">FAQ</a>
+                        </li>
+                        <li>
+                            <a href="">Contact Us</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="space">
+                    <ul>
+                        <li class="colored-list">PAYMENTS</li>
+                        <li>
+                            <a href="">Mastercard</a>
+                        </li>
+                        <li>
+                            <a href="">Verve</a>
+                        </li>
+                        <li>
+                            <a href="">Visa</a>
+                        </li>
+                        <li>
+                            <a href="">Wallet</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="space">
+                    <ul>
+                        <li class="colored-list">EXPLORE</li>
+                        <li>
+                            <a href="">Top Brands</a>
+                        </li>
+                        <li>
+                            <a href="">Privacy Policy</a>
+                        </li>
+                        <li>
+                            <a href="">Disclaimer</a>
+                        </li>
+                        <li>
+                            <a href="">Billing Policy</a>
+                        </li>
+                        <li>
+                            <a href="">Terms of Use</a>
+                        </li>
+                        <li>
+                            <a href="">Advertise with Us</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="space">
+                    <ul>
+                        <li class="colored-list">SELL ON AFIANANYI</li>
+                        <li>
+                            <a href="">Register your Business</a>
+                        </li>
+                        <li>
+                            <a href="">Create a Store</a>
+                        </li>
+                        <li>
+                            <a href="">How it works</a>
+                        </li>
+                        <li>
+                            <a href="">Trust and Safety</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="space">
+                    <ul>
+                        <li class="colored-list">DELIVERY</li>
+                        <li>
+                            <a href="">Chisco Express</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="left-space">
+                    <ul>
+                        <li class="colored-list big-para">DOWNLOAD AND CONNECT WITH US</li>
+                    </ul>
+                    <div class="mobile-app">
+
+                    </div>
+
+                    <a href=""><img src="resources/img/ios.svg">
+                    </a>&nbsp;&nbsp;
+                    <a href=""><img src="resources/img/android.svg"></a>
+
+                    <p class="follow__p">Follow us:
+                        <span>
+                            <a href=""><img class="icon-small" src="resources/img/brands/facebook-white.svg" width="22px" height="22px" alt="facebook"></a>
+                        </span>
+                        <span>
+                            <a href=""><img class="icon-small" src="resources/img/brands/instagram-white.svg" width="22px" height="22px" alt="instagram"></a>
+                        </span>
+                        <span>
+                            <a href=""><img class="icon-small" src="resources/img/brands/linkedin-white.svg" width="22px" height="22px" alt="linkedin"></a>
+                        </span>
+                        <span>
+                            <a href=""><img class="icon-small" src="resources/img/brands/twitter-circular-button-white.svg" width="22px" height="22px" alt="twitter"></a>
+                        </span>
+                    </p>
+                    <p class="powered">Powered by
+                        <img class="logo-by" src="resources/img/logo-by.svg">
+                    </p>
+                </div>
+            </div>
+
+            <img class="footer-last-img" src="resources/img/awka.svg">
+            <img class="footer-last-img" src="resources/img/onitsha.svg">
+            <img class="footer-last-img" src="resources/img/nccima.svg">
+            <img class="footer-last-img" src="resources/img/oni.svg">
+
+            <p class="copy">Copyright (c) 2018 Afiaanyi. All rights reserved</p>
+
+            <img class="yb" src="resources/img/yb.svg">
+            <img class="by" src="resources/img/black-yellow.svg">
+        </footer>
+    </section>
+
+    <script src="resources/js/modal.js"></script>
+</body>
+
+</html>

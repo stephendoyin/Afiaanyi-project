@@ -21,3 +21,4 @@ var modal = document.querySelector(".modal_container");
 function toggleModal(event) {
   modal.classList.toggle("show_modal");
 }
+

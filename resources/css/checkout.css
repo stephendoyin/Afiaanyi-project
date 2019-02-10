@@ -2,6 +2,11 @@ body{
     position: relative;
 }
 
+.body_row{
+    max-width: 1140px;
+    margin: 0 auto;
+}
+
 .header__greeting {
     font-family: "Montserrat";
     font-weight: 500;
@@ -221,7 +226,7 @@ body{
 .chkout-btn--color {
     width: 100%;
     color: white;
-    padding: 14px 0;
+    padding: 13px 0;
     background: linear-gradient(90deg, #E6B712 31.25%, #CAAA3B 88.19%);
 }
 
@@ -235,7 +240,7 @@ body{
 }
 
 .inner-space {
-    margin: 24px 36px;
+    margin: 14px 36px;
 }
 
 .checkout-calc__p--currency {
@@ -470,11 +475,11 @@ body{
 .modal_address_value{
     font-size: 12px;
     font-weight: 400;
-    padding-bottom: 15px;
+    padding-bottom: 5px;
 }
 
 .right_lower_section{
-    padding-top: 25px;
+    padding-top: 33px;
 }
 
 .chkout-btn--modal{

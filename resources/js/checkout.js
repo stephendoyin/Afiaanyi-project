@@ -103,13 +103,18 @@ let placeInfo = document.querySelector(".pickup-info");
 let confirmButton = document.querySelector(".js_confirm_order");
 let firstPayRadioBtn = document.querySelector(".js_handle_payment_radio");
 let secondPayRadioBtn = document.querySelector(".js_handle_payment_radio_two");
-
+let pickContainer = document.querySelector(".js_handle_pick_container")
 
 
 proceedBtn.style.opacity = 1;
 
 pickupRadioBtnSec.addEventListener("click", function () {
-    if (pickupRadioBtnSec.checked) {
+    if(pickContainer.innerHTML !== "" && pickupRadioBtnSec.checked){
+        console.log(pickContainer.innerHTML.length);
+        proceedBtn.style.opacity = 1;
+        document.querySelector(".js_handle_pick_container")
+        .classList.remove("hide");
+    }else if (pickupRadioBtnSec.checked) {
         console.log(pickupRadioBtnSec.value);
         proceedBtn.style.opacity = .5;
         triggerBtn.classList.remove("hide");
@@ -121,7 +126,8 @@ pickupRadioBtnFirst.addEventListener("click", function () {
     if (pickupRadioBtnFirst.checked) {
         console.log(pickupRadioBtnFirst.value);
         triggerBtn.classList.add("hide");
-        placeInfo.classList.add("hide");
+        document.querySelector(".js_handle_pick_container")
+        .classList.add("hide");
         proceedBtn.style.opacity = 1;
     }
 });
@@ -130,13 +136,37 @@ secondProceedBtn.addEventListener("click", function () {
     //pick up station dom
 
     console.log("event triggered");
-    let pickUpStation = document.querySelector(".pick_up_station_name");
+    // let pickUpStation = document.querySelector(".pick_up_station_name");
     let address = document.querySelector(".modal_section_left .select-selected");
-    pickUpStation.innerHTML = address.innerHTML;
-    placeInfo.classList.remove("hide");
+    pickContainer.innerHTML = `
+    <div class="pickup-info">
+                                    <p class="details-content__text">
+                                        <span class="pick_up_station_name">${address.innerHTML}</span> Pick-Up Station
+                                    </p>
+
+                                    <p class="details-content__text">
+                                        9, Commercial Avenue, Sabo, Yaba
+                                    </p>
+
+                                    <p class="details-content__text">
+                                        Shipping Fee:
+                                        <span>
+                                            ₦&nbsp; 400
+                                        </span>
+                                    </p>
+                                    <button class="chkout-btn second_trigger_btn">
+                                    <span>CHANGE PICKUP STATION</span>
+                                </button>
+                                </div>
+    `;
     proceedBtn.style.opacity = 1;
+    triggerBtn.classList.add("hide");
     toggleModal();
+    addEventToNewBtn();
+    
 });
+
+/*  */
 
 
 proceedBtn.addEventListener("click", function () {
@@ -166,3 +196,18 @@ secondPayRadioBtn.addEventListener("click", function (e) {
 
 // confirmButton.addEventListener("click", function)
 
+function addEventToNewBtn() {
+    document.querySelector(".second_trigger_btn").addEventListener("click", function(){
+        toggleModal();
+    })
+}
+
+
+$(function () {
+
+    $(".js_confirm_order").click(function () {
+        window.location = $(this).find("a").attr("href");
+        return false;
+    });
+
+});
