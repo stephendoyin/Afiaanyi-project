@@ -62,6 +62,8 @@ function previousSlider() {
     });
 }
 
+
+
 document.querySelector(".previous").addEventListener("click", function(){
     previousSlider();
 });
@@ -74,3 +76,5 @@ document.querySelector(".next").addEventListener("click", function(){
 $(".hero--btn").click(function(){
     $("html, body").animate({scrollTop: $(".about__outer-wrapper").offset().top-100}, 1000)
 });
+
+

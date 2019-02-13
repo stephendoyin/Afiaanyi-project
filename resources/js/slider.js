@@ -1,85 +1,85 @@
-$(function () {
+ $(function () {
 
 
-    function slide() {
-        //grap slider wrapper
+//     function slide() {
+//         //grap slider wrapper
 
-        var inWrap = $('.slides');
+//         var inWrap = $('.slides');
 
-        //animate to the left inner wrapper
-        inWrap.animate({ left: '0%' }, 3000, function () {
+//         //animate to the left inner wrapper
+//         inWrap.animate({ left: '0%' }, 3000, function () {
 
-            inWrap.css('left', '-100%');
+//             inWrap.css('left', '-100%');
 
-            $('.slide').first().before($('.slide').last());
+//             $('.slide').first().before($('.slide').last());
 
-        });
+//         });
 
-    }
+//     }
 
-    setInterval(slide, 10000);
-
-
-
-    function secondSlide() {
-
-        if ($(window).width() < 940) {
-            let secSlide = $('.featured-images');
-
-            secSlide.animate({ left: '-100%' }, 3000, function () {
-
-                secSlide.css('left', '-50%');
-
-                $('.featured-images__card').last().after($('.featured-images__card').first());
-
-            });
-        }
-        else {
-            let secSlide = $('.featured-images');
-
-            secSlide.animate({ left: '-68%' }, 3000, function () {
-
-                secSlide.css('left', '-34%');
-
-                $('.featured-images__card').last().after($('.featured-images__card').first());
-
-            });
-        }
+//     setInterval(slide, 10000);
 
 
-    }
 
-    setInterval(secondSlide, 8000);
+//     function secondSlide() {
 
-    function thirdSlider() {
-        let thirdSlide = $('.card-wrapper__outer');
+//         if ($(window).width() < 940) {
+//             let secSlide = $('.featured-images');
 
-        thirdSlide.animate({ left: '-68%' }, 3000, function () {
+//             secSlide.animate({ left: '-100%' }, 3000, function () {
 
-            thirdSlide.css('left', '-34%');
+//                 secSlide.css('left', '-50%');
 
-            $('.service__card').last().after($('.service__card').first());
+//                 $('.featured-images__card').last().after($('.featured-images__card').first());
 
-        });
-    }
+//             });
+//         }
+//         else {
+//             let secSlide = $('.featured-images');
 
-    setInterval(thirdSlider, 9000);
+//             secSlide.animate({ left: '-68%' }, 3000, function () {
+
+//                 secSlide.css('left', '-34%');
+
+//                 $('.featured-images__card').last().after($('.featured-images__card').first());
+
+//             });
+//         }
 
 
-    function fourthSlide() {
+//     }
 
-        let fourthSlide = $('.testimonials');
+//     setInterval(secondSlide, 8000);
 
-        fourthSlide.animate({ left: '20%' }, 3000, function () {
+//     function thirdSlider() {
+//         let thirdSlide = $('.card-wrapper__outer');
 
-            fourthSlide.css('left', '0%');
+//         thirdSlide.animate({ left: '-68%' }, 3000, function () {
 
-            $('.paper').first().before($('.paper').last());
+//             thirdSlide.css('left', '-34%');
 
-        });
-    }
+//             $('.service__card').last().after($('.service__card').first());
 
-    setInterval(fourthSlide, 8000);
+//         });
+//     }
+
+//     setInterval(thirdSlider, 9000);
+
+
+//     function fourthSlide() {
+
+//         let fourthSlide = $('.testimonials');
+
+//         fourthSlide.animate({ left: '20%' }, 3000, function () {
+
+//             fourthSlide.css('left', '0%');
+
+//             $('.paper').first().before($('.paper').last());
+
+//         });
+//     }
+
+//     setInterval(fourthSlide, 8000);
 
 
     let slideContainer = $(".slider__container");
@@ -112,20 +112,20 @@ $(function () {
 
     function pause(){
         
-        let pause = document.querySelector(".pause");
+        let pause = document.querySelector("img.pause");
         pause.classList.add("hide");
-        let play = document.querySelector(".play");
+        let play = document.querySelector("img.play");
         play.classList.remove("hide");
         intervalSetter('pause');
 
     }
 
     function play(){
-        let pause = document.querySelector('.pause');
+        let pause = document.querySelector('img.pause');
         pause.classList.remove("hide");
-        let play = document.querySelector(".play");
+        let play = document.querySelector("img.play");
         play.classList.add("hide");
-        // setInterval(moveNext, 11000);
+        moveNext();
         intervalSetter();
     }
     let autoMove;
