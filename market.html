@@ -3,7 +3,7 @@
 
 <head>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Poppins:400,500,600" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Montserrat:200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i" rel="stylesheet">
     <style>
@@ -19,10 +19,10 @@
         <nav>
             <div class="header__top-container">
                 <div class="row header__nav-content">
-                    <div class="header__logo-container">
+                    <div>
                         <img src="resources/img/market-logo.svg" class="header__logo" alt="Afiaanyi logo">
                     </div>
-                    <div class="header__form-input-container">
+                    <div>
                         <input type="search" class="header__form-input header__input-nav" placeholder="Search for products, brands and categories">
                         <input type="submit" class="header__submit">
                     </div>
@@ -46,7 +46,7 @@
 
 
                     <div class="header__customized-items">
-                        <p class="header__greeting">Welcome <span class="header__username">Stephen!</span></p>
+                        <p class="header__greeting">Welcome <span class="header__username">&nbsp;Stephen!</span></p>
 
                         <a href="">
                             <img src="resources/img/man.png" class="header-nav-icon header__avatar" height="35px" width="35px">
@@ -57,16 +57,21 @@
                         </a>
                         <a href="">
                             <img src="resources/img/gold-shop-cart.svg" class="header-nav-icon">
+                            <sup class="cart__label">3</sup>
                         </a>
+
+                        <a href="">
+                            <img src="resources/img/notify.svg" class="header-nav-icon">
+                        </a>
+
                         </p>
                     </div>
                 </div>
             </div>
-
         </nav>
 
-        <div class="full--nav">
-            <ul class="row header__full-nav" style="position:relative">
+        <div class="full--nav row">
+            <ul class="header__full-nav" style="position:relative">
                 <li class="header__full-nav-list">
                     <a href="" class="header__full-nav-link ">
                         <img src="resources/img/product-list/product-images/phoneandtablet.svg">
@@ -250,7 +255,7 @@
                         <img src="resources/img/product-list/product-images/fashion.svg">
                         &nbsp;Fashion</a>
                     <img src="resources/img/gold-up-arrow.svg">
-                    <div class="dropdown__header animated fadeIn">
+                    <div class="dropdown__header animated dropdown__header--fashion fadeIn">
                         <div class="drop-down__content">
                             <div class="drop-down__column">
                                 <h4 class="drop-drop__list-title">Food Stuff</h4>
@@ -428,7 +433,7 @@
                         <img src="resources/img/product-list/product-images/gaming.svg">
                         &nbsp;Gaming</a>
                     <img src="resources/img/gold-up-arrow.svg">
-                    <div class="dropdown__header animated fadeIn">
+                    <div class="dropdown__header dropdown__header--gaming animated fadeIn">
                         <div class="drop-down__content">
                             <div class="drop-down__column">
                                 <h4 class="drop-drop__list-title">Food Stuff</h4>
@@ -518,7 +523,7 @@
                         &nbsp;Grocery
                     </a>
                     <img src="resources/img/gold-up-arrow.svg">
-                    <div class="dropdown__header animated fadeIn">
+                    <div class="dropdown__header dropdown__header--grocery animated fadeIn">
                         <div class="drop-down__content">
                             <div class="drop-down__column">
                                 <h4 class="drop-drop__list-title">Food Stuff</h4>
@@ -607,7 +612,7 @@
                         <img src="resources/img/product-list/product-images/toykidandbabies.svg">
                         &nbsp;Toys, Kids & Babies</a>
                     <img src="resources/img/gold-up-arrow.svg">
-                    <div class="dropdown__header animated fadeIn">
+                    <div class="dropdown__header dropdown__header--toys animated fadeIn">
                         <div class="drop-down__content">
                             <div class="drop-down__column">
                                 <h4 class="drop-drop__list-title">Food Stuff</h4>
@@ -696,7 +701,7 @@
                         <img src="resources/img/product-list/product-images/hometools.svg">
                         &nbsp;Home Improvement, Tools</a>
                     <img src="resources/img/gold-up-arrow.svg">
-                    <div class="dropdown__header animated fadeIn">
+                    <div class="dropdown__header dropdown__header--impr animated fadeIn">
                         <div class="drop-down__content">
                             <div class="drop-down__column">
                                 <h4 class="drop-drop__list-title">Food Stuff</h4>
@@ -1003,26 +1008,35 @@
             </div>
             <div class="advert-space">
                 <div class="advert-space__upper-division">
-                    <p>SELL ON AFIANYI
+                    <p>
+                        <img src="resources/img/sell.svg">
                         <span>
-                            <br>Become a Vendor!</span>
+                            SELL ON AFIANYI
+                            <br>Become a Vendor!
+                        </span>
                     </p>
 
 
-                    <p>FREE RETURNS
+                    <p>
+                        <img src="resources/img/free_ret.svg">
                         <span>
-                            <br>Within 7 days</span>
+                            FREE RETURNS
+                            <br>Within 7 days
+                        </span>
                     </p>
 
 
-                    <p>EXCLUSIVE OFFERS
+                    <p>
+                        <img src="resources/img/exclusive.svg">
                         <span>
-                            <br>Download Afiaanyi app</span>
+                            EXCLUSIVE OFFERS
+                            <br>Download Afiaanyi app
+                        </span>
                     </p>
 
                 </div>
                 <div class="advert-space__lower-division">
-                    <!-- <img src="resources/img/top-deal.svg"> -->
+                    <img src="resources/img/ELECTRONICS.png">
                 </div>
             </div>
         </div>
@@ -1096,18 +1110,21 @@
     </section>
 
     <section>
-        <div class="ad-bar">
+
+        <a href="" class="ad-bar">
             <img src="resources/img/banner.svg" width="100%">
-        </div>
+            <img class="ad-bar__get-started" src="resources/img/get_started.png">
+        </a>
+
     </section>
 
     <section>
 
         <div class="market__roll--wrapper row">
 
-            <div class="market__ad">
-                <img src="resources/img/ELECTRONICS.png">
-            </div>
+            <a href="" class="market__ad">
+                <img src="resources/img/top-deals.jpg">
+            </a>
 
 
             <div class="market__product-wrapper">
@@ -1128,7 +1145,7 @@
                                     <div class="badge__new">NEW</div>
                                 </div>
                                 <div class="img__overlay">
-                                    <img src="resources/img/ear-phone.jpg" class="product__img" alt="product">
+                                    <img src="resources/img/phone_pro.jpg" class="product__img" alt="product">
                                 </div>
                                 <span class="product__badge"></span>
                             </div>
@@ -1175,7 +1192,7 @@
                                     <div class="badge__new">NEW</div>
                                 </div>
                                 <div class="img__overlay">
-                                    <img src="resources/img/ear-phone.jpg" class="product__img" alt="product">
+                                    <img src="resources/img/phone_pro.jpg" class="product__img" alt="product">
                                 </div>
                                 <span class="product__badge"></span>
                             </div>
@@ -1222,7 +1239,7 @@
                                     <div class="badge__new">NEW</div>
                                 </div>
                                 <div class="img__overlay">
-                                    <img src="resources/img/ear-phone.jpg" class="product__img" alt="product">
+                                    <img src="resources/img/boot.jpg" class="product__img" alt="product">
                                 </div>
                                 <span class="product__badge"></span>
                             </div>
@@ -1269,7 +1286,7 @@
                                     <div class="badge__new">NEW</div>
                                 </div>
                                 <div class="img__overlay">
-                                    <img src="resources/img/ear-phone.jpg" class="product__img" alt="product">
+                                    <img src="resources/img/dummy.jpg" class="product__img" alt="product">
                                 </div>
                                 <span class="product__badge"></span>
                             </div>
@@ -1316,7 +1333,7 @@
                                     <div class="badge__new">NEW</div>
                                 </div>
                                 <div class="img__overlay">
-                                    <img src="resources/img/ear-phone.jpg" class="product__img" alt="product">
+                                    <img src="resources/img/prophone.jpg" class="product__img" alt="product">
                                 </div>
                                 <span class="product__badge"></span>
                             </div>
@@ -1393,7 +1410,7 @@
                                     <div class="badge__new">NEW</div>
                                 </div>
                                 <div class="img__overlay">
-                                    <img src="resources/img/ear-phone.jpg" class="product__img" alt="product">
+                                    <img src="resources/img/phone_pro.jpg" class="product__img" alt="product">
                                 </div>
                                 <span class="product__badge"></span>
                             </div>
@@ -1440,7 +1457,7 @@
                                     <div class="badge__new">NEW</div>
                                 </div>
                                 <div class="img__overlay">
-                                    <img src="resources/img/ear-phone.jpg" class="product__img" alt="product">
+                                    <img src="resources/img/phone_pro.jpg" class="product__img" alt="product">
                                 </div>
                                 <span class="product__badge"></span>
                             </div>
@@ -1487,7 +1504,7 @@
                                     <div class="badge__new">NEW</div>
                                 </div>
                                 <div class="img__overlay">
-                                    <img src="resources/img/ear-phone.jpg" class="product__img" alt="product">
+                                    <img src="resources/img/phone_pro.jpg" class="product__img" alt="product">
                                 </div>
                                 <span class="product__badge"></span>
                             </div>
@@ -1534,7 +1551,7 @@
                                     <div class="badge__new">NEW</div>
                                 </div>
                                 <div class="img__overlay">
-                                    <img src="resources/img/ear-phone.jpg" class="product__img" alt="product">
+                                    <img src="resources/img/phone_pro.jpg" class="product__img" alt="product">
                                 </div>
                                 <span class="product__badge"></span>
                             </div>
@@ -1581,7 +1598,7 @@
                                     <div class="badge__new">NEW</div>
                                 </div>
                                 <div class="img__overlay">
-                                    <img src="resources/img/ear-phone.jpg" class="product__img" alt="product">
+                                    <img src="resources/img/phone_pro.jpg" class="product__img" alt="product">
                                 </div>
                                 <span class="product__badge"></span>
                             </div>
@@ -1669,13 +1686,13 @@
                             <li class="market__nav-list"><a href="" class="market__nav-link">iPads</a></li>
                             <li class="market__nav-list"><a href="" class="market__nav-link">Tabs</a></li>
                         </ul>
-                        
+
                     </div>
                 </div>
 
-                <div class="market_ad_cont">
+                <a href="" class="market_ad_cont">
                     <img src="resources/img/PHONEad.jpg">
-                </div>
+                </a>
 
             </div>
 
@@ -2004,8 +2021,7 @@
             <div class="market__nav-outer-container">
 
                 <div class="market__nav market__nav--second-row market__nav--third-row">
-                    <h2 class="market__nav-title market__nav-title--green"><img src="resources/img/phone-tablet.svg">&nbsp;&nbsp;PHONE AND
-                        TABLETS</h2>
+                    <h2 class="market__nav-title market__nav-title--green"><img src="resources/img/home_off.svg">&nbsp;&nbsp;home & office</h2>
                     <div class="market__nav--list-container market-brand__logo market__nav--list-container--three">
                         <img src="resources/img/henkel-logo.png">
                         <img src="resources/img/origins.png">
@@ -2047,9 +2063,9 @@
                     </div>
                 </div>
 
-                <div class="market_ad_cont">
+                <a href="" class="market_ad_cont">
                     <img src="resources/img/home.jpg">
-                </div>
+                </a>
 
             </div>
 
@@ -2384,8 +2400,7 @@
             <div class="market__nav-outer-container">
 
                 <div class="market__nav market__nav--second-row market__nav market__nav--fourth-row">
-                    <h2 class="market__nav-title market__nav-title--purple"><img src="resources/img/phone-tablet.svg">&nbsp;&nbsp;PHONE AND
-                        TABLETS</h2>
+                    <h2 class="market__nav-title market__nav-title--purple"><img src="resources/img/health_beau.svg">&nbsp;&nbsp;health & beauty</h2>
                     <div class="market__nav--list-container market-brand__logo">
                         <img src="resources/img/hills.png">
                         <img src="resources/img/watsons-logo.png">
@@ -2431,9 +2446,9 @@
                     </div>
                 </div>
 
-                <div class="market_ad_cont">
+                <a href="" class="market_ad_cont">
                     <img src="resources/img/CREAM.jpg">
-                </div>
+                </a>
 
             </div>
 
@@ -2759,16 +2774,12 @@
         <img src="resources/img/blog/ajax-loader.gif" class="gif__loader">Loading
     </div>
 
-
-    <script src="resources/js/slider.js"></script>
-    <script src="resources/js/market.js"></script>
-
     <section class="contact__container">
         <div class="contact row">
             <div class="one">
                 <p>
                     <strong>SUPPORT</strong><br>
-    
+
                     <img class="" src="resources/img/phone.svg" alt=""> +234 803 400 0000
                 </p>
             </div>
@@ -2794,10 +2805,8 @@
                 <input type="email" id="mail" placeholder="Enter e-mail"><input id="send" type="submit" value="send">
             </div>
         </div>
-    
-    
     </section>
-    
+
     <section class="footer hide-flow">
         <footer class="row">
             <div class="footer-inner">
@@ -2891,13 +2900,13 @@
                         <li class="colored-list big-para">DOWNLOAD AND CONNECT WITH US</li>
                     </ul>
                     <div class="mobile-app">
-    
+
                     </div>
-    
+
                     <a href=""><img src="resources/img/ios.svg">
                     </a>&nbsp;&nbsp;
                     <a href=""><img src="resources/img/android.svg"></a>
-    
+
                     <p class="follow__p">Follow us:
                         <span>
                             <a href=""><img class="icon-small" src="resources/img/brands/facebook-white.svg" width="22px" height="22px" alt="facebook"></a>
@@ -2917,17 +2926,19 @@
                     </p>
                 </div>
             </div>
-    
+
             <img class="footer-last-img" src="resources/img/awka.svg">
             <img class="footer-last-img" src="resources/img/onitsha.svg">
             <img class="footer-last-img" src="resources/img/nccima.svg">
             <img class="footer-last-img" src="resources/img/oni.svg">
-    
+
             <p class="copy">Copyright (c) 2018 Afiaanyi. All rights reserved</p>
-    
-            <img class="yb" src="resources/img/yb.svg">
-            <img class="by" src="resources/img/black-yellow.svg">
+            <img src="resources/img/footer_mark.png" class="footer-mark">
     </section>
+
+    <script src="resources/js/slider.js"></script>
+    <script src="resources/js/market.js"></script>
+
 </body>
 
 </html>

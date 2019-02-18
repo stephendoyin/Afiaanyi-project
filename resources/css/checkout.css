@@ -14,7 +14,6 @@ body{
 }
 
 .header__top-container {
-    /* background: url(../img/header__bar.jpg); */
     box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.05);
 }
 
@@ -521,8 +520,4 @@ body{
 
 .form__sections--scroll::-webkit-scrollbar-thumb:hover {
     background: #555;
-}
-
-.js_handle_sec_proceed{
-    /* opacity: .5; */
 }
