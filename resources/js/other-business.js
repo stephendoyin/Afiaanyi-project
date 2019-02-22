@@ -197,32 +197,18 @@ $("#rateBox").rate({
 });
 
 
-$("#second-rateBox").rate({
-    // 0：svg  1：Font class  2：Unicode
+$(".second-rateBox").rate({
     type: 0,
-    // the number of stars
     length: 5,
-    // initial value
     value: 4,
-    // allows half star
     half: true,
-    // supports decimal?
     decimal: true,
-    // is readonly?
     readonly: true,
-    // shows the current rating value on hover
-    // hover: false,
-      // shows rating text
-       text: false,
-    // an array of rating text
+    text: false,
     textList: ['Bad', 'Poor', 'Medium', 'Good', 'Perfect'],
-    // color
     theme: '#E6B712',
-    // text/star size
     size: '16px',
-    // space between stars
     gutter: '3px',
-    // default CSS classes
     selectClass: 'fxss_rate_select',
     incompleteClass: '',
     customClass: 'first-star-rating'

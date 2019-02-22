@@ -71,7 +71,7 @@ aside {
     visibility: hidden;
 }
 
-.row {
+.main_row {
     max-width: 90%;
     margin: 0 auto;
     /* overflow: hidden; */
@@ -691,7 +691,7 @@ nav {
 }
 
 .market__ad {
-    width: 18%;
+    width: 20%;
     margin-right: 2%;
 }
 
@@ -780,6 +780,7 @@ button:focus {
 .ratings-numbers {
     display: flex;
     justify-content: space-between;
+    margin-left: -3px;
 }
 
 .badge__new {
@@ -1101,11 +1102,13 @@ hr {
 }
 
 .col_wrapper_inner {
-    margin: 0 1.6%
+    margin: 0 1.6%;
+    width: 50%;
 }
 
 .col_wrapper_inner--two {
-    padding: 0 1.66%
+    padding: 0 1.66%;
+    width: 50%;
 }
 
 section {
@@ -1132,7 +1135,8 @@ section.col {
 }
 
 .col_wrapper_inner--three {
-    padding: 0 1.66%
+    padding: 0 1.66%;
+    width: 50%;
 }
 
 .product__card--col:hover .product-modal {
@@ -1347,4 +1351,141 @@ section.footer {
     right: 4.5%;
     transform: translateY(-50%);
     width: 9%;
+}
+
+.numbers {
+    font-size: 12px;
+}
+
+.modal_header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #FFFFFF;
+    box-shadow: 0px 5px 20px rgba(0, 0, 0, 0.05);
+    padding: 25px;
+}
+
+.modal_header__title {
+    font-family: Segoe UI;
+    font-size: 18px;
+    color: #030303;
+    font-weight: 500;
+}
+
+.modal_content {
+    /* width: 80%; */
+    padding: 0;
+}
+
+.modal_product__thumbnail {
+    height: 68px;
+    width: 68px;
+    overflow: hidden;
+    cursor: pointer;
+    margin: 20px 25px;
+}
+
+.modal_product__thumbnail img {
+    width: 100%;
+}
+
+.modal_body {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+
+.modal_body__second_column {
+    height: 640px;
+    width: 458px;
+    overflow: hidden;
+}
+
+.modal_body__second_column img {
+    width: 100%;
+    padding: 20px 0;
+}
+
+.modal_body__third_column {
+    width: 555px;
+    margin: 20px 29px;
+}
+
+.modal_body__title {
+    font-size: 24px;
+    font-weight: 500;
+    padding-bottom: 9px;
+}
+
+.modal_body_flex {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.modal_body__details__rating_value {
+    font-size: 16px;
+    font-weight: 200;
+    padding-left: 10px;
+    color: #666666;
+    font-family: "Montserrat";
+}
+
+.modal-body__details_amount {
+    font-size: 24px;
+    color: #000;
+    font-weight: 300;
+    padding-bottom: 6px;
+}
+
+.modal_body_flex--center {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.modal_body_flex--center:nth-child(1), .modal_body_flex--center:nth-child(2) {
+    padding-bottom: 30px;
+}
+
+.modal_body__details_seller_name {
+    font-size: 12px;
+    color: black;
+    margin-bottom: 18px;
+}
+
+.modal_description_title {
+    font-size: 12px;
+    color: black;
+    padding-bottom: 6px;
+}
+
+.modal_description_text {
+    font-family: Segoe UI;
+    line-height: 20px;
+    font-size: 14px;
+    font-weight: 400;
+    text-align: justify;
+}
+
+.modal_review_btn, modal_review_btn:visited {
+    color: #F30000;
+    font-size: 12px;
+    line-height: 20px;
+    margin-bottom: 13px;
+    text-decoration: none;
+}
+
+.modal_inner_container {
+    background: #FCFCFC;
+    border: 1px solid #C4C4C4;
+    margin-top: 13px;
+    padding: 20px 13px;
+}
+
+.modal_body_flex--center span {
+    font-size: 12px;
+    font-weight: 500;
+    margin-left: 6px;
 }

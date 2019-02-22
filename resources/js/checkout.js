@@ -107,6 +107,7 @@ let pickContainer = document.querySelector(".js_handle_pick_container")
 
 
 proceedBtn.style.opacity = 1;
+confirmButton.style.opacity = .5;
 
 pickupRadioBtnSec.addEventListener("click", function () {
     if(pickContainer.innerHTML !== "" && pickupRadioBtnSec.checked){
@@ -184,6 +185,7 @@ firstPayRadioBtn.addEventListener("click", function (e) {
     if (firstPayRadioBtn.checked) {
         let thirdSvg = document.querySelector("#third_process_svg path");
         thirdSvg.setAttribute("fill", "rgb(67, 184, 64)");
+        confirmButton.style.opacity = 1;
     }
 })
 
@@ -191,6 +193,7 @@ secondPayRadioBtn.addEventListener("click", function (e) {
     if (secondPayRadioBtn.checked) {
         let thirdSvg = document.querySelector("#third_process_svg path");
         thirdSvg.setAttribute("fill", "rgb(67, 184, 64)");
+        confirmButton.style.opacity = 1;
     }
 })
 
@@ -206,8 +209,12 @@ function addEventToNewBtn() {
 $(function () {
 
     $(".js_confirm_order").click(function () {
-        window.location = $(this).find("a").attr("href");
-        return false;
+        if (confirmButton.style.opacity == 1) {
+            window.location = $(this).find("a").attr("href");
+            return false; 
+        }
+        
     });
 
 });
+

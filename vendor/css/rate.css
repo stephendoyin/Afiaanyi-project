@@ -1,35 +1,38 @@
-.clearfix:before,
-.clearfix:after {
-    display: table;
-    content: " ";
+.jq-stars {
+    display: inline-block;
 }
-.clearfix:after {
-    clear: both;
-}
-.clearfix{
-    *zoom: 1;
-}
-.icon {
-    width: 1em; height: 1em;
-    vertical-align: -0.15em;
-    fill: currentColor;
-    overflow: hidden;
-}
-.rate_wrapper {
+
+.jq-rating-label {
+    font-size: 22px;
+    display: inline-block;
     position: relative;
-}
-.rate_box {
-    display: inline-block;
-}
-.rate_item {
-    float: left;
-    cursor: pointer;
-    font-size: 0;
-    line-height: 1;
-}
-.rate_text {
-    display: inline-block;
     vertical-align: top;
-    line-height: 1;
-    margin-left: 15px;
+    font-family: helvetica, arial, verdana;
+}
+
+.jq-star {
+    width: 100px;
+    height: 100px;
+    display: inline-block;
+    cursor: pointer;
+}
+
+.jq-star-svg {
+    padding-left: 3px;
+    width: 100%;
+    height: 100%;
+}
+
+.jq-star:hover .fs-star-svg path {}
+
+.jq-star-svg path {
+    /* stroke: #000; */
+    stroke-linejoin: round;
+}
+
+/* un-used */
+
+.jq-shadow {
+    -webkit-filter: drop-shadow( -2px -2px 2px #888);
+    filter: drop-shadow( -2px -2px 2px #888);
 }

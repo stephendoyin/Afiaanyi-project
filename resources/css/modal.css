@@ -5,18 +5,29 @@
     display: none;
     justify-content: center;
     align-items: center;
+    z-index: 209;
+    overflow-y: auto;
+    align-items: center;
     width: 100%;
-    height: 100%;
+    max-height: 100%;
     background-color: rgba(0, 0, 0, 0.5);
     transition: visibility 0s linear 0.25s, opacity 0.25s 0s, transform 0.25s;
 }
 
+/* body{
+    overflow-y: hidden;
+} */
+
 .modal_content {
     background-color: white;
-    padding: 23px 50px;
+    padding: 30px;
     z-index: 869;
 }
 
 .show_modal {
     display: flex;
+}
+
+.modal_body {
+    background: #fff;
 }
