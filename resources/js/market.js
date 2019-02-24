@@ -307,6 +307,11 @@ $(".modal_body_second-row-rateBox").starRating({
 
 //store btn in a variable
 let quickViewButton = document.querySelectorAll(".quick-view");
+let closeButton = document.querySelector(".close_button");
+
+closeButton.addEventListener("click", function () {
+    toggleModal();
+})
 
 //add click event on all button
 for (let i = 0; i < quickViewButton.length; i++) {
@@ -317,7 +322,7 @@ for (let i = 0; i < quickViewButton.length; i++) {
 }
 
 function windowOnClick(event) {
-    if (event.target === modal_container) {
+    if (event.target === modal) {
         toggleModal();
     }
 }

@@ -7,8 +7,8 @@
 
 
 // var okButton = document.querySelector(".ok");
-var modal = document.querySelector(".modal_container");
-
+let modal = document.querySelector(".modal_container");
+let body = document.querySelector("body");
 
   
 
@@ -20,5 +20,6 @@ var modal = document.querySelector(".modal_container");
 //toggle modal
 function toggleModal(event) {
   modal.classList.toggle("show_modal");
+  body.classList.toggle("hide_scroll")
 }
 

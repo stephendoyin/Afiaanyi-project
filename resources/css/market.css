@@ -1102,7 +1102,7 @@ hr {
 }
 
 .col_wrapper_inner {
-    margin: 0 1.6%;
+    padding: 0 1.66%;
     width: 50%;
 }
 
@@ -1223,6 +1223,7 @@ span.ios, span.android {
 
 .colored-list {
     color: #d8b027;
+    font-weight: 600;
 }
 
 .copy {
@@ -1488,4 +1489,8 @@ section.footer {
     font-size: 12px;
     font-weight: 500;
     margin-left: 6px;
+}
+
+.close_button{
+    cursor: pointer;
 }
