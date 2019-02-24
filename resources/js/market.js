@@ -363,3 +363,25 @@ function reduceInput() {
         return;
     }
 }
+
+
+let thumbnailContainers = document.querySelectorAll(".modal_product__thumbnail");
+
+let largeImage = document.querySelector(".modal_body__second_column img")
+
+// let src = document.querySelectorAll(".modal_product__thumbnail img").src
+
+
+
+//loop thru all thumbnails
+
+for (let i = 0; i < thumbnailContainers.length; i++){
+
+    thumbnailContainers[i].addEventListener("click", function () {
+        let newSrc = thumbnailContainers[i].childNodes[1].src
+        largeImage.src = newSrc;
+        
+    });
+    
+    
+}

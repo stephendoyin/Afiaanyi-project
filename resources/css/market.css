@@ -1398,13 +1398,14 @@ section.footer {
 }
 
 .modal_body__second_column {
-    height: 640px;
+    height: 690px;
     width: 458px;
     overflow: hidden;
 }
 
 .modal_body__second_column img {
     width: 100%;
+    height: 100%;
     padding: 20px 0;
 }
 
@@ -1442,7 +1443,7 @@ section.footer {
 
 .modal_body_flex--center {
     display: flex;
-    justify-content: space-between;
+    justify-content: flex-start;
     align-items: center;
 }
 
@@ -1450,10 +1451,23 @@ section.footer {
     padding-bottom: 30px;
 }
 
+.modal_body_second-row-rateBox {
+    margin-left: -4px;
+}
+
+.modal_body_flex--center svg {
+    width: 20px;
+}
+
 .modal_body__details_seller_name {
     font-size: 12px;
     color: black;
-    margin-bottom: 18px;
+    margin-bottom: 5px;
+}
+
+.modal_description__box {
+    padding-top: 18px;
+    border-top: 1px solid #dedede;
 }
 
 .modal_description_title {
@@ -1702,4 +1716,62 @@ section.footer {
     background: linear-gradient(90deg, #E6B712 31.25%, #CAAA3B 88.19%);
     color: #fff;
     border: none;
+}
+
+.modal-p {
+    font-family: Segoe UI;
+    line-height: 20px;
+    font-size: 14px;
+    color: #666666;
+}
+
+.modal_share__container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.modal_share__container img {
+    margin: 0 8px;
+}
+
+.modal_share__container p {
+    padding-right: 20px;
+}
+
+.modal_share__container a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.modal_body_flex--top-spaced {
+    padding-top: 35px;
+}
+
+.modal__btn--underlined {
+    width: 135px;
+    text-align: center;
+    border-bottom: 1px solid #F30000;
+    padding: 10px 15px;
+}
+
+.modal_btn__outlined--large:link, .modal_btn__outlined--large:visited {
+    width: 444px;
+    margin-left: 50%;
+    transform: translateX(-50%);
+    -webkit-transform: translateX(-50%);
+    -moz-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+    -o-transform: translateX(-50%);
+    margin-bottom: 20px;
+}
+
+.modal__btn-odd {
+    text-decoration: none;
+    font-family: Segoe UI;
+    line-height: 20px;
+    font-size: 12px;
+    color: #E6B712;
+    display: block;
 }
