@@ -329,3 +329,37 @@ function windowOnClick(event) {
 
 
 window.addEventListener("click", windowOnClick);
+
+
+//increase quantity code
+
+let increaseButton = document.querySelector(".modal_quantity__increase");
+let reduceButton = document.querySelector(".modal_quantity__reduce");
+let inputValue = document.querySelector(".modal_quantity__input");
+let max = 20;
+let min = 1;
+
+increaseButton.addEventListener("click", function () {
+    increaseInput();
+});
+
+reduceButton.addEventListener("click", function () {
+    reduceInput();
+});
+
+
+function increaseInput() {
+    if (inputValue.value < max) {
+        inputValue.value++;
+    } else {
+        return;
+    }     
+}
+
+function reduceInput() {
+    if (inputValue.value > min) {
+        inputValue.value--;
+    } else {
+        return;
+    }
+}
