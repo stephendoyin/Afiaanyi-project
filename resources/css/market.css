@@ -1775,3 +1775,10 @@ section.footer {
     color: #E6B712;
     display: block;
 }
+
+.fadeIn {
+    -webkit-animation: fadeIn 5s;
+    /*Safari4+*/-moz-animation: fadeIn .5s;
+    /*Fx5+*/-o-animation: fadeIn .5s;
+    /*Opera12+*/animation: fadeIn .5s;
+}
