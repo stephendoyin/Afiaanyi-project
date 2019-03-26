@@ -684,7 +684,7 @@ nav {
 
 .market__roll--wrapper {
     display: flex;
-    justify-content: space-between;
+    justify-content: flex-start;
     align-items: stretch;
     width: 100%;
     padding: 25px 0;
@@ -1778,7 +1778,10 @@ section.footer {
 
 .fadeIn {
     -webkit-animation: fadeIn 5s;
-    /*Safari4+*/-moz-animation: fadeIn .5s;
-    /*Fx5+*/-o-animation: fadeIn .5s;
-    /*Opera12+*/animation: fadeIn .5s;
+    /*Safari4+*/
+    -moz-animation: fadeIn .5s;
+    /*Fx5+*/
+    -o-animation: fadeIn .5s;
+    /*Opera12+*/
+    animation: fadeIn .5s;
 }

@@ -96,7 +96,6 @@ document.querySelector(".slider__prev--two").addEventListener("click", function 
 
 
 //third slider
-// let thirdSliderOuterContainer = $(".")
 let thirdSliderInnerContainer = $(".col_wrapper_inner_container");
 
 let sliderzThree = $(".col_wrapper_inner");
@@ -108,7 +107,7 @@ if (sliderzThree.length > 2) {
 } else {
     thirdSliderInnerContainer.css("width", "100%");
     thirdSliderInnerContainer.css('left', '0%');
-    $(".col_wrapper_inner:first-child").css("visibility", "visible");
+    // $(".col_wrapper_inner:first-child").css("visibility", "visible");
 }
 
 
