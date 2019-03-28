@@ -1751,7 +1751,6 @@ section.footer {
 
 .modal__btn--underlined {
     width: 135px;
-    text-align: center;
     border-bottom: 1px solid #F30000;
     padding: 10px 15px;
 }
