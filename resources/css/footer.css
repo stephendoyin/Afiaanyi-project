@@ -128,8 +128,12 @@ span.android {
 
 .colored-list {
     color: #d8b027;
+    font-weight: bold;
 }
 
+.big-para--download{
+    padding-bottom: 5px;
+}
 
 .copy {
     color: white;
@@ -503,7 +507,7 @@ section.footer {
     .two, .one{
         width: auto;
     }
-} 
+}
 
 #send{
     padding: 11px;
