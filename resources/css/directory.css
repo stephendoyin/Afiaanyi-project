@@ -456,145 +456,10 @@ section.info {
     padding: 30px 0;
 }
 
-section.footer {
-    background-color: #414040;
-}
-
-.footer-inner {
-    display: flex;
-    justify-content: space-between;
-    padding: 17px 0;
-}
-
-.footer li {
-    list-style: none;
-    font-size: 12px;
-    line-height: 22px;
-}
-
-.footer-inner li a, .footer-inner li:visited {
-    color: white;
-    text-decoration: none;
-}
-
-.left-space {
-    margin-left: 6%;
-}
-
-span.ios, span.android {
-    margin-top: 5px;
-    display: inline-block;
-    width: 170px;
-    height: 60px;
-    background-color: #000;
-    border-radius: 4px;
-}
-
-.colored-list {
-    color: #d8b027;
-}
-
-.copy {
-    color: white;
-    font-size: 12px;
-}
-
-section.footer {
-    position: relative;
-    background-color: #414040;
-    padding: 17px 0;
-    overflow: hidden;
-}
-
-.follow__p {
-    font-size: 12px;
-    margin-top: 29px;
-    color: #fff;
-}
-
-.powered {
-    text-align: right;
-    margin-top: 33px;
-    font-size: 12px;
-    color: #fff;
-    float: right;
-    margin-right: 115px;
-}
-
-.logo-by, .icon-small {
-    vertical-align: middle;
-}
-
 .icon-small {
     margin: 0 7px;
 }
 
-.contact {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    height: 59px;
-    width: 100%;
-}
-
-.contact .one, .contact .two {
-    line-height: 25px;
-}
-
-.one {
-    width: 16%;
-    align-self: center;
-}
-
-.contact p {
-    font-size: 12px;
-    line-height: 26px;
-    font-weight: 500;
-}
-
-.one p img, .two p img {
-    vertical-align: middle;
-    margin-left: -2px;
-    margin-right: 4px;
-}
-
-.two {
-    width: 16%;
-    align-self: center
-}
-
-.three {
-    margin-left: 50px;
-}
-
-#send {
-    padding: 11px;
-    border: 0px;
-    border-radius: 0 4px 4px 0;
-    background-color: #d8b027;
-    background-image: url(../img/sent-mail.png);
-    background-size: 21px 21px;
-    background-position: center;
-    background-repeat: no-repeat;
-    color: transparent;
-}
-
-.four {
-    white-space: nowrap;
-}
-
-#mail {
-    padding: 9.5px;
-    width: 250px;
-    font-size: 11px;
-    border-radius: 4px 0 0 4px;
-    border: 1px solid #d8b027;
-}
-
-.contact__container {
-    padding: 14px 0;
-    background: rgba(243, 243, 243, 0.8);
-}
 
 .product__pagination-container {
     display: flex;
@@ -627,24 +492,6 @@ section.footer {
     align-self: center;
 }
 
-.yb {
-    height: 116px;
-    width: 288px;
-    right: -10px;
-    bottom: -10px;
-    position: absolute;
-    z-index: 99;
-}
-
-.by {
-    height: 116px;
-    width: 288px;
-    right: -105px;
-    bottom: 10px;
-    z-index: 1;
-    transform: rotate(90deg);
-    position: absolute;
-}
 
 .select-items::-webkit-scrollbar {
     width: 3px;
