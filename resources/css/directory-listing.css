@@ -64,7 +64,6 @@ aside{
 }
 
 
-
 /* Header css rules */
 
 header{
@@ -283,7 +282,7 @@ padding: 8px;
 }
 
 .header__menu_icon img {
-    width: 32px;
+    width: 28px;
 }
 
 @media only screen and (max-width: 840px){
@@ -316,6 +315,15 @@ padding: 8px;
 }
 
 .header__nav-link:hover{
+    color: #d8b027;
+}
+
+.header__nav-link--bg:link,
+.header__nav-link--bg:visited {
+    color: #fff;
+}
+
+.header__nav-link--bg:hover {
     color: #d8b027;
 }
 
@@ -1428,14 +1436,7 @@ section.footer {
     }
 }
 
-.header__nav-link--bg:link,
-.header__nav-link--bg:visited {
-    color: #fff;
-}
 
-.header__nav-link--bg:hover {
-    color: #d8b027;
-}
 
 .header-nav-icon {
     margin-left: 12px;

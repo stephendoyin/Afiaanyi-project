@@ -139,8 +139,20 @@ $(function () {
 
         if (scroll >= 100) {
             header.addClass('header__top-container--shadow');
+            let logo = document.querySelector(".header__logo-container img");
+            logo.src = "resources/img/logo-white.png";
+            let linksHeader = document.querySelectorAll("a.header__nav-link");
+            for (let i = 0; i < linksHeader.length; i++) {
+                linksHeader[i].classList.add("header__nav-link--bg");
+            }
         } else {
             header.removeClass('header__top-container--shadow');
+            let logo = document.querySelector(".header__logo-container img");
+            logo.src = "resources/img/market-logo.svg";
+            let linksHeader = document.querySelectorAll("a.header__nav-link");
+            for (let i = 0; i < linksHeader.length; i++) {
+                linksHeader[i].classList.remove("header__nav-link--bg");
+            }
         }
     });
 });
