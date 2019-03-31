@@ -1,6 +1,6 @@
 let container = document.querySelector(".info-cards__container");
 
-let cardsPerPage = 5;
+let cardsPerPage = 6;
 
 let card = `
     <div class="info-card__container">
@@ -49,7 +49,7 @@ for (let i = 0; i < cardsPerPage; i++) {
     container.innerHTML += card;
 }
 
-$(function () {
+function swapHeader() {
     //caches a jQuery object containing the header element
     var header = $(".header__top-container");
     $(window).scroll(function () {
@@ -77,170 +77,131 @@ $(function () {
             }
         }
     });
+};
+
+swapHeader();
+
+// let slideInnerContainer = $(".sliderContainer");
+// let slideOuterContainer = $(".slider__container");
+
+// let slides = $(".slider__self-container");
+
+// let widthOfInnerContainer = slides.length * 50;
+
+// let finalWidth = widthOfInnerContainer + "%";
+
+// slideInnerContainer.css("width", finalWidth);
+
+
+
+
+// function nextSlider() {
+//     slideInnerContainer.animate({ left: '-100%' }, 400, function () {
+//         slideInnerContainer.css('left', '-50%');
+//         $('.slider__self-container').last().after($('.slider__self-container').first());
+
+//     });
+// }
+
+// setInterval(nextSlider, 8000);
+
+
+// function previousSlider() {
+//     slideInnerContainer.animate({ left: '0%' }, 400, function () {
+//         slideInnerContainer.css('left', '-50%');
+//         $('.slider__self-container').first().before($('.slider__self-container').last());
+//     });
+// }
+
+// document.querySelector(".previous").addEventListener("click", function () {
+//     previousSlider();
+// });
+
+// document.querySelector(".next").addEventListener("click", function () {
+//     nextSlider();
+// });
+
+
+
+
+
+$(".first-row-rateBox").starRating({
+    totalStars: 5,
+    readOnly: true,
+    emptyColor: 'lightgray',
+    hoverColor: 'lightgray',
+    activeColor: '#E6B712',
+    starShape: 'rounded',
+    starSize: 18,
+    initialRating: 4,
+    strokeWidth: 0,
+    useGradient: false,
+    callback: function (currentRating, $el) {
+        alert('rated ' + currentRating);
+        console.log('DOM element ', $el);
+    }
 });
 
-let slideInnerContainer = $(".sliderContainer");
-let slideOuterContainer = $(".slider__container");
 
-let slides = $(".slider__self-container");
+$(".second-row-rateBox").starRating({
+    totalStars: 5,
+    readOnly: true,
+    emptyColor: 'lightgray',
+    hoverColor: 'lightgray',
+    activeColor: '#E6B712',
+    starShape: 'rounded',
+    starSize: 18,
+    initialRating: 4,
+    strokeWidth: 0,
+    useGradient: false,
+    callback: function (currentRating, $el) {
+        alert('rated ' + currentRating);
+        console.log('DOM element ', $el);
+    }
+});
 
-let widthOfInnerContainer = slides.length * 50;
+$(".third-row-rateBox").starRating({
+    totalStars: 5,
+    readOnly: true,
+    emptyColor: 'lightgray',
+    hoverColor: 'lightgray',
+    activeColor: '#E6B712',
+    starShape: 'rounded',
+    starSize: 18,
+    initialRating: 4,
+    strokeWidth: 0,
+    useGradient: false,
+    callback: function (currentRating, $el) {
+        alert('rated ' + currentRating);
+        console.log('DOM element ', $el);
+    }
+});
 
-let finalWidth = widthOfInnerContainer + "%";
-
-slideInnerContainer.css("width", finalWidth);
-
-
-
-
-function nextSlider() {
-    slideInnerContainer.animate({ left: '-100%' }, 400, function () {
-        slideInnerContainer.css('left', '-50%');
-        $('.slider__self-container').last().after($('.slider__self-container').first());
-
+$(document).ready(function () {
+    let owl = $(".owl-one");
+    owl.owlCarousel({
+        items: 2,
+        responsive: {
+            0: {
+                items: 1
+            },
+            620: {
+                items: 2,
+            }
+        },
+        autoplay: true,
+        loop: true,
+        dots: true,
+        dotsEach: true,
+        autoplayTimeout: 8000
     });
-}
 
-setInterval(nextSlider, 8000);
-
-
-function previousSlider() {
-    slideInnerContainer.animate({ left: '0%' }, 400, function () {
-        slideInnerContainer.css('left', '-50%');
-        $('.slider__self-container').first().before($('.slider__self-container').last());
-    });
-}
-
-document.querySelector(".previous").addEventListener("click", function () {
-    previousSlider();
-});
-
-document.querySelector(".next").addEventListener("click", function () {
-    nextSlider();
-});
+    $('.next').click(function () {
+        owl.trigger('next.owl.carousel');
+    })
 
 
-
-$("#rateBox").rate({
-
-
-
-    // 0：svg  1：Font class  2：Unicode
-
-    type: 0,
-
-
-
-    // the number of stars
-
-    length: 5,
-
-    // initial value
-
-    value: 4,
-
-
-    // allows half star
-
-    half: true,
-
-
-
-    // supports decimal?
-
-    decimal: true,
-
-
-
-    // is readonly?
-
-    readonly: true,
-
-
-    // shows the current rating value on hover
-
-    // hover: false,
-
-      // shows rating text
-  
-      text: false,
-
-
-    // an array of rating text
-
-    textList: ['Bad', 'Poor', 'Medium', 'Good', 'Perfect'],
-
-
-
-    // color
-
-    theme: '#E6B712',
-
-    // text/star size
-
-    size: '16px',
-
-    // space between stars
-
-    gutter: '3px',
-
-
-
-    // default CSS classes
-
-    selectClass: 'fxss_rate_select',
-
-    incompleteClass: '',
-
-    customClass: 'first-star-rating'
-
-});
-
-
-$(".second-rateBox").rate({
-    type: 0,
-    length: 5,
-    value: 4,
-    half: true,
-    decimal: true,
-    readonly: true,
-    text: false,
-    textList: ['Bad', 'Poor', 'Medium', 'Good', 'Perfect'],
-    theme: '#E6B712',
-    size: '16px',
-    gutter: '3px',
-    selectClass: 'fxss_rate_select',
-    incompleteClass: '',
-    customClass: 'first-star-rating'
-});
-
-$("#third-rateBox").rate({
-    // 0：svg  1：Font class  2：Unicode
-    type: 0,
-    // the number of stars
-    length: 5,
-    // initial value
-    value: 4,
-    // allows half star
-    half: true,
-    // supports decimal?
-    decimal: true,
-    // is readonly?
-    readonly: true,
-    // shows the current rating value on hover
-    // hover: false,
-      // shows rating text
-      text: false,
-    // an array of rating text
-    textList: ['Bad', 'Poor', 'Medium', 'Good', 'Perfect'],
-    // color
-    theme: '#E6B712',
-    // text/star size
-    size: '16px',
-    // space between stars
-    gutter: '3px',
-    // default CSS classes
-    selectClass: 'fxss_rate_select',
-    incompleteClass: '',
-    customClass: 'first-star-rating'
+    $('.previous').click(function () {
+        owl.trigger('prev.owl.carousel');
+    })
 });

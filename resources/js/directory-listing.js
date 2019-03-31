@@ -143,16 +143,16 @@ $(function () {
                     </div>
     `;
 
-    for (let x = 0; x < cardCount; x++){
+    for (let x = 0; x < cardCount; x++) {
         container.innerHTML += card;
     }
 
-    $(function () {
+    function swapHeader() {
         //caches a jQuery object containing the header element
         var header = $(".header__top-container");
         $(window).scroll(function () {
             var scroll = $(window).scrollTop();
-    
+
             if (scroll >= 210) {
                 header.addClass('header__top-container--shadow');
                 let img = document.querySelector(".header__top-container img");
@@ -160,7 +160,7 @@ $(function () {
                 document.querySelector(".greeting").classList.add("greeting--bg");
                 document.querySelector(".user__name").classList.add("user__name--bg");
                 let linksHeader = document.querySelectorAll("a.header__nav-link");
-                for(let i = 0; i < linksHeader.length; i++){
+                for (let i = 0; i < linksHeader.length; i++) {
                     linksHeader[i].classList.add("header__nav-link--bg");
                 }
             } else {
@@ -170,31 +170,33 @@ $(function () {
                 document.querySelector(".greeting").classList.remove("greeting--bg");
                 document.querySelector(".user__name").classList.remove("user__name--bg");
                 let linksHeader = document.querySelectorAll("a.header__nav-link");
-                for(let i = 0; i < linksHeader.length; i++){
+                for (let i = 0; i < linksHeader.length; i++) {
                     linksHeader[i].classList.remove("header__nav-link--bg");
                 }
             }
         });
-    });
-    
+    };
+
+    swapHeader();
+
 
 });
 
-let searchLists = ['Ogbaru (142)','Ihiala (173)','Ekwusigo (256)', 'Oyi (280)', 'Njikoka (418)'];
+let searchLists = ['Ogbaru (142)', 'Ihiala (173)', 'Ekwusigo (256)', 'Oyi (280)', 'Njikoka (418)'];
 
-let newSearch = []; 
-for(let i = 0; i < searchLists.length; i++){
+let newSearch = [];
+for (let i = 0; i < searchLists.length; i++) {
     newSearch.push(searchLists[i].toLowerCase());
 }
 
 let el = document.querySelector(".side-bar__section--first");
 
-$('#search-form .term').bind('input', function(){
+$('#search-form .term').bind('input', function () {
     let newList = newSearch.filter(returnfiltered);
     console.log(document.querySelector("#tested").value)
-    for(let i = 0; i < newList.length; i++){
-        
-        if(i < 1){
+    for (let i = 0; i < newList.length; i++) {
+
+        if (i < 1) {
             el.innerHTML = "";
         }
         el.innerHTML += `
@@ -204,10 +206,10 @@ $('#search-form .term').bind('input', function(){
         `
 
     }
-    
+
 });
 
-function returnfiltered(searchList){
+function returnfiltered(searchList) {
     return searchList.includes(document.querySelector("#tested").value)
     // === document.querySelector("#tested").value.slice(0, 1).toUpperCase();
 }
@@ -219,9 +221,9 @@ function returnfiltered(searchList){
 let headerInputContainer = document.querySelector(".header__form-input-container--tab")
 
 headerInputContainer.addEventListener("mouseover", function (e) {
-    
+
     $(".header__form-input--tab").focus();
-    
+
 });
 
 
