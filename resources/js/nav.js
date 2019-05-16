@@ -1,6 +1,6 @@
 
-let menuIcon = $(".header__menu_icon");
-let menuModal = $(".nav_menu__resp");
+let menuIcon = $(".header__resp_menu-btn");
+let menuModal = $(".nav_menu__resp-mega-menu");
 
 menuIcon.click(function () {
     menuModal.animate({ left: "0%" });
@@ -10,7 +10,7 @@ menuIcon.click(function () {
 });
 
 $(window).click(function (e) {
-    if (e.target.className === "nav_menu__resp") {
+    if (e.target.className === "nav_menu__resp" || e.target.className === "nav_menu__resp-mega-menu") {
         //remv the modal
         menuModal.animate({ left: "-100%" });
         // height of the document
@@ -38,9 +38,9 @@ function colorRed() {
         if (document.querySelectorAll(".resp_menu__link--active:link polygon").length > 0) {
             document.querySelectorAll(".resp_menu__link--active:link polygon")[i].setAttribute("fill", "#dcbd56");
         }
-        if (document.querySelectorAll(".resp_menu__link--active:link rect").length > 0) {
-            document.querySelectorAll(".resp_menu__link--active:link rect")[i].setAttribute("fill", "#dcbd56");
-        }
+        // if (document.querySelectorAll(".resp_menu__link--active:link rect").length > 0) {
+        //     document.querySelectorAll(".resp_menu__link--active:link rect")[i].setAttribute("fill", "#dcbd56");
+        // }
     }
 
 }
