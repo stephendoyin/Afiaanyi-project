@@ -644,6 +644,18 @@ nav {
     background-position: center;
 }
 
+@media only screen and (max-width: 860px) {
+    .slide--market {
+        height: 380px;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .slide--market {
+        height: 340px;
+    }
+}
+
 /* 
 .slides {
     position: relative;
