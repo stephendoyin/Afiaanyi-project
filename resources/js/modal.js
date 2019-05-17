@@ -1,3 +1,4 @@
+
 // //close modal by click window area if modal is showing
 // function windowOnClick(event) {
 //     if (event.target === modal) {
@@ -22,4 +23,3 @@ function toggleModal(event) {
   modal.classList.toggle("show_modal");
   body.classList.toggle("hide_scroll")
 }
-
