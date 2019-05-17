@@ -9,6 +9,16 @@
     z-index: 100;
 }
 
+.nav_menu__resp-mega-menu {
+    display: none;
+}
+
+@media only screen and (max-width: 1100px) {
+    .nav_menu__resp-mega-menu {
+        display: block;
+    }
+}
+
 .resp_menu {
     position: absolute;
     left: 0;
