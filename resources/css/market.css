@@ -1203,7 +1203,7 @@ hr {
 .slider__next_two {
     position: absolute;
     z-index: 9;
-    right: -2px;
+    right: 0px;
     width: 14px;
     top: 50%;
     cursor: pointer;
@@ -1216,8 +1216,6 @@ hr {
     .slider__prev,
     .slider__prev_two,
     .slider__prev_three {
-
-
         width: 12px;
     }
 

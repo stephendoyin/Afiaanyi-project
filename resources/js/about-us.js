@@ -11,7 +11,7 @@ $(function () {
             document.querySelector(".greeting").classList.add("greeting--bg");
             document.querySelector(".user__name").classList.add("user__name--bg");
             let linksHeader = document.querySelectorAll("a.header__nav-link");
-            for(let i = 0; i < linksHeader.length; i++){
+            for (let i = 0; i < linksHeader.length; i++) {
                 linksHeader[i].classList.add("header__nav-link--bg");
             }
         } else {
@@ -21,7 +21,7 @@ $(function () {
             document.querySelector(".greeting").classList.remove("greeting--bg");
             document.querySelector(".user__name").classList.remove("user__name--bg");
             let linksHeader = document.querySelectorAll("a.header__nav-link");
-            for(let i = 0; i < linksHeader.length; i++){
+            for (let i = 0; i < linksHeader.length; i++) {
                 linksHeader[i].classList.remove("header__nav-link--bg");
             }
         }
@@ -73,8 +73,8 @@ slideInnerContainer.css("width", finalWidth);
 // });
 
 
-$(".hero--btn").click(function(){
-    $("html, body").animate({scrollTop: $(".about__outer-wrapper").offset().top-100}, 1000)
+$(".hero--btn").click(function () {
+    $("html, body").animate({ scrollTop: $(".about__outer-wrapper").offset().top - 100 }, 1000)
 });
 
 let lowTexts = document.querySelectorAll(".about__lower-txt-content");
@@ -105,7 +105,7 @@ function reduceBtn() {
     if (screen.availWidth <= 500) {
         imgBtn.textContent = "APPLY NOW";
     } else if (screen.availWidth > 500) {
-        imgBtn.textContent = "Interested in being a part of our journey? APPLY NOW"        
+        imgBtn.textContent = "Interested in being a part of our journey? APPLY NOW"
     }
 }
 
@@ -144,7 +144,7 @@ $(document).ready(function () {
             },
             960: {
                 items: 3,
-            }, 
+            },
             1200: {
                 items: 4
             }
@@ -166,4 +166,36 @@ $(document).ready(function () {
     $('.previous').click(function () {
         owl.trigger('prev.owl.carousel');
     })
+});
+
+
+let menuIconMega = $(".header__menu_icon");
+let menuModalMega = $(".nav_menu__resp");
+
+menuIconMega.click(function () {
+    menuModalMega.animate({ left: "0%" });
+    document.body.style.height = "100vh";
+    document.body.style.overflow = "hidden";
+    // document.querySelector(".menu_icon").style.visibility = "hidden";
+});
+
+$(window).click(function (e) {
+    if (e.target.className === "nav_menu__resp") {
+        //remv the modal
+        menuModalMega.animate({ left: "-100%" });
+        // height of the document
+        document.body.style.height = "auto";
+        //make the document scrollable again
+        document.body.style.overflow = "auto";
+        // document.querySelector(".menu_icon").style.visibility = "visible";
+    }
+});
+
+
+$(".menu__close").click(function () {
+    menuModalMega.animate({ left: "-100%" });
+    document.body.style.height = "auto";
+    document.body.style.overflow = "auto";
+    // document.querySelector(".menu_icon").style.visibility = "visible";
+
 });

@@ -226,14 +226,14 @@ $(document).ready(function () {
         }
     });
 
-    // $('.next').click(function () {
-    //     owl.trigger('next.owl.carousel');
-    // })
+    $('.js__prev--one').click(function () {
+        owl.trigger('next.owl.carousel');
+    })
 
 
-    // $('.previous').click(function () {
-    //     owl.trigger('prev.owl.carousel');
-    // })
+    $('.js__next--one').click(function () {
+        owl.trigger('prev.owl.carousel');
+    })
 });
 
 $(document).ready(function () {
@@ -262,14 +262,14 @@ $(document).ready(function () {
         }
     });
 
-    // $('.next').click(function () {
-    //     owl.trigger('next.owl.carousel');
-    // })
+    $('.js__next--two').click(function () {
+        owl.trigger('next.owl.carousel');
+    })
 
 
-    // $('.previous').click(function () {
-    //     owl.trigger('prev.owl.carousel');
-    // })
+    $('.js__prev--two').click(function () {
+        owl.trigger('prev.owl.carousel');
+    })
 });
 
 $(document).ready(function () {
@@ -301,14 +301,14 @@ $(document).ready(function () {
         }
     });
 
-    // $('.next').click(function () {
-    //     owl.trigger('next.owl.carousel');
-    // })
+    $('.js__next--three').click(function () {
+        owl.trigger('next.owl.carousel');
+    })
 
 
-    // $('.previous').click(function () {
-    //     owl.trigger('prev.owl.carousel');
-    // })
+    $('.js__prev--three').click(function () {
+        owl.trigger('prev.owl.carousel');
+    })
 });
 
 
@@ -338,6 +338,52 @@ $(document).ready(function () {
             }
         }
     });
+
+    $('.js__next--four').click(function () {
+        owl.trigger('next.owl.carousel');
+    })
+
+
+    $('.js__prev--four').click(function () {
+        owl.trigger('prev.owl.carousel');
+    })
+});
+
+$(document).ready(function () {
+    let owl = $(".owl-four--two");
+    owl.owlCarousel({
+        items: 1,
+        responsive: {
+            0: {
+                items: 1
+            },
+            420: {
+                items: 2
+            },
+            500: {
+                items: 1
+            },
+
+            760: {
+                items: 2
+            },
+            980: {
+                items: 3,
+            },
+            1280: {
+                items: 4
+            }
+        }
+    });
+
+    $('.js__next--six').click(function () {
+        owl.trigger('next.owl.carousel');
+    })
+
+
+    $('.js__prev--six').click(function () {
+        owl.trigger('prev.owl.carousel');
+    })
 });
 
 
@@ -370,14 +416,14 @@ $(document).ready(function () {
         }
     });
 
-    // $('.next').click(function () {
-    //     owl.trigger('next.owl.carousel');
-    // })
+    $('.js__next--seven').click(function () {
+        owl.trigger('next.owl.carousel');
+    })
 
 
-    // $('.previous').click(function () {
-    //     owl.trigger('prev.owl.carousel');
-    // })
+    $('.js__prev--seven').click(function () {
+        owl.trigger('prev.owl.carousel');
+    })
 });
 
 
@@ -410,14 +456,14 @@ $(document).ready(function () {
         }
     });
 
-    // $('.next').click(function () {
-    //     owl.trigger('next.owl.carousel');
-    // })
+    $('.js__next--eight').click(function () {
+        owl.trigger('next.owl.carousel');
+    })
 
 
-    // $('.previous').click(function () {
-    //     owl.trigger('prev.owl.carousel');
-    // })
+    $('.js__prev--eight').click(function () {
+        owl.trigger('prev.owl.carousel');
+    })
 });
 
 
@@ -451,14 +497,14 @@ $(document).ready(function () {
         }
     });
 
-    // $('.next').click(function () {
-    //     owl.trigger('next.owl.carousel');
-    // })
+    $('.js__next--nine').click(function () {
+        owl.trigger('next.owl.carousel');
+    })
 
 
-    // $('.previous').click(function () {
-    //     owl.trigger('prev.owl.carousel');
-    // })
+    $('.js__prev--nine').click(function () {
+        owl.trigger('prev.owl.carousel');
+    })
 });
 
 
