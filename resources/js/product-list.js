@@ -1,113 +1,113 @@
 $(function () {
 
-        $(".minus__material").click(function () {
-            $(".minus__material").css("display", "none");
-            $(".plus__material").css("display", "block");
-            $(".material--toggle").css("display", "none");
-        });
-    
-        $(".plus__material").click(function (e) {
-            $(".plus__material").css("display", "none");
-            $(".minus__material").css("display", "block");
-            $(".material--toggle").css("display", "block");
-        });
-    
-    
-        $(".minus__discount").click(function () {
-            $(".minus__discount").css("display", "none");
-            $(".plus__discount").css("display", "block");
-            $(".discount--toggle").css("display", "none");
-        });
-    
-        $(".plus__discount").click(function (e) {
-            $(".plus__discount").css("display", "none");
-            $(".minus__discount").css("display", "block");
-            $(".discount--toggle").css("display", "block");
-        });
-    
-        $(".minus__ratings").click(function () {
-            $(".minus__ratings").css("display", "none");
-            $(".plus__ratings").css("display", "block");
-            $(".ratings--toggle").css("display", "none");
-        });
-    
-        $(".plus__ratings").click(function (e) {
-            $(".plus__ratings").css("display", "none");
-            $(".minus__ratings").css("display", "block");
-            $(".ratings--toggle").css("display", "block");
-        });
-    
-        $(".minus__score").click(function () {
-            $(".minus__score").css("display", "none");
-            $(".plus__score").css("display", "block");
-            $(".score--toggle").css("display", "none");
-        });
-    
-        $(".plus__score").click(function (e) {
-            $(".plus__score").css("display", "none");
-            $(".minus__score").css("display", "block");
-            $(".score--toggle").css("display", "block");
-        });
-    
-        $(".minus__brand").click(function () {
-            $(".minus__brand").css("display", "none");
-            $(".plus__brand").css("display", "block");
-            $(".brand--toggle").css("display", "none");
-        });
-    
-        $(".plus__brand").click(function (e) {
-            $(".plus__brand").css("display", "none");
-            $(".minus__brand").css("display", "block");
-            $(".brand--toggle").css("display", "block");
-        });
-    
-        $(".minus__price").click(function () {
-            $(".minus__price").css("display", "none");
-            $(".plus__price").css("display", "block");
-            $(".price--toggle").css("display", "none");
-        });
-    
-        $(".plus__price").click(function (e) {
-            $(".plus__price").css("display", "none");
-            $(".minus__price").css("display", "block");
-            $(".price--toggle").css("display", "block");
-        });
-    
-        $(".minus__colour").click(function () {
-            $(".minus__colour").css("display", "none");
-            $(".plus__colour").css("display", "block");
-            $(".colour--toggle").css("display", "none");
-        });
-    
-        $(".plus__colour").click(function (e) {
-            $(".plus__colour").css("display", "none");
-            $(".minus__colour").css("display", "block");
-            $(".colour--toggle").css("display", "block");
-        });
-    
-        $(".minus__size").click(function () {
-            $(".minus__size").css("display", "none");
-            $(".plus__size").css("display", "block");
-            $(".size--toggle").css("display", "none");
-        });
-    
-        $(".plus__size").click(function (e) {
-            $(".plus__size").css("display", "none");
-            $(".minus__size").css("display", "block");
-            $(".size--toggle").css("display", "block");
-        });
-    
-        $(".minus__ship").click(function () {
-            $(".minus__ship").css("display", "none");
-            $(".plus__ship").css("display", "block");
-            $(".ship--toggle").css("display", "none");
-        });
-    
-        $(".plus__ship").click(function (e) {
-            $(".plus__ship").css("display", "none");
-            $(".minus__ship").css("display", "block");
-            $(".ship--toggle").css("display", "block");
-        });
+    $(".minus__material").click(function () {
+        $(".minus__material").css("display", "none");
+        $(".plus__material").css("display", "block");
+        $(".material--toggle").css("display", "none");
+    });
+
+    $(".plus__material").click(function (e) {
+        $(".plus__material").css("display", "none");
+        $(".minus__material").css("display", "block");
+        $(".material--toggle").css("display", "block");
+    });
+
+
+    $(".minus__discount").click(function () {
+        $(".minus__discount").css("display", "none");
+        $(".plus__discount").css("display", "block");
+        $(".discount--toggle").css("display", "none");
+    });
+
+    $(".plus__discount").click(function (e) {
+        $(".plus__discount").css("display", "none");
+        $(".minus__discount").css("display", "block");
+        $(".discount--toggle").css("display", "block");
+    });
+
+    $(".minus__ratings").click(function () {
+        $(".minus__ratings").css("display", "none");
+        $(".plus__ratings").css("display", "block");
+        $(".ratings--toggle").css("display", "none");
+    });
+
+    $(".plus__ratings").click(function (e) {
+        $(".plus__ratings").css("display", "none");
+        $(".minus__ratings").css("display", "block");
+        $(".ratings--toggle").css("display", "block");
+    });
+
+    $(".minus__score").click(function () {
+        $(".minus__score").css("display", "none");
+        $(".plus__score").css("display", "block");
+        $(".score--toggle").css("display", "none");
+    });
+
+    $(".plus__score").click(function (e) {
+        $(".plus__score").css("display", "none");
+        $(".minus__score").css("display", "block");
+        $(".score--toggle").css("display", "block");
+    });
+
+    $(".minus__brand").click(function () {
+        $(".minus__brand").css("display", "none");
+        $(".plus__brand").css("display", "block");
+        $(".brand--toggle").css("display", "none");
+    });
+
+    $(".plus__brand").click(function (e) {
+        $(".plus__brand").css("display", "none");
+        $(".minus__brand").css("display", "block");
+        $(".brand--toggle").css("display", "block");
+    });
+
+    $(".minus__price").click(function () {
+        $(".minus__price").css("display", "none");
+        $(".plus__price").css("display", "block");
+        $(".price--toggle").css("display", "none");
+    });
+
+    $(".plus__price").click(function (e) {
+        $(".plus__price").css("display", "none");
+        $(".minus__price").css("display", "block");
+        $(".price--toggle").css("display", "block");
+    });
+
+    $(".minus__colour").click(function () {
+        $(".minus__colour").css("display", "none");
+        $(".plus__colour").css("display", "block");
+        $(".colour--toggle").css("display", "none");
+    });
+
+    $(".plus__colour").click(function (e) {
+        $(".plus__colour").css("display", "none");
+        $(".minus__colour").css("display", "block");
+        $(".colour--toggle").css("display", "block");
+    });
+
+    $(".minus__size").click(function () {
+        $(".minus__size").css("display", "none");
+        $(".plus__size").css("display", "block");
+        $(".size--toggle").css("display", "none");
+    });
+
+    $(".plus__size").click(function (e) {
+        $(".plus__size").css("display", "none");
+        $(".minus__size").css("display", "block");
+        $(".size--toggle").css("display", "block");
+    });
+
+    $(".minus__ship").click(function () {
+        $(".minus__ship").css("display", "none");
+        $(".plus__ship").css("display", "block");
+        $(".ship--toggle").css("display", "none");
+    });
+
+    $(".plus__ship").click(function (e) {
+        $(".plus__ship").css("display", "none");
+        $(".minus__ship").css("display", "block");
+        $(".ship--toggle").css("display", "block");
+    });
 
     let imgs = [
         'resources/img/product-list/product-images/product-one.svg',
@@ -381,12 +381,12 @@ $(function () {
             console.log(scroll);
             aside.classList.add("scroll__fixed");
             productList.classList.add("outer__product-container--scrolled");
-        } else{
+        } else {
             aside.classList.remove("scroll__fixed");
             productList.classList.remove("outer__product-container--scrolled");
         }
-           
-         
+
+
     });
 
 });
