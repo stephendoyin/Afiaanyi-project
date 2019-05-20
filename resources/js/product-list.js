@@ -412,6 +412,27 @@ $(function () {
 });
 
 $(function () {
+    $("#slider-range--menu").slider({
+        range: true,
+        min: 0,
+        max: 500000,
+        values: [0, 500000],
+        slide: function (event, ui) {
+            $("#amount1--menu").val(ui.values[0]);
+            $("#amount2--menu").val(ui.values[1]);
+        }
+    });
+    $("#amount1--menu").val($("#slider-range--menu").slider("values", 0));
+    $("#amount2--menu").val($("#slider-range--menu").slider("values", 1));
+
+
+    $("#amount1").bind("change paste keyup", function () {
+        $("#slider-range").slider("", 7000)
+
+    });
+});
+
+$(function () {
     //caches a jQuery object containing the header element
     var header = $(".header__top-container");
     $(window).scroll(function () {
@@ -434,7 +455,7 @@ $(function () {
         let aside = document.querySelector(".scroll__relative");
         let productList = document.querySelector(".outer__product-container");
         if (scroll >= 625) {
-            console.log(scroll);
+            // console.log(scroll);
             aside.classList.add("scroll__fixed");
             productList.classList.add("outer__product-container--scrolled");
         } else {
@@ -448,3 +469,132 @@ $(function () {
 });
 
 
+//store btn in a variable
+window.addEventListener("load", function () {
+    let quickViewButton = document.querySelectorAll(".quick-view");
+    let closeButton = document.querySelector(".close_button");
+
+    console.log(quickViewButton[1]);
+
+    closeButton.addEventListener("click", function () {
+        toggleModal();
+    })
+
+    //add click event on all button
+    for (let i = 0; i < quickViewButton.length; i++) {
+        quickViewButton[i].addEventListener("click", function (e) {
+            toggleModal();
+            console.log("event triggered")
+        })
+    }
+
+    function windowOnClick(event) {
+        if (event.target === modal) {
+            toggleModal();
+        }
+    }
+
+
+    window.addEventListener("click", windowOnClick);
+
+
+    // increase quantity code
+
+    let increaseButton = document.querySelector(".modal_quantity__increase");
+    let reduceButton = document.querySelector(".modal_quantity__reduce");
+    let inputValue = document.querySelector(".modal_quantity__input");
+    let max = 20;
+    let min = 1;
+
+    increaseButton.addEventListener("click", function () {
+        increaseInput();
+    });
+
+    reduceButton.addEventListener("click", function () {
+        reduceInput();
+    });
+
+
+    function increaseInput() {
+        if (inputValue.value < max) {
+            inputValue.value++;
+        } else {
+            return;
+        }
+    }
+
+    function reduceInput() {
+        if (inputValue.value > min) {
+            inputValue.value--;
+        } else {
+            return;
+        }
+    }
+
+
+    let thumbnailContainers = document.querySelectorAll(".modal_product__thumbnail");
+
+    let largeImage = document.querySelector(".modal_body__second_column img")
+
+    let src = document.querySelectorAll(".modal_product__thumbnail img").src
+
+
+
+    // loop thru all thumbnails
+
+    for (let i = 0; i < thumbnailContainers.length; i++) {
+
+        thumbnailContainers[i].addEventListener("click", function () {
+            let newSrc = thumbnailContainers[i].childNodes[1].src
+            largeImage.src = newSrc;
+
+        });
+
+
+    }
+
+    window.addEventListener("resize", moveDropDownPostion())
+
+
+    function moveDropDownPostion() {
+
+        let dropDownContainer = document.querySelector(".full--nav");
+        let dropDownTrigger = document.querySelector(".header__resp_menu-button-container");
+        let navig = document.querySelector("nav");
+        if (screen.availWidth < 1280) {
+            dropDownTrigger.appendChild(dropDownContainer);
+        } else {
+            navig.appendChild(dropDownContainer);
+        }
+
+    }
+
+})
+
+let filterDropDown = document.querySelector(".filter__drop-down");
+let filterSortButton = document.querySelector(".filter_button--sort");
+let filterDropItem = document.querySelectorAll(".filter__drop_item ");
+
+filterSortButton.addEventListener("click", function () {
+    filterDropDown.classList.toggle("filter__drop-down--view");
+});
+
+// for (let x = 0; x < filterDropItem.length; x++) {
+//     
+
+// }
+for (let i = 0; i < filterDropItem.length; i++) {
+
+    filterDropItem[i].addEventListener('click', function () {
+        setTimeout(function () {
+            filterDropDown.classList.toggle("filter__drop-down--view");
+        }, 200)
+    })
+
+};
+
+window.addEventListener("click", function (e) {
+    if (!((e.target.classList[1] === "filter_button--sort") || (e.target.classList[0] === "filter__drop_item"))) {
+        filterDropDown.classList.remove("filter__drop-down--view");
+    }
+});

@@ -9,6 +9,7 @@
         rel="stylesheet">
     <link href="vendor/css/animate.css" rel="stylesheet">
     <link rel="stylesheet" href="vendor/css/jquery.ui.css">
+    <link rel="stylesheet" href="resources/css/modal.css">
     <style>
         @import url('https://fonts.googleapis.com/css?family=Lato:100,300,300i,400');
         @import url(resources/css/menu.css);
@@ -1099,11 +1100,25 @@
         <div class="row">
             <div class="filter_button_container">
 
-                <button class="filter_button" tabindex="0">
-                    <img src="resources/img/sort.svg" alt=""> Sort By
+                <button class="filter_button filter_button--sort" tabindex="0">
+                    <img src="resources/img/sort.svg" alt="">&nbsp;&nbsp;Sort By
                 </button>
-                <button class="filter_button" tabindex="0">
-                    <img src="resources/img/filter.svg" alt=""> Filter
+                <div class="filter__drop-down">
+                    <div class="filter__drop_item" tabindex="0">
+                        Audi
+                    </div>
+                    <div class="filter__drop_item" tabindex="0">
+                        BMW
+                    </div>
+                    <div class="filter__drop_item" tabindex="0">
+                        FORD
+                    </div>
+                    <div class="filter__drop_item" tabindex="0">
+                        BENZ
+                    </div>
+                </div>
+                <button class="filter_button filter_button--two" tabindex="0">
+                    <img src="resources/img/filter.svg" alt="">&nbsp;&nbsp;Filter
                 </button>
 
             </div>
@@ -3832,7 +3847,464 @@
         </nav>
     </div>
 
+    <div class="nav_menu__resp-filter-menu">
+        <nav class="resp_menu resp_menu--filter">
+
+            <div class="resp_menu-filter-header">
+                <h2 class="resp_menu-filter-header-title">
+                    <span><img src="resources/img/filter.svg"></span> &nbsp;FILTER
+                </h2>
+                <img src="resources/img/close_btn-black.svg" class="close_filter_menu menu__close">
+            </div>
+
+            <div class="resp_menu-filter-item">
+                <h1 class="resp_menu-filter-item-title">
+                    Clothings &nbsp; <img class="filter__down-arrow" src="resources/img/down-arrow.svg" alt="">
+                </h1>
+
+                <ul class="filter__category-list-container">
+                    <li class="filter__category-list"><a href="" class="filter__category-link"
+                            :active="">Dresses</a><span class="right increased-font">(988)</span></li>
+                    <li class="filter__category-list"><a href="" class="filter__category-link">Crossbody
+                            Bags</a><span class="right  increased-font">(988)</span></li>
+                    <li class="filter__category-list"><a href="" class="filter__category-link">Clutches</a><span
+                            class="right increased-font">(988)</span></li>
+                    <li class="filter__category-list"><a href="" class="filter__category-link">Backpacks</a><span
+                            class="right increased-font">(988)</span></li>
+                    <li class="filter__category-list"><a href="" class="filter__category-link">Evening
+                            Bags</a><span class="right increased-font">(988)</span></li>
+                    <li class="filter__category-list"><a href="" class="filter__category-link">Shoulder
+                            Bags</a><span class="right increased-font">(988)</span></li>
+                    <li class="filter__category-list"><a href="" class="filter__category-link">Top-Handle
+                            Bags</a><span class="right increased-font">(988)</span></li>
+                    <li class="filter__category-list"><a href="" class="filter__category-link">Wristlets</a><span
+                            class="right increased-font">(988)</span></li>
+                    <li class="filter__category-list"><a href="" class="filter__category-link">Wallets</a><span
+                            class="right increased-font">(988)</span></li>
+                    <li class="filter__category-list"><a href="" class="filter__category-link">Cosmetic Bags &amp;
+                            Cases</a><span class="right increased-font">(988)</span></li>
+                    <li class="filter__category-list"><a href="" class="filter__category-link">Buckets</a><span
+                            class="right increased-font">(988)</span></li>
+                    <li class="filter__category-list"><a href="" class="filter__category-link">Hobos</a><span
+                            class="right increased-font">(988)</span></li>
+                    <li class="filter__category-list"><a href="" class="filter__category-link">Waist
+                            Packs</a><span class="right increased-font">(988)</span></li>
+                </ul>
+
+            </div>
+
+            <div class="resp_menu-filter-item">
+
+                <h1 class="resp_menu-filter-item-title">
+                    Shipped From &nbsp; <img class="filter__down-arrow" src="resources/img/down-arrow.svg" alt="">
+                </h1>
+
+                <div class="inset">
+                    <input type="checkbox" id="Nigeria--menu">
+                    <label for="Nigeria--menu" class="input__text">Nigeria</label>
+                    <span class="right">(100000)</span>
+                </div>
+
+            </div>
+
+            <div class="resp_menu-filter-item">
+
+                <h1 class="resp_menu-filter-item-title">
+                    Size &nbsp; <img class="filter__down-arrow" src="resources/img/down-arrow.svg" alt="">
+                </h1>
+
+                <div>
+                    <div class="search__container">
+                        <input type="search" id="form__size-search" placeholder="Search size">
+                        <img src="resources/img/vendor/search__gold.svg">
+                    </div>
+                    <div class="inset form__sections--scroll size--toggle">
+                        <div class="spacer">
+                            <input type="checkbox" id="large--menu">
+                            <label for="large--menu" class="input__text">L</label>
+                            <span class="right">(100000)</span>
+                        </div>
+                        <div class="spacer">
+                            <input type="checkbox" id="medium--menu">
+                            <label for="medium--menu" class="input__text">M</label>
+                            <span class="right">(100000)</span>
+                        </div>
+                        <div class="spacer">
+                            <input type="checkbox" id="x-large--menu">
+                            <label for="x-large--menu" class="input__text">XL</label>
+                            <span class="right">(100000)</span>
+                        </div>
+                        <div class="spacer">
+                            <input type="checkbox" id="small--menu">
+                            <label for="small--menu" class="input__text">S</label>
+                            <span class="right">(100000)</span>
+                        </div>
+                        <div class="spacer">
+                            <input type="checkbox" id="xx-large--menu">
+                            <label for="xx-large--menu" class="input__text">XXL</label>
+                            <span class="right">(100000)</span>
+                        </div>
+                        <div class="spacer">
+                            <input type="checkbox" id="Large--menu">
+                            <label for="Large--menu" class="input__text">L</label>
+                            <span class="right">(100000)</span>
+                        </div>
+                        <div class="spacer">
+                            <input type="checkbox" id="medium--menu">
+                            <label for="medium--menu" class="input__text">M</label>
+                            <span class="right">(100000)</span>
+                        </div>
+                        <div class="spacer">
+                            <input type="checkbox" id="x-large--menu">
+                            <label for="x-large--menu" class="input__text">XL</label>
+                            <span class="right">(100000)</span>
+                        </div>
+                        <div class="spacer">
+                            <input type="checkbox" id="small--menu">
+                            <label class="input__text" for="small--menu">S</label>
+                            <span class="right">(100000)</span>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="resp_menu-filter-item">
+
+                <h1 class="resp_menu-filter-item-title">
+                    Color &nbsp; <img class="filter__down-arrow" src="resources/img/down-arrow.svg" alt="">
+                </h1>
+
+                <div>
+                    <div class="inset form__sections--scroll">
+                        <div class="spacer">
+                            <input type="checkbox" id="multi--menu">
+                            <label for="multi--menu" class="input__text">Multi</label>
+                            <span class="right">(100000)</span>
+                        </div>
+                        <div class="spacer">
+                            <input type="checkbox" id="black--menu">
+                            <label for="black--menu" class="input__text">Black</label>
+                            <span class="right">(100000)</span>
+                        </div>
+                        <div class="spacer">
+                            <input type="checkbox" id="blue--menu">
+                            <label for="blue--menu" class="input__text">Blue</label>
+                            <span class="right">(100000)</span>
+                        </div>
+                        <div class="spacer">
+                            <input type="checkbox" id="white--menu">
+                            <label for="white--menu" class="input__text">White</label>
+                            <span class="right">(100000)</span>
+                        </div>
+                        <div class="spacer">
+                            <input type="checkbox" id="brown--menu">
+                            <label for="brown--menu" class="input__text">Brown</label>
+                            <span class="right">(100000)</span>
+                        </div>
+                        <div class="spacer">
+                            <input type="checkbox" id="white--menu">
+                            <label for="white--menu" class="input__text">White</label>
+                            <span class="right">(100000)</span>
+                        </div>
+                        <div class="spacer">
+                            <input type="checkbox" id="grey--menu">
+                            <label for="grey--menu" class="input__text">Grey</label>
+                            <span class="right">(100000)</span>
+                        </div>
+                        <div class="spacer">
+                            <input type="checkbox" id="yellow--menu">
+                            <label for="yellow--menu" class="input__text">Yellow</label>
+                            <span class="right">(100000)</span>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="resp_menu-filter-item">
+
+                <h1 class="resp_menu-filter-item-title">
+                    Brand &nbsp; <img class="filter__down-arrow" src="resources/img/down-arrow.svg" alt="">
+                </h1>
+
+                <div>
+                    <div class="inset form__sections--scroll">
+                        <div class="spacer">
+                            <input type="checkbox" id="Generic--menu">
+                            <label for="Generic--menu" class="input__text">Generic</label>
+                            <span class="right">(100000)</span>
+                        </div>
+                        <div class="spacer">
+                            <input type="checkbox" id="dandg--menu">
+                            <label for="dandg--menu" class="input__text">D&amp;G</label>
+                            <span class="right">(100000)</span>
+                        </div>
+                        <div class="spacer">
+                            <input type="checkbox" id="chanel--menu">
+                            <label for="chanel--menu" class="input__text">Chanel</label>
+                            <span class="right">(100000)</span>
+                        </div>
+                        <div class="spacer">
+                            <input type="checkbox" id="luisvuitton--menu">
+                            <label for="luisvuitton--menu" class="input__text">Luis Vuitton</label>
+                            <span class="right">(100000)</span>
+                        </div>
+                        <div class="spacer">
+                            <input type="checkbox" id="gucci--menu">
+                            <label for="gucci--menu" class="input__text">Gucci</label>
+                            <span class="right">(100000)</span>
+                        </div>
+                        <div class="spacer">
+                            <input type="checkbox" id="prada--menu">
+                            <label for="prada--menu" class="input__text">Prada</label>
+                            <span class="right">(100000)</span>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="resp_menu-filter-item">
+
+                <h1 class="resp_menu-filter-item-title">
+                    Price &nbsp; <img class="filter__down-arrow" src="resources/img/down-arrow.svg" alt="">
+                </h1>
+
+                <div>
+                    <div class="">
+                        <div class="price__centering">
+                            <div style="padding: 15px">
+                                <div id="slider-range--menu"
+                                    class="ui-slider ui-corner-all ui-slider-horizontal ui-widget ui-widget-content">
+                                    <div class="ui-slider-range ui-corner-all ui-widget-header"
+                                        style="left: 0%; width: 100%;"></div><span tabindex="0"
+                                        class="ui-slider-handle ui-corner-all ui-state-default"
+                                        style="left: 0%;"></span><span tabindex="0"
+                                        class="ui-slider-handle ui-corner-all ui-state-default"
+                                        style="left: 100%;"></span>
+                                </div>
+                            </div>
+                            <div class="range__input">
+                                <span>₦</span><input type="text" id="amount1--menu">
+
+
+                                <span>₦</span><input type="text" id="amount2--menu">
+
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="resp_menu-filter-item">
+
+                <h1 class="resp_menu-filter-item-title">
+                    Seller Score &nbsp; <img class="filter__down-arrow" src="resources/img/down-arrow.svg" alt="">
+                </h1>
+
+                <div>
+                    <div class=" form__sections--scroll inset">
+                        <div class="seller__score-container">
+                            <div class="seller__progress">
+                                <div class="seller__progression seller__progression--four">
+                                    <p class="seller__rate">4.0</p>
+                                </div>
+                            </div>
+                            <div class="right--adjusted">
+                                (1000000)
+                            </div>
+                        </div>
+                        <div class="seller__score-container inset">
+                            <div class="seller__progress">
+                                <div class="seller__progression seller__progression--three">
+                                    <p class="seller__rate">3.0</p>
+                                </div>
+                            </div>
+                            <div class="right--adjusted">
+                                (1000000)
+                            </div>
+                        </div>
+
+                        <div class="seller__score-container inset">
+                            <div class="seller__progress">
+                                <div class="seller__progression seller__progression--two">
+                                    <p class="seller__rate">2.0</p>
+                                </div>
+                            </div>
+                            <div class="right--adjusted">
+                                (1000000)
+                            </div>
+                        </div>
+
+                        <div class="seller__score-container inset">
+                            <div class="seller__progress">
+                                <div class="seller__progression seller__progression--one">
+                                    <p class="seller__rate">1.0</p>
+                                </div>
+                            </div>
+                            <div class="right--adjusted">
+                                (1000000)
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="resp_menu-filter-item">
+
+                <h1 class="resp_menu-filter-item-title">
+                    Ratings &nbsp; <img class="filter__down-arrow" src="resources/img/down-arrow.svg" alt="">
+                </h1>
+
+                <div>
+                    <div class=" form__sections--scroll">
+                        <div class="spacer">
+                            <span class="input__text inset">
+                                <img src="resources/img/ratings.svg" height="13px" width="13px" alt="rating">
+                                <img src="resources/img/ratings.svg" height="13px" width="13px" alt="rating">
+                                <img src="resources/img/ratings.svg" height="13px" width="13px" alt="rating">
+                                <img src="resources/img/ratings.svg" height="13px" width="13px" alt="rating">
+                                <img src="resources/img/ratings.svg" height="13px" width="13px" alt="rating">
+                            </span>
+                            <span class="right">5 Star</span>
+                        </div>
+                        <div class="spacer">
+                            <span class="input__text inset">
+                                <img src="resources/img/ratings.svg" height="13px" width="13px" alt="rating">
+                                <img src="resources/img/ratings.svg" height="13px" width="13px" alt="rating">
+                                <img src="resources/img/ratings.svg" height="13px" width="13px" alt="rating">
+                                <img src="resources/img/ratings.svg" height="13px" width="13px" alt="rating">
+                                <img src="resources/img/ratins-none.svg" height="13px" width="13px" alt="rating">
+                            </span>
+                            <span class="right">4 Star</span>
+                        </div>
+                        <div class="spacer">
+                            <span class="input__text inset">
+                                <img src="resources/img/ratings.svg" height="13px" width="13px" alt="rating">
+                                <img src="resources/img/ratings.svg" height="13px" width="13px" alt="rating">
+                                <img src="resources/img/ratings.svg" height="13px" width="13px" alt="rating">
+                                <img src="resources/img/ratins-none.svg" height="13px" width="13px" alt="rating">
+                                <img src="resources/img/ratins-none.svg" height="13px" width="13px" alt="rating">
+                                <span class="right">3 Star</span>
+                            </span></div>
+                        <div class="spacer">
+                            <span class="input__text inset">
+                                <img src="resources/img/ratings.svg" height="13px" width="13px" alt="rating">
+                                <img src="resources/img/ratings.svg" height="13px" width="13px" alt="rating">
+                                <img src="resources/img/ratins-none.svg" height="13px" width="13px" alt="rating">
+                                <img src="resources/img/ratins-none.svg" height="13px" width="13px" alt="rating">
+                                <img src="resources/img/ratins-none.svg" height="13px" width="13px" alt="rating">
+                            </span>
+                            <span class="right">2 Star</span>
+                        </div>
+                        <div class="spacer">
+                            <span class="input__text inset">
+                                <img src="resources/img/ratings.svg" height="13px" width="13px" alt="rating">
+                                <img src="resources/img/ratins-none.svg" height="13px" width="13px" alt="rating">
+                                <img src="resources/img/ratins-none.svg" height="13px" width="13px" alt="rating">
+                                <img src="resources/img/ratins-none.svg" height="13px" width="13px" alt="rating">
+                                <img src="resources/img/ratins-none.svg" height="13px" width="13px" alt="rating">
+                            </span>
+                            <span class="right">1 Star</span>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="resp_menu-filter-item">
+
+                <h1 class="resp_menu-filter-item-title">
+                    Material &nbsp; <img class="filter__down-arrow" src="resources/img/down-arrow.svg" alt="">
+                </h1>
+
+                <div>
+                    <div class="inset form__sections--scroll">
+                        <div class="spacer">
+                            <input type="checkbox" id="textile--menu">
+                            <label for="textile--menu" class="input__text">Textile</label>
+                            <span class="right">(100000)</span>
+                        </div>
+                        <div class="spacer">
+                            <input type="checkbox" id="leather--menu">
+                            <label for="leather--menu" class="input__text">Leather</label>
+                            <span class="right">(100000)</span>
+                        </div>
+                        <div class="spacer">
+                            <input type="checkbox" id="fibre--menu">
+                            <label for="fibre--menu" class="input__text">Fibre</label>
+                            <span class="right">(100000)</span>
+                        </div>
+                        <div class="spacer">
+                            <input type="checkbox" id="synthetic--menu">
+                            <label for="synthetic--menu" class="input__text">Synthetic</label>
+                            <span class="right">(100000)</span>
+                        </div>
+                        <div class="spacer">
+                            <input type="checkbox" id="linen--menu">
+                            <label for="linen--menu" class="input__text">Linen</label>
+                            <span class="right">(100000)</span>
+                        </div>
+                        <div class="spacer">
+                            <input type="checkbox" id="silk--menu">
+                            <label for="silk--menu" class="input__text">Silk</label>
+                            <span class="right">(100000)</span>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="resp_menu-filter-item">
+
+                <h1 class="resp_menu-filter-item-title">
+                    Discount &nbsp; <img class="filter__down-arrow" src="resources/img/down-arrow.svg" alt="">
+                </h1>
+
+                <div>
+                    <div class="inset form__sections--scroll">
+                        <div class="spacer">
+                            <input type="checkbox" id="90--menu">
+                            <label for="90--menu" class="input__text">80% - 99%</label>
+                            <span class="right">(100000)</span>
+                        </div>
+                        <div class="spacer">
+                            <input type="checkbox" id="70--menu">
+                            <label for="70--menu" class="input__text">60% - 79%</label>
+                            <span class="right">(100000)</span>
+                        </div>
+                        <div class="spacer">
+                            <input type="checkbox" id="30--menu">
+                            <label for="30--menu" class="input__text">20% - 39%</label>
+                            <span class="right">(100000)</span>
+                        </div>
+                        <div class="spacer">
+                            <input type="checkbox" id="10--menu">
+                            <label for="10--menu" class="input__text">1% - 19%</label>
+                            <span class="right">(100000)</span>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+        </nav>
+    </div>
+
+    <div class="scroll_to_top">
+        <img src="resources/img/to_top.svg" width="18px" alt="">
+    </div>
+
+    <script src="vendor/js/jquery.waypoints.min.js"></script>
+    <script src="resources/js/scroll.js"></script>
+    <script src="resources/js/filter.js"></script>
     <script src="resources/js/nav.js"></script>
+    <script src="resources/js/modal.js"></script>
     <script src="resources/js/product-list.js"></script>
 </body>
 
