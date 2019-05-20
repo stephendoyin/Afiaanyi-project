@@ -598,3 +598,12 @@ window.addEventListener("click", function (e) {
         filterDropDown.classList.remove("filter__drop-down--view");
     }
 });
+
+
+let hoverLink = document.querySelectorAll(".header__full-nav-link");
+
+for (let c = 0; c < hoverLink.length; c++) {
+    hoverLink[c].addEventListener("click", function (e) {
+        e.preventDefault();
+    })
+}
