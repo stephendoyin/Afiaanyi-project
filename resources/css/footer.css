@@ -60,7 +60,7 @@ section.footer {
     }
 }
 
-.row {
+.contact.row, .footer .row {
     width: 90%;
     margin: 0 auto;
 }
