@@ -569,7 +569,7 @@ window.addEventListener("load", function () {
 
     }
 
-})
+});
 
 let filterDropDown = document.querySelector(".filter__drop-down");
 let filterSortButton = document.querySelector(".filter_button--sort");

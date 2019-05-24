@@ -3,10 +3,13 @@ let menuIcon = $(".header__resp_menu-btn");
 let menuModal = $(".nav_menu__resp-mega-menu");
 
 menuIcon.click(function () {
+
     menuModal.animate({ left: "0%" });
-    document.body.style.height = "100vh";
-    document.body.style.overflow = "hidden";
-    // document.querySelector(".menu_icon").style.visibility = "hidden";
+    if (screen.availWidth < 1100) {
+        document.body.style.height = "100vh";
+        document.body.style.overflow = "hidden";
+        // document.querySelector(".menu_icon").style.visibility = "hidden";
+    }
 });
 
 $(window).click(function (e) {

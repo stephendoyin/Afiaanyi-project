@@ -204,7 +204,6 @@ $('#search-form .term').bind('input', function () {
                 ${newList[i].charAt(0).toUpperCase() + newList[i].slice(1)}         
         </p>
         `
-
     }
 
 });
@@ -214,7 +213,34 @@ function returnfiltered(searchList) {
     // === document.querySelector("#tested").value.slice(0, 1).toUpperCase();
 }
 
+let filterDropDown = document.querySelector(".filter__drop-down");
+let filterSortButton = document.querySelector(".filter_button--sort");
+let filterDropItem = document.querySelectorAll(".filter__drop_item ");
 
+
+filterSortButton.addEventListener("click", function () {
+    filterDropDown.classList.toggle("filter__drop-down--view");
+});
+
+// for (let x = 0; x < filterDropItem.length; x++) {
+//     
+
+// }
+for (let i = 0; i < filterDropItem.length; i++) {
+
+    filterDropItem[i].addEventListener('click', function () {
+        setTimeout(function () {
+            filterDropDown.classList.toggle("filter__drop-down--view");
+        }, 200)
+    })
+
+};
+
+window.addEventListener("click", function (e) {
+    if (!((e.target.classList[1] === "filter_button--sort") || (e.target.classList[0] === "filter__drop_item"))) {
+        filterDropDown.classList.remove("filter__drop-down--view");
+    }
+});
 
 
 
