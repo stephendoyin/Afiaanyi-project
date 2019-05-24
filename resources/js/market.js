@@ -143,9 +143,8 @@ function moveDropDownPostion() {
 
 }
 
-
-let menuIconMega = $(".header__menu_icon");
-let menuModalMega = $(".nav_menu__resp");
+let menuIconMega = $(".header__resp_menu-btn");
+let menuModalMega = $(".nav_menu__resp-mega-menu");
 
 menuIconMega.click(function () {
     menuModalMega.animate({ left: "0%" });
@@ -155,7 +154,7 @@ menuIconMega.click(function () {
 });
 
 $(window).click(function (e) {
-    if (e.target.className === "nav_menu__resp") {
+    if (e.target.className === "nav_menu__resp-mega-menu") {
         //remv the modal
         menuModalMega.animate({ left: "-100%" });
         // height of the document
@@ -167,7 +166,7 @@ $(window).click(function (e) {
 });
 
 
-$(".menu__close").click(function () {
+$(".close_mega_menu").click(function () {
     menuModalMega.animate({ left: "-100%" });
     document.body.style.height = "auto";
     document.body.style.overflow = "auto";
@@ -584,3 +583,4 @@ function closeAllSelect(elmnt) {
 /* If the user clicks anywhere outside the select box,
 then close all select boxes: */
 document.addEventListener("click", closeAllSelect);
+

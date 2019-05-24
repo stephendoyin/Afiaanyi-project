@@ -1,6 +1,6 @@
 
-let menuIcon = $(".header__resp_menu-btn");
-let menuModal = $(".nav_menu__resp-mega-menu");
+let menuIcon = $(".header__menu_icon");
+let menuModal = $(".nav_menu__resp");
 
 menuIcon.click(function () {
 
@@ -41,9 +41,9 @@ function colorRed() {
         if (document.querySelectorAll(".resp_menu__link--active:link polygon").length > 0) {
             document.querySelectorAll(".resp_menu__link--active:link polygon")[i].setAttribute("fill", "#dcbd56");
         }
-        // if (document.querySelectorAll(".resp_menu__link--active:link rect").length > 0) {
-        //     document.querySelectorAll(".resp_menu__link--active:link rect")[i].setAttribute("fill", "#dcbd56");
-        // }
+        if (document.querySelectorAll(".resp_menu__link--active:link rect").length > i) {
+            document.querySelectorAll(".resp_menu__link--active:link rect")[i].setAttribute("fill", "#dcbd56");
+        }
     }
 
 }
