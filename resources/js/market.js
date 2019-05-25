@@ -129,27 +129,29 @@ for (let i = 0; i < thumbnailContainers.length; i++) {
 
 window.addEventListener("resize", moveDropDownPostion())
 
-
 function moveDropDownPostion() {
-
     let dropDownContainer = document.querySelector(".full--nav");
     let dropDownTrigger = document.querySelector(".header__resp_menu-button-container");
-    let navig = document.querySelector("nav");
-    if (screen.availWidth < 1280) {
-        dropDownTrigger.appendChild(dropDownContainer);
-    } else {
-        navig.appendChild(dropDownContainer);
+    let newEl = dropDownContainer.cloneNode(true);
+    if (screen.availWidth <= 1280) {
+        dropDownTrigger.appendChild(newEl);
     }
 
 }
+
+moveDropDownPostion();
 
 let menuIconMega = $(".header__resp_menu-btn");
 let menuModalMega = $(".nav_menu__resp-mega-menu");
 
 menuIconMega.click(function () {
-    menuModalMega.animate({ left: "0%" });
-    document.body.style.height = "100vh";
-    document.body.style.overflow = "hidden";
+
+    if (screen.availWidth <= 1100) {
+        menuModalMega.animate({ left: "0%" });
+        document.body.style.height = "100vh";
+        document.body.style.overflow = "hidden";
+    }
+
     // document.querySelector(".menu_icon").style.visibility = "hidden";
 });
 
@@ -584,3 +586,13 @@ function closeAllSelect(elmnt) {
 then close all select boxes: */
 document.addEventListener("click", closeAllSelect);
 
+
+
+
+let hoverLink = document.querySelectorAll(".header__full-nav-link");
+
+for (let c = 0; c < hoverLink.length; c++) {
+    hoverLink[c].addEventListener("click", function (e) {
+        e.preventDefault();
+    })
+}

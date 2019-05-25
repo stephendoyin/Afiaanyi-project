@@ -303,11 +303,6 @@ $(function () {
         `;
         history.innerHTML += product;
     }
-    // $(".header__full-nav-link").hover(function () {
-    //     $(".dropdown__header").css("display", "block");
-    // }, function () {
-    //     $(".dropdown__header").css("display", "none");
-    // });
 });
 
 

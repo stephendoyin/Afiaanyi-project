@@ -10,10 +10,10 @@
     <style>
         @import url('https://fonts.googleapis.com/css?family=Lato:100,300,300i,400');
         @import url(vendor/css/animate.css);
-        @import url(resources/css/faq.css);
-        @import url(resources/css/cart.css);
         @import url(resources/css/modal.css);
         @import url(resources/css/checkout.css);
+        @import url(resources/css/menu.css);
+        @import url(resources/css/footer.css);
     </style>
     <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
     <title>Checkout</title>
@@ -35,7 +35,14 @@
                         <input type="submit" class="header__submit">
                     </div>
 
-                    <div>
+                    <div class="header__form-input-container--tab">
+                        <input type="text"
+                            class="header__form-input header__form-input--tab header__input-nav header__form-input--trans"
+                            placeholder="Search for companies and services">
+                        <input type="submit" value="" class="header__submit--tab ">
+                    </div>
+
+                    <div class="header__nav-list_outer_container">
                         <ul class="header__nav-list-container">
                             <li class="header__nav-list header__nav-list--divider">
                                 <a href="" class="header__nav-link">Directory</a>
@@ -55,36 +62,44 @@
                         </ul>
                     </div>
 
-                    <div class="header__right">
-                        <p class="greeting">Welcome <span class="header__username">&nbsp;Stephen!</span></p>
+                    <div class="header__right-nav">
+                        <p class="greeting">
+                            <span class="user__generic">Welcome, &nbsp;</span>
+                            <span class="user__name">Stephen</span>
 
-                        <a href="">
-                            <img src="resources/img/man.png" class="header-nav-icon header__avatar" height="35px"
-                                width="35px">
-                        </a>
+                            <a href="">
+                                <img src="resources/img/man.png" class="header-nav-icon header__avatar" height="35px"
+                                    width="35px">
+                            </a>
 
-                        <a href="">
-                            <img src="resources/img/gold-favorite.svg" class="header-nav-icon">
-                        </a>
-                        <a href="">
-                            <img src="resources/img/gold-shop-cart.svg" class="header-nav-icon">
-                            <sup class="cart__label">3</sup>
-                        </a>
+                            <a href="">
+                                <img src="resources/img/gold-favorite.svg" class="header-nav-icon">
+                            </a>
 
-                        <a href="">
-                            <img src="resources/img/notify.svg" class="header-nav-icon">
-                        </a>
+                            <a href="">
+                                <img src="resources/img/gold-shop-cart.svg" class="header-nav-icon">
+                                <sup class="cart__label">3</sup>
+                            </a>
 
+                            <img class="notify" src="resources/img/notify.svg">
                         </p>
                     </div>
 
+                    <div class="header__menu_icon">
+                        <img src="resources/img/resp_menu.svg" alt="">
+                    </div>
+
                 </div>
+
+
+
+
             </div>
         </nav>
 
     </header>
 
-    <section>
+    <!-- <section>
 
         <div class="row">
 
@@ -519,180 +534,9 @@
 
             </div>
 
-    </section>
+    </section> -->
 
 
-    <section class="contact__container">
-        <div class="contact row">
-            <div class="one">
-                <p>
-                    <strong>SUPPORT</strong><br>
-
-                    <img class="" src="resources/img/phone.svg" alt=""> +234 803 400 0000
-                </p>
-            </div>
-            <div class="two">
-                <p>
-                    <strong>EMAIL SUPPORT</strong>
-                </p>
-                <p>
-                    <img class="" src="resources/img/mail.svg" alt=""> info@afiaayan.com
-                </p>
-            </div>
-            <div class="three">
-                <p>
-                    <span>
-                        <strong>GET LATEST DEALS & UPDATES</strong>
-                    </span>
-                    <br>
-                    <i>Stay in the loop on all upcoming promotions,
-                        <br> discounts and latest updates.</i>
-                </p>
-            </div>
-            <div class="four">
-                <input type="email" id="mail" placeholder="Enter e-mail"><input id="send" type="submit" value="send">
-            </div>
-        </div>
-
-
-    </section>
-
-    <section class="footer hide-flow">
-        <footer class="row">
-            <div class="footer-inner">
-                <div class="space">
-                    <ul>
-                        <li class="colored-list">GET TO KNOW US</li>
-                        <li>
-                            <a href="">About us</a>
-                        </li>
-                        <li>
-                            <a href="">Careers</a>
-                        </li>
-                        <li>
-                            <a href="">Blog</a>
-                        </li>
-                        <li>
-                            <a href="">FAQ</a>
-                        </li>
-                        <li>
-                            <a href="">Contact Us</a>
-                        </li>
-                    </ul>
-                </div>
-                <div class="space">
-                    <ul>
-                        <li class="colored-list">PAYMENTS</li>
-                        <li>
-                            <a href="">Mastercard</a>
-                        </li>
-                        <li>
-                            <a href="">Verve</a>
-                        </li>
-                        <li>
-                            <a href="">Visa</a>
-                        </li>
-                        <li>
-                            <a href="">Wallet</a>
-                        </li>
-                    </ul>
-                </div>
-                <div class="space">
-                    <ul>
-                        <li class="colored-list">EXPLORE</li>
-                        <li>
-                            <a href="">Top Brands</a>
-                        </li>
-                        <li>
-                            <a href="">Privacy Policy</a>
-                        </li>
-                        <li>
-                            <a href="">Disclaimer</a>
-                        </li>
-                        <li>
-                            <a href="">Billing Policy</a>
-                        </li>
-                        <li>
-                            <a href="">Terms of Use</a>
-                        </li>
-                        <li>
-                            <a href="">Advertise with Us</a>
-                        </li>
-                    </ul>
-                </div>
-                <div class="space">
-                    <ul>
-                        <li class="colored-list">SELL ON AFIANANYI</li>
-                        <li>
-                            <a href="">Register your Business</a>
-                        </li>
-                        <li>
-                            <a href="">Create a Store</a>
-                        </li>
-                        <li>
-                            <a href="">How it works</a>
-                        </li>
-                        <li>
-                            <a href="">Trust and Safety</a>
-                        </li>
-                    </ul>
-                </div>
-                <div class="space">
-                    <ul>
-                        <li class="colored-list">DELIVERY</li>
-                        <li>
-                            <a href="">Chisco Express</a>
-                        </li>
-                    </ul>
-                </div>
-                <div class="left-space">
-                    <ul>
-                        <li class="colored-list big-para">DOWNLOAD AND CONNECT WITH US</li>
-                    </ul>
-                    <div class="mobile-app">
-
-                    </div>
-
-                    <a href=""><img src="resources/img/ios.svg">
-                    </a>&nbsp;&nbsp;
-                    <a href=""><img src="resources/img/android.svg"></a>
-
-                    <p class="follow__p">Follow us:
-                        <span>
-                            <a href=""><img class="icon-small" src="resources/img/brands/facebook-white.svg"
-                                    width="22px" height="22px" alt="facebook"></a>
-                        </span>
-                        <span>
-                            <a href=""><img class="icon-small" src="resources/img/brands/instagram-white.svg"
-                                    width="22px" height="22px" alt="instagram"></a>
-                        </span>
-                        <span>
-                            <a href=""><img class="icon-small" src="resources/img/brands/linkedin-white.svg"
-                                    width="22px" height="22px" alt="linkedin"></a>
-                        </span>
-                        <span>
-                            <a href=""><img class="icon-small"
-                                    src="resources/img/brands/twitter-circular-button-white.svg" width="22px"
-                                    height="22px" alt="twitter"></a>
-                        </span>
-                    </p>
-                    <p class="powered">Powered by
-                        <img class="logo-by" src="resources/img/logo-by.svg">
-                    </p>
-                </div>
-            </div>
-
-            <img class="footer-last-img" src="resources/img/awka.svg">
-            <img class="footer-last-img" src="resources/img/onitsha.svg">
-            <img class="footer-last-img" src="resources/img/nccima.svg">
-            <img class="footer-last-img" src="resources/img/oni.svg">
-
-            <p class="copy">Copyright (c) 2018 Afiaanyi. All rights reserved</p>
-
-            <img class="yb" src="resources/img/yb.svg">
-            <img class="by" src="resources/img/black-yellow.svg">
-        </footer>
-    </section>
 
     <div class="modal_container">
         <div class="modal_content animated fadeIn">
