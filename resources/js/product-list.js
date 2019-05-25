@@ -1,3 +1,15 @@
+
+let dropDownContainer = document.querySelector(".full--nav");
+let dropDownTrigger = document.querySelector(".header__resp_menu-button-container");
+let newEl = dropDownContainer.cloneNode(true);
+
+dropDownTrigger.appendChild(newEl);
+
+
+
+// window.addEventListener("resize", moveDropDownPostion, false)
+
+
 let menuIconMega = $(".header__resp_menu-btn");
 let menuModalMega = $(".nav_menu__resp-mega-menu");
 
@@ -548,21 +560,11 @@ window.addEventListener("load", function () {
 
     }
 
-    window.addEventListener("resize", moveDropDownPostion())
-
-    function moveDropDownPostion() {
-        let dropDownContainer = document.querySelector(".full--nav");
-        let dropDownTrigger = document.querySelector(".header__resp_menu-button-container");
-        let newEl = dropDownContainer.cloneNode(true);
-        if (screen.availWidth <= 1280) {
-            dropDownTrigger.appendChild(newEl);
-        }
-
-    }
-
-    moveDropDownPostion();
 
 });
+
+
+
 
 let filterDropDown = document.querySelector(".filter__drop-down");
 let filterSortButton = document.querySelector(".filter_button--sort");

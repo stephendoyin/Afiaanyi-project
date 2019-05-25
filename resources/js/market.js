@@ -1,4 +1,13 @@
 
+
+let dropDownContainer = document.querySelector(".full--nav");
+let dropDownTrigger = document.querySelector(".header__resp_menu-button-container");
+let newEl = dropDownContainer.cloneNode(true);
+dropDownTrigger.appendChild(newEl);
+
+
+
+
 let navLinks = document.querySelectorAll(".market__nav-link");
 let navImgs = document.querySelectorAll(".market__nav-link img")
 
@@ -127,20 +136,6 @@ for (let i = 0; i < thumbnailContainers.length; i++) {
 
 }
 
-window.addEventListener("resize", moveDropDownPostion())
-
-function moveDropDownPostion() {
-    let dropDownContainer = document.querySelector(".full--nav");
-    let dropDownTrigger = document.querySelector(".header__resp_menu-button-container");
-    let newEl = dropDownContainer.cloneNode(true);
-    if (screen.availWidth <= 1280) {
-        dropDownTrigger.appendChild(newEl);
-    }
-
-}
-
-moveDropDownPostion();
-
 let menuIconMega = $(".header__resp_menu-btn");
 let menuModalMega = $(".nav_menu__resp-mega-menu");
 
@@ -154,6 +149,7 @@ menuIconMega.click(function () {
 
     // document.querySelector(".menu_icon").style.visibility = "hidden";
 });
+
 
 $(window).click(function (e) {
     if (e.target.className === "nav_menu__resp-mega-menu") {
@@ -585,7 +581,6 @@ function closeAllSelect(elmnt) {
 /* If the user clicks anywhere outside the select box,
 then close all select boxes: */
 document.addEventListener("click", closeAllSelect);
-
 
 
 
