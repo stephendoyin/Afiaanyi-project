@@ -2,10 +2,12 @@ let menuIconMega = $(".header__resp_menu-btn");
 let menuModalMega = $(".nav_menu__resp-mega-menu");
 
 menuIconMega.click(function () {
-    menuModalMega.animate({ left: "0%" });
-    document.body.style.height = "100vh";
-    document.body.style.overflow = "hidden";
-    // document.querySelector(".menu_icon").style.visibility = "hidden";
+
+    if (screen.availWidth <= 1100) {
+        menuModalMega.animate({ left: "0%" });
+        document.body.style.height = "100vh";
+        document.body.style.overflow = "hidden";
+    }
 });
 
 $(window).click(function (e) {
@@ -548,19 +550,17 @@ window.addEventListener("load", function () {
 
     window.addEventListener("resize", moveDropDownPostion())
 
-
     function moveDropDownPostion() {
-
         let dropDownContainer = document.querySelector(".full--nav");
         let dropDownTrigger = document.querySelector(".header__resp_menu-button-container");
-        let navig = document.querySelector("nav");
-        if (screen.availWidth < 1280) {
-            dropDownTrigger.appendChild(dropDownContainer);
-        } else {
-            navig.appendChild(dropDownContainer);
+        let newEl = dropDownContainer.cloneNode(true);
+        if (screen.availWidth <= 1280) {
+            dropDownTrigger.appendChild(newEl);
         }
 
     }
+
+    moveDropDownPostion();
 
 });
 
