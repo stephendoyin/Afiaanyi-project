@@ -632,9 +632,8 @@ nav {
     border: 1px solid #BDBDBD;
     border-radius: 4px;
     cursor: pointer;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    display: inline-block;
+    vertical-align: middle;
 }
 
 .filter_button_container {
@@ -649,7 +648,7 @@ nav {
 
 .filter__drop-down {
     width: 49%;
-    /* max-height: 400px; */
+    left: 0;
     background: #fff;
     position: absolute;
     display: none;
