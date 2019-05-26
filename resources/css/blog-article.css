@@ -435,9 +435,15 @@ nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    width: 90%;
+    width: 80%;
     margin: 0 auto;
     height: 50px;
+}
+
+@media only screen and (max-width: 1080px) {
+    .header__lower-nav-inner-container {
+        width: 90%;
+    }
 }
 
 .header__lower-nav-list-container {
@@ -465,11 +471,11 @@ nav {
 @media only screen and (max-width: 1280px) {
     .header__back_nav {
         display: flex;
-        width: 100%;
+        width: 90%;
     }
 }
 
-@media only screen and (max-width: 940px) {
+@media only screen and (max-width: 1080px) {
     .header__back_nav {
         width: 100%;
     }
