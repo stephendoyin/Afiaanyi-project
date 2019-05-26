@@ -74,11 +74,100 @@ document.addEventListener("click", closeAllSelect);
 
 $(function () {
 
-    $(".first-row__launch-container").click(function() {
-        window.location = $(this).find("a").attr("href"); 
+    $(".first-row__launch-container").click(function () {
+        window.location = $(this).find("a").attr("href");
         return false;
-      });
+    });
 
 });
-    
-    
+
+
+let filterDropDown = document.querySelectorAll(".filter__drop-down");
+let filterSortButton = document.querySelector(".filter_button--sort");
+let filterSortButtonTwo = document.querySelector(".filter_button--two");
+let filterDropItem = document.querySelectorAll(".filter__drop_item ");
+
+filterSortButton.addEventListener("click", function () {
+    filterDropDown[0].classList.toggle("filter__drop-down--view");
+});
+
+filterSortButtonTwo.addEventListener("click", function () {
+    filterDropDown[1].classList.toggle("filter__drop-down--view");
+});
+
+// for (let x = 0; x < filterDropItem.length; x++) {
+//     
+
+// }
+for (let i = 0; i < filterDropItem.length; i++) {
+
+    filterDropItem[i].addEventListener('click', function () {
+        setTimeout(function () {
+            filterDropDown[0].classList.remove("filter__drop-down--view");
+        }, 200)
+    })
+
+};
+for (let i = 0; i < filterDropItem.length; i++) {
+
+    filterDropItem[i].addEventListener('click', function () {
+        setTimeout(function () {
+            filterDropDown[1].classList.remove("filter__drop-down--view");
+        }, 200)
+    })
+
+};
+
+
+
+window.addEventListener("click", function (e) {
+    if (!((e.target.classList[1] === "filter_button--sort") || (e.target.classList[0] === "filter__drop_item"))) {
+        filterDropDown[0].classList.remove("filter__drop-down--view");
+    }
+    if (!((e.target.classList[1] === "filter_button--two") || (e.target.classList[0] === "filter__drop_item"))) {
+        filterDropDown[1].classList.remove("filter__drop-down--view");
+    }
+});
+
+
+
+
+let caseTextOriginal = document.querySelectorAll(".first-row__content")
+let caseText = document.querySelectorAll(".first-row__content")
+
+let initialText = [];
+
+for (let i = 0; i < caseTextOriginal.length; i++) {
+    initialText.push(caseTextOriginal[i].textContent);
+    console.log(initialText[i]);
+}
+
+
+let screenRespValues = [640]
+
+
+window.addEventListener("resize", function () {
+    textResize();
+
+})
+
+
+
+
+textResize();
+
+
+
+function textResize() {
+    if (window.screen.availWidth > 640) {
+        for (let n = 0; n < caseText.length; n++) {
+            caseText[n].textContent = initialText[n];
+        }
+    }
+    else if ((window.screen.availWidth <= 640)) {
+        for (let i = 0; i < caseText.length; i++) {
+            let newText = initialText[i];
+            caseText[i].textContent = newText.trim().substring(0, 100) + "...";
+        }
+    }
+}

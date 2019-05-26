@@ -428,10 +428,6 @@ input:focus {
     color: #d8b027;
 }
 
-.header--outlined:hover {
-    color: white
-}
-
 .header-nav-icon {
     margin-left: 12px;
 }
