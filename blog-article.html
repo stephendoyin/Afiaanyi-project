@@ -4,13 +4,45 @@
 <head>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Montserrat:200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i"
+    <link
+        href="https://fonts.googleapis.com/css?family=Montserrat:200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i"
         rel="stylesheet">
     <style>
         @import url('https://fonts.googleapis.com/css?family=Lato:100,300,300i,400');
         @import url(resources/css/blog-article.css);
+        @import url(resources/css/menu.css);
+        @import url(resources/css/footer.css);
     </style>
     <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
+    <script>
+        function includeHTML() {
+            var z, i, elmnt, file, xhttp;
+            /*loop through a collection of all HTML elements:*/
+            z = document.getElementsByTagName("*");
+            for (i = 0; i < z.length; i++) {
+                elmnt = z[i];
+                /*search for elements with a certain atrribute:*/
+                file = elmnt.getAttribute("w3-include-html");
+                if (file) {
+                    /*make an HTTP request using the attribute value as the file name:*/
+                    xhttp = new XMLHttpRequest();
+                    xhttp.onreadystatechange = function () {
+                        if (this.readyState == 4) {
+                            if (this.status == 200) { elmnt.innerHTML = this.responseText; }
+                            if (this.status == 404) { elmnt.innerHTML = "Page not found."; }
+                            /*remove the attribute, and call this function once more:*/
+                            elmnt.removeAttribute("w3-include-html");
+                            includeHTML();
+                        }
+                    }
+                    xhttp.open("GET", file, true);
+                    xhttp.send();
+                    /*exit the function:*/
+                    return;
+                }
+            }
+        };
+    </script>
     <title>Blog</title>
 </head>
 
@@ -18,24 +50,38 @@
 
     <header>
         <nav>
-            <div class="row header__nav-content">
-                <div>
-                    <img src="resources/img/market-logo.svg" class="header__logo" alt="Afiaanyi logo">
-                </div>
+            <div class="header__top-container">
+                <div class="row header__nav-content">
 
+                    <div class="header__logo-container">
+                        <img src="resources/img/market-logo.svg" class="header__logo" alt="Afiaanyi logo">
+                    </div>
 
+                    <div class="header__form-input-container">
+                        <input type="search" class="header__form-input header__input-nav"
+                            placeholder="Search for companies and services">
+                        <input type="submit" class="header__submit">
+                    </div>
 
-                <div class="header__customized-items">
+                    <div class="header__form-input-container--tab">
+                        <input type="text"
+                            class="header__form-input header__form-input--tab header__input-nav header__form-input--trans"
+                            placeholder="Search for companies and services">
+                        <input type="submit" value="" class="header__submit--tab ">
+                    </div>
 
-                    <div class="sub__nav">
+                    <div class="header__nav-list_outer_container">
                         <ul class="header__nav-list-container">
-                            <li class="header__nav-list">
+                            <li class="header__nav-list header__nav-list--divider">
                                 <a href="" class="header__nav-link">Directory</a>
                             </li>
-                            <li class="header__nav-list">
+                            <li class="header__nav-list header__nav-list--divider">
+                                <a href="" class="header__nav-link">Top Brands</a>
+                            </li>
+                            <li class="header__nav-list header__nav-list--divider">
                                 <a href="" class="header__nav-link">Shop</a>
                             </li>
-                            <li class="header__nav-list">
+                            <li class="header__nav-list header__nav-list--divider">
                                 <a href="" class="header__nav-link">Jobs</a>
                             </li>
                             <li class="header__nav-list">
@@ -44,20 +90,33 @@
                         </ul>
                     </div>
 
-                    <p class="header__greeting">Welcome <span class="header__username">Stephen!</span></p>
+                    <div class="header__right-nav">
+                        <p class="greeting">
+                            <span class="user__generic">Welcome, &nbsp;</span>
+                            <span class="user__name">Stephen</span>
 
-                    <a href="">
-                        <img src="resources/img/man.png" class="header-nav-icon header__avatar" height="35px" width="35px">
-                    </a>
+                            <a href="">
+                                <img src="resources/img/man.png" class="header-nav-icon header__avatar" height="35px"
+                                    width="35px">
+                            </a>
 
-                    <a href="">
-                        <img src="resources/img/gold-favorite.svg" class="header-nav-icon">
-                    </a>
-                    <a href="">
-                        <img src="resources/img/gold-shop-cart.svg" class="header-nav-icon">
-                    </a>
-                    </p>
+                            <a href="">
+                                <img src="resources/img/gold-favorite.svg" class="header-nav-icon">
+                            </a>
+
+                            <img class="notify" src="resources/img/notify.svg">
+                        </p>
+                    </div>
+
+                    <div class="header__menu_icon">
+                        <img src="resources/img/resp_menu.svg" alt="">
+                    </div>
+
                 </div>
+
+
+
+
             </div>
         </nav>
 
@@ -66,56 +125,56 @@
         </div>
 
         <div class="full--nav row">
-            <ul class="row header__full-nav" style="position:relative">
+            <ul class="header__full-nav" style="position:relative">
                 <li class="header__full-nav-list">
                     <a href="" class="header__full-nav-link">
                         <img src="resources/img/blog/business.svg">
-                        &nbsp;Business</a>
+                        &nbsp;&nbsp;Business</a>
                 </li>
                 <li class="header__full-nav-list">
                     <a href="" class="header__full-nav-link">
                         <img src="resources/img/blog/home-improvement.svg">
-                        &nbsp;Home Improvement</a>
+                        &nbsp;&nbsp;Home Improvement</a>
                 </li>
                 <li class="header__full-nav-list">
                     <a href="" class="header__full-nav-link">
                         <img src="resources/img/blog/business-services.svg">
-                        &nbsp;Business Services</a>
+                        &nbsp;&nbsp;Business Services</a>
                 </li>
                 <li class="header__full-nav-list">
                     <a href="" class="header__full-nav-link">
                         <img src="resources/img/blog/life-style.svg">
-                        &nbsp;Lifestyle</a>
+                        &nbsp;&nbsp;Lifestyle</a>
                 </li>
                 <li class="header__full-nav-list">
                     <a href="" class="header__full-nav-link">
                         <img src="resources/img/blog/marketing.svg">
-                        &nbsp;Marketing</a>
+                        &nbsp;&nbsp;Marketing</a>
                 </li>
                 <li class="header__full-nav-list">
                     <a href="" class="header__full-nav-link">
                         <img src="resources/img/blog/financial-services.svg">
-                        &nbsp;Financial Services</a>
+                        &nbsp;&nbsp;Financial Services</a>
                 </li>
                 <li class="header__full-nav-list">
                     <a href="" class="header__full-nav-link">
                         <img src="resources/img/blog/tipnguide.svg">
-                        &nbsp;Tips & Guides</a>
+                        &nbsp;&nbsp;Tips & Guides</a>
                 </li>
                 <li class="header__full-nav-list">
                     <a href="" class="header__full-nav-link">
                         <img src="resources/img/blog/new.svg">
-                        &nbsp;News</a>
+                        &nbsp;&nbsp;News</a>
                 </li>
                 <li class="header__full-nav-list">
                     <a href="" class="header__full-nav-link">
                         <img src="resources/img/blog/sales.svg">
-                        &nbsp;Sales</a>
+                        &nbsp;&nbsp;Sales</a>
                 </li>
                 <li class="header__full-nav-list">
                     <a href="" class="header__full-nav-link">
                         <img src="resources/img/blog/product.svg">
-                        &nbsp;Product</a>
+                        &nbsp;&nbsp;Product</a>
                 </li>
             </ul>
 
@@ -126,7 +185,7 @@
         <div class="header__lower-nav-outer-container">
 
             <div class="row header__lower-wrapper">
-                <div class="row header__lower-nav-inner-container">
+                <div class=" header__lower-nav-inner-container">
 
                     <div>
                         <ul class="header__lower-nav-list-container">
@@ -135,14 +194,14 @@
                                 <img src="resources/img/product-list/front-arrow.svg">
                             </li>
                             <li class="header__lower-nav-list">
-                                <a href="blog.html" class="header__lower-nav-link">Back to Blog
+                                <a href="" class="header__lower-nav-link">Blog
                                 </a>
                             </li>
                         </ul>
                     </div>
                     <div class="header__lower-nav-input-container header__lower--shift">
 
-                        <label for="">Filter:&nbsp;&nbsp;</label>
+                        <label for="">Filter:</label>
                         <div class="custom-select" style="width:200px;">
                             <select>
                                 <option value="0">Year</option>
@@ -156,7 +215,7 @@
                     </div>
                     <div class="header__lower-nav-input-container">
 
-                        <label for="" >Show me posts tagged:&nbsp;&nbsp;</label>
+                        <label for="">Show me posts tagged:</label>
                         <div class="custom-select" style="width:200px;">
                             <select>
                                 <option value="0">Any</option>
@@ -172,7 +231,7 @@
                     </div>
 
                     <div class="blog__search">
-                        <div class="blog__search-input">
+                        <div class=" blog__search-input">
                             <input type="search" placeholder="What are you looking for?">
                         </div>
                     </div>
@@ -181,11 +240,71 @@
             </div>
         </div>
 
+        <div class="row">
+            <div class="header__back_nav">
+                <a href="" class="back__button">
+                    <img src="resources/img/blog_back-arrow.svg" alt="" class="back__btn-arrow">
+                    &nbsp;&nbsp;
+                    Back to Blog
+                </a>
+
+                <div class="blog__search_low">
+                    <div class=" blog__search-input">
+                        <input type="search" placeholder="What are you looking for?">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="filter_button_container">
+
+                <button class="filter_button filter_button--sort" tabindex="0">
+                    <img src="resources/img/tags.svg" alt="">&nbsp;&nbsp;Tags
+                </button>
+                <div class="filter__drop-down">
+                    <div class="filter__drop_item" tabindex="0">
+                        Any
+                    </div>
+                    <div class="filter__drop_item" tabindex="0">
+                        All tags
+                    </div>
+                    <div class="filter__drop_item" tabindex="0">
+                        Content Strategy
+                    </div>
+                    <div class="filter__drop_item" tabindex="0">
+                        Business
+                    </div>
+                    <div class="filter__drop_item" tabindex="0">
+                        Seo
+                    </div>
+                    <div class="filter__drop_item" tabindex="0">
+                        Social Media
+                    </div>
+                </div>
+                <button class="filter_button filter_button--two" tabindex="0">
+                    <img src="resources/img/filter.svg" alt="">&nbsp;&nbsp;Filter
+                </button>
+                <div class="filter__drop-down filter__drop-down--two">
+                    <div class="filter__drop_item" tabindex="0">
+                        Year
+                    </div>
+                    <div class="filter__drop_item" tabindex="0">
+                        Month
+                    </div>
+                    <div class="filter__drop_item" tabindex="0">
+                        Date
+                    </div>
+                    <div class="filter__drop_item" tabindex="0">
+                        Topic
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
     </header>
 
-    <section>
-
-    </section>
 
     <section>
         <div class="row__large post">
@@ -341,174 +460,6 @@
         </div>
 
 
-    </section>
-
-    <section class="contact__container">
-        <div class="contact row">
-            <div class="one">
-                <p>
-                    <strong>SUPPORT</strong><br>
-
-                    <img class="" src="resources/img/phone.svg" alt=""> +234 803 400 0000
-                </p>
-            </div>
-            <div class="two">
-                <p>
-                    <strong>EMAIL SUPPORT</strong>
-                </p>
-                <p>
-                    <img class="" src="resources/img/mail.svg" alt=""> info@afiaayan.com
-                </p>
-            </div>
-            <div class="three">
-                <p>
-                    <span>
-                        <strong>GET LATEST DEALS & UPDATES</strong>
-                    </span>
-                    <br>
-                    <i>Stay in the loop on all upcoming promotions,
-                        <br> discounts and latest updates.</i>
-                </p>
-            </div>
-            <div class="four">
-                <input type="email" id="mail" placeholder="Enter e-mail"><input id="send" type="submit" value="send">
-            </div>
-        </div>
-    </section>
-
-    <section class="footer hide-flow">
-        <footer class="row">
-            <div class="footer-inner">
-                <div class="space">
-                    <ul>
-                        <li class="colored-list">GET TO KNOW US</li>
-                        <li>
-                            <a href="">About us</a>
-                        </li>
-                        <li>
-                            <a href="">Careers</a>
-                        </li>
-                        <li>
-                            <a href="">Blog</a>
-                        </li>
-                        <li>
-                            <a href="">FAQ</a>
-                        </li>
-                        <li>
-                            <a href="">Contact Us</a>
-                        </li>
-                    </ul>
-                </div>
-                <div class="space">
-                    <ul>
-                        <li class="colored-list">PAYMENTS</li>
-                        <li>
-                            <a href="">Mastercard</a>
-                        </li>
-                        <li>
-                            <a href="">Verve</a>
-                        </li>
-                        <li>
-                            <a href="">Visa</a>
-                        </li>
-                        <li>
-                            <a href="">Wallet</a>
-                        </li>
-                    </ul>
-                </div>
-                <div class="space">
-                    <ul>
-                        <li class="colored-list">EXPLORE</li>
-                        <li>
-                            <a href="">Top Brands</a>
-                        </li>
-                        <li>
-                            <a href="">Privacy Policy</a>
-                        </li>
-                        <li>
-                            <a href="">Disclaimer</a>
-                        </li>
-                        <li>
-                            <a href="">Billing Policy</a>
-                        </li>
-                        <li>
-                            <a href="">Terms of Use</a>
-                        </li>
-                        <li>
-                            <a href="">Advertise with Us</a>
-                        </li>
-                    </ul>
-                </div>
-                <div class="space">
-                    <ul>
-                        <li class="colored-list">SELL ON AFIANANYI</li>
-                        <li>
-                            <a href="">Register your Business</a>
-                        </li>
-                        <li>
-                            <a href="">Create a Store</a>
-                        </li>
-                        <li>
-                            <a href="">How it works</a>
-                        </li>
-                        <li>
-                            <a href="">Trust and Safety</a>
-                        </li>
-                    </ul>
-                </div>
-                <div class="space">
-                    <ul>
-                        <li class="colored-list">DELIVERY</li>
-                        <li>
-                            <a href="">Chisco Express</a>
-                        </li>
-                    </ul>
-                </div>
-                <div class="left-space">
-                    <ul>
-                        <li class="colored-list big-para">DOWNLOAD AND CONNECT WITH US</li>
-                    </ul>
-                    <div class="mobile-app">
-
-                    </div>
-
-                    <a href=""><img src="resources/img/ios.svg">
-                    </a>&nbsp;&nbsp;
-                    <a href=""><img src="resources/img/android.svg"></a>
-
-                    <p class="follow__p">Follow us:
-                        <span>
-                            <a href=""><img class="icon-small" src="resources/img/brands/facebook-white.svg" width="22px"
-                                    height="22px" alt="facebook"></a>
-                        </span>
-                        <span>
-                            <a href=""><img class="icon-small" src="resources/img/brands/instagram-white.svg" width="22px"
-                                    height="22px" alt="instagram"></a>
-                        </span>
-                        <span>
-                            <a href=""><img class="icon-small" src="resources/img/brands/linkedin-white.svg" width="22px"
-                                    height="22px" alt="linkedin"></a>
-                        </span>
-                        <span>
-                            <a href=""><img class="icon-small" src="resources/img/brands/twitter-circular-button-white.svg"
-                                    width="22px" height="22px" alt="twitter"></a>
-                        </span>
-                    </p>
-                    <p class="powered">Powered by
-                        <img class="logo-by" src="resources/img/logo-by.svg">
-                    </p>
-                </div>
-            </div>
-
-            <img class="footer-last-img" src="resources/img/awka.svg">
-            <img class="footer-last-img" src="resources/img/onitsha.svg">
-            <img class="footer-last-img" src="resources/img/nccima.svg">
-            <img class="footer-last-img" src="resources/img/oni.svg">
-
-            <p class="copy">Copyright (c) 2018 Afiaanyi. All rights reserved</p>
-
-            <img class="yb" src="resources/img/yb.svg">
-            <img class="by" src="resources/img/black-yellow.svg">
     </section>
 
     <script src="resources/js/blog.js"></script>
