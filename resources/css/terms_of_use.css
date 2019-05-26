@@ -787,6 +787,12 @@ u a:link, u a:visited {
     .terms__dropdown {
         padding: 6px 3px 15px 3px;
     }
+    .hero__content-title {
+        font-size: 20px;
+    }
+    .hero__text-box {
+        top: 40%;
+    }
 }
 
 .scroll_to_top {
