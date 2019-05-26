@@ -140,16 +140,13 @@ let menuIconMega = $(".header__resp_menu-btn");
 let menuModalMega = $(".nav_menu__resp-mega-menu");
 
 menuIconMega.click(function () {
+    menuModalMega.animate({ left: "0%" });
+    document.body.style.height = "100vh";
+    if (window.screen.width <= 1100) {
 
-    if (screen.availWidth <= 1100) {
-        menuModalMega.animate({ left: "0%" });
-        document.body.style.height = "100vh";
         document.body.style.overflow = "hidden";
     }
-
-    // document.querySelector(".menu_icon").style.visibility = "hidden";
 });
-
 
 $(window).click(function (e) {
     if (e.target.className === "nav_menu__resp-mega-menu") {
