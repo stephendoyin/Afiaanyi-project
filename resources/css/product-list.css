@@ -471,14 +471,18 @@ nav {
     .header__full-nav {
         margin-left: -25px;
         flex-direction: column;
+        width: 255px;
         align-items: flex-start;
         display: inline-flex;
-        padding: 16px 16px 16px 26px;
+        padding: 16px 0px 16px 26px;
         background: #FFFFFF;
         position: absolute;
         z-index: 20;
-        margin-top: 26px;
+        margin-top: 15px;
         box-shadow: 4px 0px 10px rgba(0, 0, 0, 0.2);
+    }
+    .header__full-nav-list:hover .dropdown__header, .header__full-nav-link:hover .dropdown__header {
+        height: 100%;
     }
     .header__triangle {
         display: block;
@@ -496,7 +500,8 @@ nav {
     }
     .header__full-nav-list {
         padding: 10px 0;
-        width: 220px;
+        padding-right: 16px;
+        width: 100%;
         position: unset;
     }
     .header__full-nav-link:link, .header__full-nav-link:visited {
@@ -519,7 +524,7 @@ nav {
         margin-top: 4px;
     }
     div.dropdown__header {
-        left: 265px;
+        left: 256px;
         top: 0;
         right: unset;
     }

@@ -316,7 +316,6 @@ nav {
     -moz-transition: all .3s linear;
     -ms-transition: all .3s linear;
     -o-transition: all .3s linear;
-    height: 100%;
 }
 
 .cart__label {
@@ -484,6 +483,9 @@ nav {
         z-index: 20;
         margin-top: 15px;
         box-shadow: 4px 0px 10px rgba(0, 0, 0, 0.2);
+    }
+    .header__full-nav-list:hover .dropdown__header, .header__full-nav-link:hover .dropdown__header {
+        height: 100%;
     }
     .header__triangle {
         display: block;
