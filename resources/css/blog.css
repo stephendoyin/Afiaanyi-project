@@ -720,6 +720,7 @@ label {
     display: flex;
     padding: 14px 0;
     align-items: center;
+    font-weight: 500;
 }
 
 .first-row__avatar, .first-row__name, .first-row__timestamp {
@@ -1280,7 +1281,10 @@ p img {
         position: absolute;
     }
     .first-row__title {
-        font-size: 16px;
+        font-size: 14px;
+    }
+    .first-row__content {
+        font-size: 13px;
     }
     .first-row__img img {
         height: auto;
